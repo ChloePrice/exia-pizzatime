@@ -3,16 +3,23 @@ class Order< ActiveRecord::Base
   belongs_to :pizza
   self.table_name = :pizzas_users
 
+
+  scope :live, ->() { where(discontinue: false) }
+
   def self.get_order_list
-    Order.joins(:user).joins(:pizza).group('users.name').order('users.name').pluck('pizzas.name', 'users.name', :created_at)
+    Order.live.joins(:user).joins(:pizza).group('users.name').order('users.name').pluck('pizzas.name', 'users.name', :created_at)
   end
 
   def self.order_summary
-    Order.joins(:pizza).group(:pizza_id).order('pizza_count').pluck('pizzas.name', 'COUNT(pizzas_users.pizza_id) as pizza_count').to_h
+    Order.live.joins(:pizza).group(:pizza_id).order('pizza_count').pluck('pizzas.name', 'COUNT(pizzas_users.pizza_id) as pizza_count').to_h
   end
 
   def self.total_price
-    Order.joins(:pizza).sum('pizzas.price')
+    Order.live.joins(:pizza).sum('pizzas.price')
+  end
+
+  def self.open_sales
+    Order.update_all(discontinue: true)
   end
 
   def discontinue

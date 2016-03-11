@@ -36,10 +36,10 @@ ActiveRecord::Schema.define(version: 20160310091556) do
   create_table "users", force: :cascade do |t|
     t.string   "email"
     t.string   "name"
-    t.datetime "created_at",                         null: false
-    t.datetime "updated_at",                         null: false
-    t.string   "password_hash", default: "changeme", null: false
-    t.string   "password_salt", default: "changeme", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.string   "password_hash"
+    t.string   "password_salt"
   end
 
 end
