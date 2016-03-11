@@ -1,6 +1,7 @@
 class OrdersController < ApplicationController
   skip_before_filter :verify_authenticity_token
   before_action :validate_token, except: [:create]
+  before_action :check_sales_opened, only: [:create]
 
 
   # Get the list of orders
@@ -63,6 +64,19 @@ class OrdersController < ApplicationController
   #
   def total
     render json: Order.total_price
+  end
+
+  # Allow people to place orders
+  #
+  def open_sales
+    if(params[:open])
+      Redis.current.set('sales_open', true)
+      Order.update_all(discontinue: true)
+      render_success
+    else
+      Redis.current.set('sales_open', false)
+      render_success
+    end
   end
 
 

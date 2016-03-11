@@ -9,4 +9,6 @@ module Exceptions
   end
   class InvalidPasswdConfirmation < StandardError
   end
+  class SalesAreClosed < StandardError
+  end
 end

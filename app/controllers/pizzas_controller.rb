@@ -3,21 +3,28 @@ class PizzasController < ApplicationController
   before_action :validate_token, except: [:index, :show]
 
   def index
-    pizzas = Pizza.all
-    render json: pizzas
+    render_success(Pizza.all)
   end
 
+  # Create a new pizza
+  #
+  # == Parameters
+  # name::
+  #   Name of pizza
+  # description::
+  #   Ingredients of pizza
+  #
   def create
-    res = Pizza.create(pizza_parameters)
-    render json: res
+    Pizza.create(pizza_parameters)
+    render_success
   end
 
   def show
-    render json: Pizza.find(params[:id])
+    render_success(Pizza.find(params[:id]))
   end
 
   def destroy
-    render json: Pizza.find(params[:id]).destroy
+    render_success(Pizza.find(params[:id]).destroy)
   end
 
   private

@@ -6,6 +6,16 @@ class UsersController < ApplicationController
     render json: User.all
   end
 
+  # Create a new user
+  #
+  # == Parameters
+  # name::
+  #   Name of user
+  # email::
+  #   email of user
+  # promo::
+  #   label of user's school class
+  #
   def create
     render json: User.create!(user_parameters)
   rescue
@@ -41,7 +51,7 @@ class UsersController < ApplicationController
   private
 
   def user_parameters
-    params.permit(:email, :name)
+    params.permit(:email, :name, :promo)
   end
 
   def password_parameters

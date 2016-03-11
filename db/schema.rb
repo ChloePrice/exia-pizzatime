@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160310091556) do
+ActiveRecord::Schema.define(version: 20160311090301) do
 
   create_table "pizzas", force: :cascade do |t|
     t.string   "name",        null: false
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 20160310091556) do
     t.datetime "updated_at",    null: false
     t.string   "password_hash"
     t.string   "password_salt"
+    t.string   "promo"
   end
 
 end

@@ -13,10 +13,13 @@ class ApplicationController < ActionController::Base
     render_errors(['How the fuck are you? (NotAuthenticated)'], :bad_request)
   end
   rescue_from Exceptions::TokenExpired do
-    render_errors(['Mwhaha. This token has expired. (TokenExpired)'], :bad_request)
+    render_errors(['Mwhaha. This token has expired. (TokenExpired)'], 419)
   end
   rescue_from Exceptions::BadCredentials do
     render_errors(['Forgot your password, idiot? Think. Hard. (BadCredentials)'], :unauthorized)
+  end
+  rescue_from Exceptions::SalesAreClosed do
+    render_errors(['Why so hungry? Sales are closed for now.'], :unauthorized)
   end
 
 
@@ -26,6 +29,10 @@ class ApplicationController < ActionController::Base
   def validate_token
     raise Exceptions::UnAuthorized.new if params[:token].blank?
     raise Exceptions::TokenExpired.new unless Token.is_valid?(params[:token])
+  end
+
+  def check_sales_opened
+    raise Exceptions::SalesAreClosed.new unless Order.sales_opened?
   end
 
   def render_success(object = {}, status = :ok, options = {})

@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resource :orders do
     get :summary, to: 'orders#summary'
     get :total, to: 'orders#total'
+    get :open_sales, to: 'orders#open_sales'
   end
   resources :orders, only: [:index, :create, :show, :destroy]
 

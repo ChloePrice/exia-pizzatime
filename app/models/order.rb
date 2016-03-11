@@ -18,8 +18,8 @@ class Order< ActiveRecord::Base
     Order.live.joins(:pizza).sum('pizzas.price')
   end
 
-  def self.open_sales
-    Order.update_all(discontinue: true)
+  def self.sales_opened?
+    return Redis.current.get('sales_open') == true
   end
 
   def discontinue
