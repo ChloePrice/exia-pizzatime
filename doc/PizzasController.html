@@ -135,7 +135,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Create a new pizza.</p>
+</div></span>
   
 </li>
 
@@ -231,23 +233,43 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Create a new pizza</p>
+
+<h2 id="label-Parameters">Parameters</h2>
+<dl class="rdoc-list note-list"><dt>name
+<dd>
+<p>Name of pizza</p>
+</dd><dt>description
+<dd>
+<p>Ingredients of pizza</p>
+</dd></dl>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-10
-11
-12
-13</pre>
+17
+18
+19
+20</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/pizzas_controller.rb', line 10</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/pizzas_controller.rb', line 17</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_create'>create</span>
-  <span class='id identifier rubyid_res'>res</span> <span class='op'>=</span> <span class='const'>Pizza</span><span class='period'>.</span><span class='id identifier rubyid_create'>create</span><span class='lparen'>(</span><span class='id identifier rubyid_pizza_parameters'>pizza_parameters</span><span class='rparen'>)</span>
-  <span class='id identifier rubyid_render'>render</span> <span class='label'>json:</span> <span class='id identifier rubyid_res'>res</span>
+  <span class='const'>Pizza</span><span class='period'>.</span><span class='id identifier rubyid_create'>create</span><span class='lparen'>(</span><span class='id identifier rubyid_pizza_parameters'>pizza_parameters</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_render_success'>render_success</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -269,15 +291,15 @@
       <pre class="lines">
 
 
-19
-20
-21</pre>
+26
+27
+28</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/pizzas_controller.rb', line 19</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/pizzas_controller.rb', line 26</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_destroy'>destroy</span>
-  <span class='id identifier rubyid_render'>render</span> <span class='label'>json:</span> <span class='const'>Pizza</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_destroy'>destroy</span>
+  <span class='id identifier rubyid_render_success'>render_success</span><span class='lparen'>(</span><span class='const'>Pizza</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_destroy'>destroy</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -301,15 +323,13 @@
 
 5
 6
-7
-8</pre>
+7</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'app/controllers/pizzas_controller.rb', line 5</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_index'>index</span>
-  <span class='id identifier rubyid_pizzas'>pizzas</span> <span class='op'>=</span> <span class='const'>Pizza</span><span class='period'>.</span><span class='id identifier rubyid_all'>all</span>
-  <span class='id identifier rubyid_render'>render</span> <span class='label'>json:</span> <span class='id identifier rubyid_pizzas'>pizzas</span>
+  <span class='id identifier rubyid_render_success'>render_success</span><span class='lparen'>(</span><span class='const'>Pizza</span><span class='period'>.</span><span class='id identifier rubyid_all'>all</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -331,15 +351,15 @@
       <pre class="lines">
 
 
-15
-16
-17</pre>
+22
+23
+24</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/pizzas_controller.rb', line 15</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/pizzas_controller.rb', line 22</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_show'>show</span>
-  <span class='id identifier rubyid_render'>render</span> <span class='label'>json:</span> <span class='const'>Pizza</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_render_success'>render_success</span><span class='lparen'>(</span><span class='const'>Pizza</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span><span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:id</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -351,7 +371,7 @@
 </div>
 
     <div id="footer">
-  Generated on Thu Mar 10 17:29:32 2016 by
+  Generated on Fri Mar 11 16:27:14 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.2.1).
 </div>

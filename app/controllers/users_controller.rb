@@ -17,13 +17,13 @@ class UsersController < ApplicationController
   #   label of user's school class
   #
   def create
+    user_parameters[:name] = user_parameters[:email].split('@').first.split('.').join(' ') if user_parameters[:name].blank?
     render json: User.create!(user_parameters)
   rescue
     render_errors(user.errors.full_messages, :unprocessable_entity)
   end
 
   def show
-    return self.index if(params[:id].to_i == 0)
     render json: User.find(params[:id])
   rescue => e
     render_errors([e.message], :unprocessable_entity)

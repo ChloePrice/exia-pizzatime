@@ -207,16 +207,16 @@
       <pre class="lines">
 
 
-22
-23
-24
-25
 26
 27
-28</pre>
+28
+29
+30
+31
+32</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 22</span>
+      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 26</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_authenticate'>authenticate</span><span class='lparen'>(</span><span class='id identifier rubyid_password'>password</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_authenticated?'>authenticated?</span><span class='lparen'>(</span><span class='id identifier rubyid_password'>password</span><span class='rparen'>)</span>
@@ -267,16 +267,16 @@
       <pre class="lines">
 
 
-14
-15
-16
-17
 18
 19
-20</pre>
+20
+21
+22
+23
+24</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 14</span>
+      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 18</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_authenticated?'>authenticated?</span><span class='lparen'>(</span><span class='id identifier rubyid_password'>password</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_password_hash'>password_hash</span><span class='period'>.</span><span class='id identifier rubyid_blank?'>blank?</span>
@@ -327,15 +327,15 @@
       <pre class="lines">
 
 
-7
-8
-9
-10
 11
-12</pre>
+12
+13
+14
+15
+16</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 7</span>
+      <pre class="code"><span class="info file"># File 'app/models/user.rb', line 11</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_change_password'>change_password</span><span class='lparen'>(</span><span class='id identifier rubyid_password'>password</span><span class='comma'>,</span> <span class='id identifier rubyid_confirmation'>confirmation</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_raise'>raise</span> <span class='const'>Exceptions</span><span class='op'>::</span><span class='const'>InvalidPasswdConfirmation</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span> <span class='kw'>if</span> <span class='id identifier rubyid_password'>password</span> <span class='op'>!=</span> <span class='id identifier rubyid_confirmation'>confirmation</span>
@@ -353,7 +353,7 @@
 </div>
 
     <div id="footer">
-  Generated on Thu Mar 10 17:29:32 2016 by
+  Generated on Fri Mar 11 16:27:14 2016 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.8.7.6 (ruby-2.2.1).
 </div>

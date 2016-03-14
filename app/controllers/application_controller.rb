@@ -4,8 +4,8 @@ class ApplicationController < ActionController::Base
   skip_before_filter :verify_authenticity_token
   protect_from_forgery with: :exception
 
-  ## EXCEPTION HANDLING
 
+  ## EXCEPTION HANDLING
   rescue_from Exceptions::UnAuthorized do
     render_errors(['Screw you! You are not allowed here. (UnAuthorized)'], :unauthorized)
   end
@@ -27,8 +27,9 @@ class ApplicationController < ActionController::Base
   protected
 
   def validate_token
-    raise Exceptions::UnAuthorized.new if params[:token].blank?
-    raise Exceptions::TokenExpired.new unless Token.is_valid?(params[:token])
+    token = request.headers['token']
+    raise Exceptions::UnAuthorizeted.new if token.blank?
+    raise Exceptions::TokenExpired.new unless Token.is_valid?(token)
   end
 
   def check_sales_opened

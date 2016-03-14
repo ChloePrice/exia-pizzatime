@@ -10,7 +10,7 @@ class OrdersController < ApplicationController
   # An array containing pizzas ans users'name.
   #
   def index
-    render json: Order.get_order_list
+    render_success(Order.get_order_list)
   end
 
   # Discontinue an order (not deleted)
@@ -29,23 +29,29 @@ class OrdersController < ApplicationController
   # all attributes of an order
   #
   def show
-    return self.index if(params[:id].to_i == 0)
     u = User.find(params[:id])
-    render json: u.pizzas
+    render_success(u.pizzas)
   end
 
   # Create a new order
   #
   # == Parameters
-  # email_user::
+  # email::
   #   Email of user
   # id_pizza::
   #   array containing the ids of pizza
+  # promo::
+  #   User's school class
+  #
   def create
+    params = order_parameters.except(:id_pizza)
+    params[:name] = params[:email].split('@').first.split('.').join(' ')
     u = User.find_by(email: order_parameters[:email_user])
-    u = User.create!(email: order_parameters[:email_user], name: order_parameters[:email_user].split('@').first) if u.blank?
+    byebug
+    u = User.create!(params) if u.blank?
     u.pizzas = Pizza.where(id: order_parameters[:id_pizza]).all
-    render json: u.save!
+    u.save!
+    render_success
   end
 
   # Display a summary of the orders sorted by pizzas
@@ -54,7 +60,7 @@ class OrdersController < ApplicationController
   # An array containing a name of a pizza, and the quantity of each one.
   #
   def summary
-    render json: Order.order_summary
+    render_success(Order.order_summary)
   end
 
   # Print the total price for all the current orders
@@ -63,27 +69,34 @@ class OrdersController < ApplicationController
   # The price.
   #
   def total
-    render json: Order.total_price
+    render_success(Order.total_price)
   end
 
   # Allow people to place orders
   #
   def open_sales
-    if(params[:open])
-      Redis.current.set('sales_open', true)
-      Order.update_all(discontinue: true)
-      render_success
-    else
-      Redis.current.set('sales_open', false)
-      render_success
-    end
+    Order.open_sales(params[:open])
+    render_success
+  end
+
+  # List unpaid orders
+  #
+  def unpaid_orders
+    render_success(Order.unpaid)
+  end
+
+  def mark_as_paid
+    orders = Order.where(user_id: params[:id])
+    return render_errors(['Uh? This user has not got any order.']) if orders.blank?
+    orders.each(&:mark_paid)
+    render_success
   end
 
 
   private
 
   def order_parameters
-    params.permit(:id_pizza, :email_user)
+    params.permit(:id_pizza, :email, :promo)
   end
 
 end
