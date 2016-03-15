@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160311090301) do
+ActiveRecord::Schema.define(version: 20160315155207) do
 
   create_table "pizzas", force: :cascade do |t|
     t.string   "name",        null: false
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20160311090301) do
     t.boolean  "discontinued", default: false, null: false
     t.datetime "created_at",                   null: false
     t.datetime "updated_at",                   null: false
+    t.integer  "base",         default: 0
   end
 
   add_index "pizzas_users", ["pizza_id"], name: "index_pizzas_users_on_pizza_id"

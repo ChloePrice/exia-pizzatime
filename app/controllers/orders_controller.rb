@@ -47,7 +47,6 @@ class OrdersController < ApplicationController
     params = order_parameters.except(:id_pizza)
     params[:name] = params[:email].split('@').first.split('.').join(' ')
     u = User.find_by(email: order_parameters[:email_user])
-    byebug
     u = User.create!(params) if u.blank?
     u.pizzas = Pizza.where(id: order_parameters[:id_pizza]).all
     u.save!
@@ -96,7 +95,7 @@ class OrdersController < ApplicationController
   private
 
   def order_parameters
-    params.permit(:id_pizza, :email, :promo)
+    params.permit(:id_pizza, :email, :promo, :base)
   end
 
 end
