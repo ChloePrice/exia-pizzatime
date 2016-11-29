@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
-  root 'pizzas#index'
+
+  # You can have the root of your site routed with "root"
+  root 'pages#index'
+  get '/login', to: 'pages#login'
+
+  # This is where we are redirected if OmniAuth successfully authenticates
+  # the user.
+  match '/auth/:provider/callback', to: 'pages#callback', via: [:get, :post]
+  match '/disconnect', to: 'pages#disconnect', via: [:get]
+
   resources :pizzas, only: [:index, :create, :show, :destroy]
   resources :users, only: [:index, :create, :destroy]
   resource :users do

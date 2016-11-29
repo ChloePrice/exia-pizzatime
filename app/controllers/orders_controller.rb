@@ -1,6 +1,6 @@
 class OrdersController < ApplicationController
   skip_before_filter :verify_authenticity_token
-  before_action :validate_token, except: [:create]
+  before_action :validate_token
   before_action :check_sales_opened, only: [:create]
 
 

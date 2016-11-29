@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 20160315155207) do
     t.string   "name"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+    t.string   "last_token"
     t.string   "password_hash"
     t.string   "password_salt"
     t.string   "promo"

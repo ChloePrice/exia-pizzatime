@@ -26,6 +26,15 @@ gem 'sidekiq'
 gem 'bcrypt', '~> 3.1'
 gem 'redis'
 gem 'rest-client'
+# Authentication resources
+gem 'omniauth'
+gem 'omniauth-oauth2'
+#gem 'omniauth-microsoft_v2_auth'
+gem 'omniauth-microsoft_v2_auth', path: './omniauth-microsoft_v2_auth'
+
+# On Windows systems we need tzinfo-data
+gem 'tzinfo-data'
+
 
 
 # Use Unicorn as the app server

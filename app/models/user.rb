@@ -3,7 +3,6 @@ class User < ActiveRecord::Base
 
   validates :name, presence: true
   validates :email, format: { with: /[a-z0-9._-]+@.+cesi.fr/ }
-  validates :promo, presence: true
 
   scope :admins, -> { where.not(password_hash: nil) }
 

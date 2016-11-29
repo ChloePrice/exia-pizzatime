@@ -7,10 +7,10 @@ class ApplicationController < ActionController::Base
 
   ## EXCEPTION HANDLING
   rescue_from Exceptions::UnAuthorized do
-    render_errors(['Screw you! You are not allowed here. (UnAuthorized)'], :unauthorized)
+    redirect_to '/login'
   end
   rescue_from Exceptions::NotAuthenticated do
-    render_errors(['How the fuck are you? (NotAuthenticated)'], :bad_request)
+    render_errors(['Who the fuck are you? (NotAuthenticated)'], :bad_request)
   end
   rescue_from Exceptions::TokenExpired do
     render_errors(['Mwhaha. This token has expired. (TokenExpired)'], 419)
@@ -28,7 +28,7 @@ class ApplicationController < ActionController::Base
 
   def validate_token
     token = request.headers['token']
-    raise Exceptions::UnAuthorizeted.new if token.blank?
+    raise Exceptions::UnAuthorized.new if token.blank?
     raise Exceptions::TokenExpired.new unless Token.is_valid?(token)
   end
 
