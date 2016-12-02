@@ -4,6 +4,7 @@ ENV['CLIENT_ID'] = '23bff6e3-cea3-4d0c-9b4f-012d966ccf78'
 ENV['CLIENT_SECRET'] = 'rdzAez4dph0Pzmo42wNaMKb'
 ENV['SCOPE'] = 'openid email profile https://graph.microsoft.com/User.Read https://graph.microsoft.com/Mail.Send'
 
+
 # Load the Rails application.
 require File.expand_path('../application', __FILE__)
 

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   skip_before_filter :verify_authenticity_token
-  before_action :validate_token, except: [:show, :authenticate]
+  #before_action :validate_token, except: [:show, :authenticate]
 
   def index
     render json: User.all
@@ -43,6 +43,12 @@ class UsersController < ApplicationController
     else
       render_errors([u.errors.full_messages], :unauthorized)
     end
+  end
+
+  def order
+    user = User.find(params[:user_id])
+    raise Exceptions::BadRequest if user.nil?
+    render_success(Order.live.placedBy(user))
   end
 
 

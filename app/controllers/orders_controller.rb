@@ -1,7 +1,9 @@
+require 'json'
+
 class OrdersController < ApplicationController
   skip_before_filter :verify_authenticity_token
-  before_action :validate_token
-  before_action :check_sales_opened, only: [:create]
+  #before_action :validate_token, only: [:index]
+  #before_action :check_sales_opened, only: [:create]
 
 
   # Get the list of orders
@@ -10,7 +12,22 @@ class OrdersController < ApplicationController
   # An array containing pizzas ans users'name.
   #
   def index
-    render_success(Order.get_order_list)
+    result = []
+    User.all.each do |u|
+      user_orders = Order.live.placedBy(u)
+      next if user_orders.blank?
+      entry = {user: u}
+      entry[:items] = user_orders.map do |o|
+        {id: o.id, pizza: {id: o.pizza.id, name: o.pizza.name, base:{id: o.pizza.base.id, name: o.pizza.base.name}}, date: o.created_at, paid: o.paid, payment_date: o.payment_date, price: o.pizza.price}
+      end
+      entry[:date] = user_orders.last.created_at
+      entry[:paid] = !user_orders.any?{|o| !o.paid}
+      entry[:delivered] = !user_orders.any?{|o| !o.is_delivered?}
+      entry[:price] = user_orders.inject(0){|sum, o| sum + o.pizza.price}
+      entry[:payment_date] = user_orders.last.payment_date
+      result.append(entry)
+    end
+    render_success(result)
   end
 
   # Discontinue an order (not deleted)
@@ -19,38 +36,26 @@ class OrdersController < ApplicationController
   # An array containing pizzas ans users'name.
   #
   def destroy
-    Order.discontinue(params[:id])
-    render_success()
+    order = Order.find(params[:id])
+    raise Exceptions::UnAuthorized if (order.user.email != session[:email] || order.discontinued)
+    raise Exceptions::SalesAreClosed if o.flag == 0
+    render_success(order.update!(flag: -1))
   end
 
-  # Get details for an order
-  #
-  # == Returns:
-  # all attributes of an order
-  #
-  def show
-    u = User.find(params[:id])
-    render_success(u.pizzas)
-  end
 
   # Create a new order
-  #
-  # == Parameters
-  # email::
-  #   Email of user
-  # id_pizza::
-  #   array containing the ids of pizza
-  # promo::
-  #   User's school class
-  #
   def create
-    params = order_parameters.except(:id_pizza)
-    params[:name] = params[:email].split('@').first.split('.').join(' ')
-    u = User.find_by(email: order_parameters[:email_user])
-    u = User.create!(params) if u.blank?
-    u.pizzas = Pizza.where(id: order_parameters[:id_pizza]).all
-    u.save!
-    render_success
+    u = User.find_by(email: 'sorian.slimani@viacesi.fr')
+    raise Exceptions::BadRequest if u.nil?
+    order_list = []
+    params[:items].each do |pizza|
+      o = Order.new({pizza_id: pizza[:id], base_id: pizza[:base][:id], ordered_for: self.getCurrentEndDate()})
+      o.user = u
+      o.validate!
+      order_list.append(o)
+    end
+    order_list.each{|o| o.save!}
+    render_success(order_list)
   end
 
   # Display a summary of the orders sorted by pizzas
@@ -84,18 +89,32 @@ class OrdersController < ApplicationController
     render_success(Order.unpaid)
   end
 
-  def mark_as_paid
-    orders = Order.where(user_id: params[:id])
-    return render_errors(['Uh? This user has not got any order.']) if orders.blank?
-    orders.each(&:mark_paid)
-    render_success
+  # price and delivered status
+  #
+  def update
+    order = Order.find(params[:id])
+    raise Exceptions::BadRequest if order.nil?
+    order.deliver if update_parameters[:delivered]
+    order.lock if update_parameters[:lock]
+    order.pay if update_parameters[:paid]
+    render_success(order)
+  end
+
+  def cancel
+    order = Order.find_by(id: params[:order_id])
+    raise Exceptions::BadRequest if order.nil?
+    render_success(order.cancel)
   end
 
 
   private
 
   def order_parameters
-    params.permit(:id_pizza, :email, :promo, :base)
+    params.require(:user)
+  end
+
+  def update_parameters
+    params.permit(:paid, :delivered, :lock)
   end
 
 end

@@ -27,6 +27,10 @@ class PagesController < ApplicationController
   # For more information about auth libraries see: https://azure.microsoft.com/documentation/articles/active-directory-v2-libraries/
   # omniauth-oauth2 repo:  https://github.com/intridea/omniauth-oauth2
 
+  def index
+    render_success
+  end
+
   def login
     redirect_to '/auth/microsoft_v2_auth'
   end
@@ -42,20 +46,18 @@ class PagesController < ApplicationController
     @email = data[:extra][:raw_info][:userPrincipalName]
     @name = data[:extra][:raw_info][:displayName]
 
-    # Associate token/user values to the session
-    session[:access_token] = data['credentials']['token']
-    session[:name] = @name
-    session[:email] = @email
-
     if User.exists?(:email => @email)
         user = User.find_by(:email => @email)
         user.last_token = session[:access_token]
-        render_success(user)
     else
         user = User.create!(name: @name, email: @email)
         user.last_token = session[:access_token]
-        render_success(user)
     end
+
+    # Store token/user in Redis
+    Token.store(data['credentials']['token'], user)
+
+    render_success(user)
   end
 
   def auth_hash

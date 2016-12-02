@@ -6,6 +6,12 @@ class Token
     return token
   end
 
+  def self.store(token, user)
+    Redis.current.hset('tokens', token, user.id.to_s )
+    Redis.current.expire('tokens', 5184000)
+    return token
+  end
+
   def self.is_valid?(token)
     Redis.current.hget('tokens', token).present?
   end

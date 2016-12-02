@@ -11,4 +11,8 @@ module Exceptions
   end
   class SalesAreClosed < StandardError
   end
+  class BadRequest < StandardError
+  end
+  class OrderLock < StandardError
+  end
 end
