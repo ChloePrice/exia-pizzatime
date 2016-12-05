@@ -28,8 +28,6 @@ ActiveRecord::Schema.define(version: 20160315155207) do
     t.integer  "base_id", null: false
   end
 
-  add_index "pizzas", ["default_base"], name: "index_bases_on_default_base"
-
   create_table "pizzas_users", force: :cascade do |t|
     t.integer  "pizza_id",                     null: false 
     t.integer  "base_id",                      null: false 
