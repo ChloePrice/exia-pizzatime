@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # the user.
   match '/auth/:provider/callback', to: 'pages#callback', via: [:get, :post]
   match '/disconnect', to: 'pages#disconnect', via: [:get]
-  match '/.well-known/acme-challenge/UkLP8WCGe2DQhWkHz_ogGm6dv7BhsbpDCnZx_s_9EOg', to: 'config#ssl_key', via: [:get]
+  match '/.well-known/acme-challenge/LYUENMW3_SAPWV2OMUiL1xoOXkkkuL1WbbQ1mLvSZmE', to: 'config#ssl_key', via: [:get]
 
   resources :pizzas, only: [:index, :create, :show, :destroy]
   resources :users, only: [:index, :create, :destroy] do

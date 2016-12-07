@@ -1,0 +1,1243 @@
+bundler: failed to load command: unicorn (/home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/bin/unicorn)
+bundler: failed to load command: unicorn (/home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/bin/unicorn)
+bundler: failed to load command: unicorn (/home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/bin/unicorn)
+bundler: failed to load command: unicorn (/home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/bin/unicorn)
+I, [2016-12-05T17:32:08.573599 #24437]  INFO -- : Started GET "/" for 37.163.59.22 at 2016-12-05 17:32:08 +0100
+I, [2016-12-05T17:32:08.692172 #24437]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-12-05T17:32:08.728025 #24437]  INFO -- : Completed 200 OK in 34ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+I, [2016-12-05T17:32:20.114269 #24439]  INFO -- : Started GET "/pizza" for 37.163.59.22 at 2016-12-05 17:32:20 +0100
+F, [2016-12-05T17:32:20.192645 #24439] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/pizza"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-05T17:32:27.474686 #24437]  INFO -- : Started GET "/pizzas" for 37.163.59.22 at 2016-12-05 17:32:27 +0100
+I, [2016-12-05T17:32:27.481442 #24437]  INFO -- : Processing by PizzasController#index as HTML
+D, [2016-12-05T17:32:27.595537 #24437] DEBUG -- :   [1m[36mPizza Load (6.1ms)[0m  [1mSELECT "pizzas".* FROM "pizzas"[0m
+E, [2016-12-05T17:32:27.595782 #24437] ERROR -- : SQLite3::SQLException: no such table: pizzas: SELECT "pizzas".* FROM "pizzas"
+I, [2016-12-05T17:32:27.597557 #24437]  INFO -- : Completed 500 Internal Server Error in 115ms (ActiveRecord: 6.1ms)
+F, [2016-12-05T17:32:27.603281 #24437] FATAL -- : 
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: pizzas: SELECT "pizzas".* FROM "pizzas"):
+  app/controllers/pizzas_controller.rb:8:in `index'
+
+
+I, [2016-12-05T17:35:55.652763 #24439]  INFO -- : Started GET "/pizzas" for 37.163.59.22 at 2016-12-05 17:35:55 +0100
+I, [2016-12-05T17:35:55.687289 #24439]  INFO -- : Processing by PizzasController#index as HTML
+D, [2016-12-05T17:35:55.720682 #24439] DEBUG -- :   [1m[36mPizza Load (2.5ms)[0m  [1mSELECT "pizzas".* FROM "pizzas"[0m
+I, [2016-12-05T17:35:55.827832 #24439]  INFO -- : Completed 200 OK in 140ms (Views: 0.6ms | ActiveRecord: 2.8ms)
+I, [2016-12-05T17:36:31.621403 #24439]  INFO -- : Started GET "/pizzas" for 37.163.59.22 at 2016-12-05 17:36:31 +0100
+I, [2016-12-05T17:36:31.626556 #24439]  INFO -- : Processing by PizzasController#index as HTML
+D, [2016-12-05T17:36:31.629807 #24439] DEBUG -- :   [1m[35mPizza Load (0.7ms)[0m  SELECT "pizzas".* FROM "pizzas"
+I, [2016-12-05T17:36:31.630748 #24439]  INFO -- : Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+I, [2016-12-07T08:57:17.724371 #24437]  INFO -- : Started GET "/" for 37.163.80.76 at 2016-12-07 08:57:17 +0100
+I, [2016-12-07T08:57:17.733086 #24437]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-12-07T08:57:17.747092 #24437]  INFO -- : Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T08:57:18.675352 #24439]  INFO -- : Started GET "/favicon.ico" for 37.163.80.76 at 2016-12-07 08:57:18 +0100
+F, [2016-12-07T08:57:18.684365 #24439] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T13:10:22.415224 #24439]  INFO -- : Started GET "/login" for 37.163.80.100 at 2016-12-07 13:10:22 +0100
+I, [2016-12-07T13:10:22.436518 #24439]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-07T13:10:22.442854 #24439]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-07T13:10:22.443504 #24439]  INFO -- : Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+I, [2016-12-07T13:10:22.526988 #24437]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 37.163.80.100 at 2016-12-07 13:10:22 +0100
+I, [2016-12-07T13:10:22.529349 #24437]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-07T13:18:28.817059 #24439]  INFO -- : Started GET "/login" for 85.233.216.37 at 2016-12-07 13:18:28 +0100
+I, [2016-12-07T13:18:28.822624 #24439]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-07T13:18:28.824202 #24439]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-07T13:18:28.824503 #24439]  INFO -- : Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+I, [2016-12-07T13:18:28.855943 #24437]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 85.233.216.37 at 2016-12-07 13:18:28 +0100
+I, [2016-12-07T13:18:28.857058 #24437]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-07T13:34:27.149650 #24439]  INFO -- : Started GET "/login" for 37.163.80.100 at 2016-12-07 13:34:27 +0100
+I, [2016-12-07T13:34:27.159324 #24439]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-07T13:34:27.173830 #24439]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-07T13:34:27.174712 #24439]  INFO -- : Completed 302 Found in 15ms (ActiveRecord: 0.0ms)
+I, [2016-12-07T13:34:27.267518 #24437]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 37.163.80.100 at 2016-12-07 13:34:27 +0100
+I, [2016-12-07T13:34:27.271232 #24437]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-07T13:45:22.336655 #24439]  INFO -- : Started GET "/" for 37.163.80.100 at 2016-12-07 13:45:22 +0100
+I, [2016-12-07T13:45:22.341057 #24439]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-12-07T13:45:22.343608 #24439]  INFO -- : Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T13:45:22.636607 #24437]  INFO -- : Started GET "/favicon.ico" for 37.163.80.100 at 2016-12-07 13:45:22 +0100
+F, [2016-12-07T13:45:22.641296 #24437] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T13:45:22.757199 #24439]  INFO -- : Started GET "/favicon.ico" for 37.163.80.100 at 2016-12-07 13:45:22 +0100
+F, [2016-12-07T13:45:22.760386 #24439] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T13:45:28.987286 #24437]  INFO -- : Started GET "/login" for 37.163.80.100 at 2016-12-07 13:45:28 +0100
+I, [2016-12-07T13:45:28.991576 #24437]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-07T13:45:28.994217 #24437]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-07T13:45:28.994909 #24437]  INFO -- : Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+I, [2016-12-07T13:45:29.113894 #24439]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 37.163.80.100 at 2016-12-07 13:45:29 +0100
+I, [2016-12-07T13:45:29.115010 #24439]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-07T13:53:34.233742 #24439]  INFO -- : Started GET "/login" for 37.163.80.100 at 2016-12-07 13:53:34 +0100
+I, [2016-12-07T13:53:34.238042 #24439]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-07T13:53:34.239782 #24439]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-07T13:53:34.240247 #24439]  INFO -- : Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+I, [2016-12-07T13:53:34.429887 #24437]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 37.163.80.100 at 2016-12-07 13:53:34 +0100
+I, [2016-12-07T13:53:34.430963 #24437]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-07T14:37:39.199408 #24437]  INFO -- : Started GET "/login" for 37.163.80.100 at 2016-12-07 14:37:39 +0100
+I, [2016-12-07T14:37:39.207021 #24437]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-07T14:37:39.209798 #24437]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-07T14:37:39.210373 #24437]  INFO -- : Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+I, [2016-12-07T14:37:39.324288 #24439]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 37.163.80.100 at 2016-12-07 14:37:39 +0100
+I, [2016-12-07T14:37:39.327102 #24439]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-07T14:38:27.818462 #24439]  INFO -- : Started GET "/" for 37.163.80.100 at 2016-12-07 14:38:27 +0100
+I, [2016-12-07T14:38:27.821674 #24439]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-12-07T14:38:27.823462 #24439]  INFO -- : Completed 200 OK in 2ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T14:38:28.142220 #24437]  INFO -- : Started GET "/favicon.ico" for 37.163.80.100 at 2016-12-07 14:38:28 +0100
+F, [2016-12-07T14:38:28.145513 #24437] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T14:38:28.209438 #24439]  INFO -- : Started GET "/favicon.ico" for 37.163.80.100 at 2016-12-07 14:38:28 +0100
+F, [2016-12-07T14:38:28.212184 #24439] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T14:39:45.652052 #24437]  INFO -- : Started GET "/login" for 37.163.80.100 at 2016-12-07 14:39:45 +0100
+I, [2016-12-07T14:39:45.654581 #24437]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-07T14:39:45.655970 #24437]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-07T14:39:45.656298 #24437]  INFO -- : Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+I, [2016-12-07T14:39:45.718806 #24439]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 37.163.80.100 at 2016-12-07 14:39:45 +0100
+I, [2016-12-07T14:39:45.719651 #24439]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-07T14:40:01.639642 #24437]  INFO -- : Started GET "/login" for 37.163.80.100 at 2016-12-07 14:40:01 +0100
+I, [2016-12-07T14:40:01.643061 #24437]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-07T14:40:01.644864 #24437]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-07T14:40:01.645710 #24437]  INFO -- : Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+I, [2016-12-07T14:40:01.799948 #24439]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 37.163.80.100 at 2016-12-07 14:40:01 +0100
+I, [2016-12-07T14:40:01.800546 #24439]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-07T14:42:51.450711 #24439]  INFO -- : Started GET "/" for 37.163.80.100 at 2016-12-07 14:42:51 +0100
+I, [2016-12-07T14:42:51.452945 #24439]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-12-07T14:42:51.454223 #24439]  INFO -- : Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T14:42:51.697465 #24437]  INFO -- : Started GET "/favicon.ico" for 37.163.80.100 at 2016-12-07 14:42:51 +0100
+F, [2016-12-07T14:42:51.703099 #24437] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T14:48:38.767404 #24439]  INFO -- : Started GET "/.well-known/acme-challenge/qLOINvWXtP3KoXuf9Okm6ru06_Kc6Uj0Clw76SK-yeg" for 66.133.109.36 at 2016-12-07 14:48:38 +0100
+F, [2016-12-07T14:48:38.770656 #24439] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/.well-known/acme-challenge/qLOINvWXtP3KoXuf9Okm6ru06_Kc6Uj0Clw76SK-yeg"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T14:56:07.148954 #24439]  INFO -- : Started GET "/.well-known/acme-challenge/UkLP8WCGe2DQhWkHz_ogGm6dv7BhsbpDCnZx_s_9EOg" for 37.163.80.100 at 2016-12-07 14:56:07 +0100
+F, [2016-12-07T14:56:07.154360 #24439] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/.well-known/acme-challenge/UkLP8WCGe2DQhWkHz_ogGm6dv7BhsbpDCnZx_s_9EOg"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:00:17.844334 #24439]  INFO -- : Started GET "/.well-known/acme-challenge/UkLP8WCGe2DQhWkHz_ogGm6dv7BhsbpDCnZx_s_9EOg" for 37.163.80.100 at 2016-12-07 15:00:17 +0100
+F, [2016-12-07T15:00:17.847010 #24439] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/.well-known/acme-challenge/UkLP8WCGe2DQhWkHz_ogGm6dv7BhsbpDCnZx_s_9EOg"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:01:56.925196 #24437]  INFO -- : Started GET "/" for 37.163.80.100 at 2016-12-07 15:01:56 +0100
+I, [2016-12-07T15:01:56.930482 #24437]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-12-07T15:01:56.933215 #24437]  INFO -- : Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T15:02:02.167291 #24439]  INFO -- : Started GET "/.well-known/acme-challenge/UkLP8WCGe2DQhWkHz_ogGm6dv7BhsbpDCnZx_s_9EOg" for 37.163.80.100 at 2016-12-07 15:02:02 +0100
+F, [2016-12-07T15:02:02.170635 #24439] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/.well-known/acme-challenge/UkLP8WCGe2DQhWkHz_ogGm6dv7BhsbpDCnZx_s_9EOg"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:03:07.188060 #1770]  INFO -- : Started GET "/.well-known/acme-challenge/UkLP8WCGe2DQhWkHz_ogGm6dv7BhsbpDCnZx_s_9EOg" for 37.163.80.100 at 2016-12-07 15:03:07 +0100
+I, [2016-12-07T15:03:07.217639 #1770]  INFO -- : Processing by ConfigController#ssl_key as HTML
+I, [2016-12-07T15:03:07.229644 #1770]  INFO -- : Completed 200 OK in 12ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T15:03:14.031991 #1768]  INFO -- : Started GET "/.well-known/acme-challenge/UkLP8WCGe2DQhWkHz_ogGm6dv7BhsbpDCnZx_s_9EOg" for 66.133.109.36 at 2016-12-07 15:03:14 +0100
+I, [2016-12-07T15:03:14.056570 #1768]  INFO -- : Processing by ConfigController#ssl_key as */*
+I, [2016-12-07T15:03:14.065758 #1768]  INFO -- : Completed 200 OK in 9ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T15:04:26.108014 #1768]  INFO -- : Started GET "/.well-known/acme-challenge/LYUENMW3_SAPWV2OMUiL1xoOXkkkuL1WbbQ1mLvSZmE" for 37.163.80.100 at 2016-12-07 15:04:26 +0100
+F, [2016-12-07T15:04:26.113009 #1768] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/.well-known/acme-challenge/LYUENMW3_SAPWV2OMUiL1xoOXkkkuL1WbbQ1mLvSZmE"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:04:55.461500 #1770]  INFO -- : Started GET "/.well-known/acme-challenge/UkLP8WCGe2DQhWkHz_ogGm6dv7BhsbpDCnZx_s_9EOg" for 37.163.80.100 at 2016-12-07 15:04:55 +0100
+I, [2016-12-07T15:04:55.465012 #1770]  INFO -- : Processing by ConfigController#ssl_key as HTML
+I, [2016-12-07T15:04:55.467289 #1770]  INFO -- : Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T15:06:58.402995 #1770]  INFO -- : Started GET "/.well-known/acme-challenge/LYUENMW3_SAPWV2OMUiL1xoOXkkkuL1WbbQ1mLvSZmE" for 37.163.80.100 at 2016-12-07 15:06:58 +0100
+F, [2016-12-07T15:06:58.406872 #1770] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/.well-known/acme-challenge/LYUENMW3_SAPWV2OMUiL1xoOXkkkuL1WbbQ1mLvSZmE"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:07:24.016018 #1810]  INFO -- : Started GET "/.well-known/acme-challenge/LYUENMW3_SAPWV2OMUiL1xoOXkkkuL1WbbQ1mLvSZmE" for 37.163.80.100 at 2016-12-07 15:07:24 +0100
+I, [2016-12-07T15:07:24.055212 #1810]  INFO -- : Processing by ConfigController#ssl_key as HTML
+I, [2016-12-07T15:07:24.064515 #1810]  INFO -- : Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T15:07:29.409124 #1812]  INFO -- : Started GET "/.well-known/acme-challenge/LYUENMW3_SAPWV2OMUiL1xoOXkkkuL1WbbQ1mLvSZmE" for 66.133.109.36 at 2016-12-07 15:07:29 +0100
+I, [2016-12-07T15:07:29.465214 #1812]  INFO -- : Processing by ConfigController#ssl_key as */*
+I, [2016-12-07T15:07:29.475172 #1812]  INFO -- : Completed 200 OK in 10ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T15:15:29.694241 #1810]  INFO -- : Started GET "/" for 37.163.80.100 at 2016-12-07 15:15:29 +0100
+I, [2016-12-07T15:15:29.705553 #1810]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-12-07T15:15:29.722695 #1810]  INFO -- :   Rendered pages/index.html.erb within layouts/application (12.0ms)
+I, [2016-12-07T15:15:29.726947 #1810]  INFO -- : Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T15:15:29.850574 #1812]  INFO -- : Started GET "/stylesheets/application.css" for 37.163.80.100 at 2016-12-07 15:15:29 +0100
+F, [2016-12-07T15:15:29.855071 #1812] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:15:29.950462 #1810]  INFO -- : Started GET "/javascripts/application.js" for 37.163.80.100 at 2016-12-07 15:15:29 +0100
+F, [2016-12-07T15:15:29.952497 #1810] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:16:00.917700 #1812]  INFO -- : Started GET "/" for 85.233.216.37 at 2016-12-07 15:16:00 +0100
+I, [2016-12-07T15:16:00.925212 #1812]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-12-07T15:16:00.941167 #1812]  INFO -- :   Rendered pages/index.html.erb within layouts/application (11.7ms)
+I, [2016-12-07T15:16:00.945813 #1812]  INFO -- : Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T15:16:00.970840 #1810]  INFO -- : Started GET "/stylesheets/application.css" for 85.233.216.37 at 2016-12-07 15:16:00 +0100
+F, [2016-12-07T15:16:00.972842 #1810] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:16:00.973703 #1810]  INFO -- : Started GET "/javascripts/application.js" for 85.233.216.37 at 2016-12-07 15:16:00 +0100
+F, [2016-12-07T15:16:00.975135 #1810] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:16:01.152110 #1812]  INFO -- : Started GET "/favicon.ico" for 85.233.216.37 at 2016-12-07 15:16:01 +0100
+F, [2016-12-07T15:16:01.155147 #1812] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:16:17.496992 #1810]  INFO -- : Started GET "/login" for 85.233.216.37 at 2016-12-07 15:16:17 +0100
+I, [2016-12-07T15:16:17.499230 #1810]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-07T15:16:17.500662 #1810]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-07T15:16:17.501001 #1810]  INFO -- : Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+I, [2016-12-07T15:16:17.664604 #1812]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 85.233.216.37 at 2016-12-07 15:16:17 +0100
+I, [2016-12-07T15:16:17.665922 #1812]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-07T15:17:07.039299 #1812]  INFO -- : Started GET "/" for 85.233.216.37 at 2016-12-07 15:17:07 +0100
+I, [2016-12-07T15:17:07.041699 #1812]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-12-07T15:17:07.043954 #1812]  INFO -- :   Rendered pages/index.html.erb within layouts/application (1.0ms)
+I, [2016-12-07T15:17:07.045238 #1812]  INFO -- : Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T15:17:07.065431 #1810]  INFO -- : Started GET "/stylesheets/application.css" for 85.233.216.37 at 2016-12-07 15:17:07 +0100
+F, [2016-12-07T15:17:07.067685 #1810] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:17:07.068945 #1812]  INFO -- : Started GET "/javascripts/application.js" for 85.233.216.37 at 2016-12-07 15:17:07 +0100
+F, [2016-12-07T15:17:07.071179 #1812] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:17:07.186876 #1810]  INFO -- : Started GET "/favicon.ico" for 85.233.216.37 at 2016-12-07 15:17:07 +0100
+F, [2016-12-07T15:17:07.189737 #1810] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:18:25.903164 #1810]  INFO -- : Started GET "/" for 85.233.216.37 at 2016-12-07 15:18:25 +0100
+I, [2016-12-07T15:18:25.904916 #1810]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-12-07T15:18:25.907164 #1810]  INFO -- :   Rendered pages/index.html.erb within layouts/application (0.9ms)
+I, [2016-12-07T15:18:25.908378 #1810]  INFO -- : Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T15:18:25.932778 #1812]  INFO -- : Started GET "/stylesheets/application.css" for 85.233.216.37 at 2016-12-07 15:18:25 +0100
+F, [2016-12-07T15:18:25.935140 #1812] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:18:25.936021 #1810]  INFO -- : Started GET "/javascripts/application.js" for 85.233.216.37 at 2016-12-07 15:18:25 +0100
+F, [2016-12-07T15:18:25.938417 #1810] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:19:17.591163 #1810]  INFO -- : Started GET "/" for 37.163.80.100 at 2016-12-07 15:19:17 +0100
+I, [2016-12-07T15:19:17.594155 #1810]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-12-07T15:19:17.597211 #1810]  INFO -- :   Rendered pages/index.html.erb within layouts/application (1.5ms)
+I, [2016-12-07T15:19:17.599224 #1810]  INFO -- : Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T15:19:17.727831 #1812]  INFO -- : Started GET "/stylesheets/application.css" for 37.163.80.100 at 2016-12-07 15:19:17 +0100
+F, [2016-12-07T15:19:17.730330 #1812] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:19:17.828558 #1810]  INFO -- : Started GET "/javascripts/application.js" for 37.163.80.100 at 2016-12-07 15:19:17 +0100
+F, [2016-12-07T15:19:17.830737 #1810] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:19:18.793506 #1812]  INFO -- : Started GET "/" for 37.163.80.100 at 2016-12-07 15:19:18 +0100
+I, [2016-12-07T15:19:18.795713 #1812]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-12-07T15:19:18.798701 #1812]  INFO -- :   Rendered pages/index.html.erb within layouts/application (1.3ms)
+I, [2016-12-07T15:19:18.800176 #1812]  INFO -- : Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T15:19:18.989619 #1810]  INFO -- : Started GET "/stylesheets/application.css" for 37.163.80.100 at 2016-12-07 15:19:18 +0100
+F, [2016-12-07T15:19:18.991665 #1810] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:19:18.997174 #1812]  INFO -- : Started GET "/javascripts/application.js" for 37.163.80.100 at 2016-12-07 15:19:18 +0100
+F, [2016-12-07T15:19:18.999139 #1812] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:19:19.353490 #1810]  INFO -- : Started GET "/" for 37.163.80.100 at 2016-12-07 15:19:19 +0100
+I, [2016-12-07T15:19:19.355033 #1810]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-12-07T15:19:19.357468 #1810]  INFO -- :   Rendered pages/index.html.erb within layouts/application (1.1ms)
+I, [2016-12-07T15:19:19.359212 #1810]  INFO -- : Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T15:19:19.473198 #1812]  INFO -- : Started GET "/stylesheets/application.css" for 37.163.80.100 at 2016-12-07 15:19:19 +0100
+F, [2016-12-07T15:19:19.475027 #1812] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/stylesheets/application.css"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:19:19.482359 #1812]  INFO -- : Started GET "/javascripts/application.js" for 37.163.80.100 at 2016-12-07 15:19:19 +0100
+F, [2016-12-07T15:19:19.484279 #1812] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/javascripts/application.js"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T15:20:40.492603 #1988]  INFO -- : Started GET "/" for 37.163.80.100 at 2016-12-07 15:20:40 +0100
+I, [2016-12-07T15:20:40.544411 #1988]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-12-07T15:20:40.554358 #1988]  INFO -- : Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+bundler: failed to load command: unicorn (/home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/bin/unicorn)

@@ -12,7 +12,7 @@ class ConfigController < ApplicationController
     end
 
     def ssl_key
-        render_success("UkLP8WCGe2DQhWkHz_ogGm6dv7BhsbpDCnZx_s_9EOg.TZwLbX77Auheo19Z3FExYf4PQjypNm6NvksZfGx1eAoblue@Blue")
+        render_success("LYUENMW3_SAPWV2OMUiL1xoOXkkkuL1WbbQ1mLvSZmE.TZwLbX77Auheo19Z3FExYf4PQjypNm6NvksZfGx1eAo")
     end
 
     private

@@ -37,7 +37,10 @@ gem 'tzinfo-data'
 
 
 # Use Unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
+gem 'rack', '~>1.6.5'
+
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
