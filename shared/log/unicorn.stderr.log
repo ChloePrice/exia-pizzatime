@@ -88,3 +88,218 @@ I, [2016-12-07T15:32:23.652856 #2135]  INFO -- : worker=0 spawned pid=2135
 I, [2016-12-07T15:32:23.653185 #2135]  INFO -- : worker=0 ready
 I, [2016-12-07T15:32:23.654238 #2138]  INFO -- : worker=1 spawned pid=2138
 I, [2016-12-07T15:32:23.654417 #2138]  INFO -- : worker=1 ready
+I, [2016-12-07T15:38:18.020095 #2132]  INFO -- : reaped #<Process::Status: pid 2135 exit 0> worker=0
+I, [2016-12-07T15:38:18.020523 #2132]  INFO -- : reaped #<Process::Status: pid 2138 exit 0> worker=1
+I, [2016-12-07T15:38:18.020770 #2132]  INFO -- : master complete
+I, [2016-12-07T15:38:21.939922 #2206]  INFO -- : Refreshing Gem list
+I, [2016-12-07T15:38:23.537005 #2206]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-07T15:38:23.538159 #2206]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-07T15:38:23.538286 #2206]  INFO -- : worker=0 spawning...
+I, [2016-12-07T15:38:23.539648 #2206]  INFO -- : worker=1 spawning...
+I, [2016-12-07T15:38:23.540502 #2206]  INFO -- : master process ready
+I, [2016-12-07T15:38:23.546456 #2209]  INFO -- : worker=0 spawned pid=2209
+I, [2016-12-07T15:38:23.546905 #2209]  INFO -- : worker=0 ready
+I, [2016-12-07T15:38:23.548040 #2211]  INFO -- : worker=1 spawned pid=2211
+I, [2016-12-07T15:38:23.548203 #2211]  INFO -- : worker=1 ready
+I, [2016-12-07T15:39:50.234013 #2206]  INFO -- : reaped #<Process::Status: pid 2209 exit 0> worker=0
+I, [2016-12-07T15:39:50.234428 #2206]  INFO -- : reaped #<Process::Status: pid 2211 exit 0> worker=1
+I, [2016-12-07T15:39:50.234737 #2206]  INFO -- : master complete
+I, [2016-12-07T15:39:53.516208 #2249]  INFO -- : Refreshing Gem list
+I, [2016-12-07T15:39:55.124181 #2249]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-07T15:39:55.124381 #2249]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-07T15:39:55.124498 #2249]  INFO -- : worker=0 spawning...
+I, [2016-12-07T15:39:55.125885 #2249]  INFO -- : worker=1 spawning...
+I, [2016-12-07T15:39:55.126788 #2249]  INFO -- : master process ready
+I, [2016-12-07T15:39:55.134216 #2252]  INFO -- : worker=0 spawned pid=2252
+I, [2016-12-07T15:39:55.134407 #2252]  INFO -- : worker=0 ready
+I, [2016-12-07T15:39:55.135304 #2254]  INFO -- : worker=1 spawned pid=2254
+I, [2016-12-07T15:39:55.135448 #2254]  INFO -- : worker=1 ready
+I, [2016-12-07T15:49:44.181544 #2249]  INFO -- : reaped #<Process::Status: pid 2252 exit 0> worker=0
+I, [2016-12-07T15:49:44.182124 #2249]  INFO -- : reaped #<Process::Status: pid 2254 exit 0> worker=1
+I, [2016-12-07T15:49:44.182451 #2249]  INFO -- : master complete
+I, [2016-12-07T15:49:46.272362 #2312]  INFO -- : Refreshing Gem list
+SyntaxError: /home/rails/sources/exia-pizzatime/config/initializers/omniauth-microsoft-v2-auth.rb:7: syntax error, unexpected ',', expecting =>
+/home/rails/sources/exia-pizzatime/config/initializers/omniauth-microsoft-v2-auth.rb:9: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+  :scope => ENV['SCOPE']
+           ^
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/dependencies.rb:268:in `load'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/dependencies.rb:268:in `block in load'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/dependencies.rb:240:in `load_dependency'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/dependencies.rb:268:in `load'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:652:in `block in load_config_initializer'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/notifications.rb:166:in `instrument'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:651:in `load_config_initializer'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:616:in `block (2 levels) in <class:Engine>'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:615:in `each'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:615:in `block in <class:Engine>'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/initializable.rb:30:in `instance_exec'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/initializable.rb:30:in `run'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/initializable.rb:55:in `block in run_initializers'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:228:in `block in tsort_each'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:422:in `block (2 levels) in each_strongly_connected_component_from'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:431:in `each_strongly_connected_component_from'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:421:in `block in each_strongly_connected_component_from'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/initializable.rb:44:in `each'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/initializable.rb:44:in `tsort_each_child'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:415:in `call'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:415:in `each_strongly_connected_component_from'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:349:in `block in each_strongly_connected_component'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:347:in `each'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:347:in `call'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:347:in `each_strongly_connected_component'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:226:in `tsort_each'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:205:in `tsort_each'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/initializable.rb:54:in `run_initializers'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:352:in `initialize!'
+  /home/rails/sources/exia-pizzatime/config/environment.rb:14:in `<top (required)>'
+  config.ru:4:in `require'
+  config.ru:4:in `block in <main>'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/builder.rb:55:in `instance_eval'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/builder.rb:55:in `initialize'
+  config.ru:1:in `new'
+  config.ru:1:in `<main>'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn.rb:56:in `eval'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn.rb:56:in `block in builder'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:752:in `build_app!'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:129:in `start'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+I, [2016-12-07T15:50:49.060282 #2342]  INFO -- : Refreshing Gem list
+SyntaxError: /home/rails/sources/exia-pizzatime/config/initializers/omniauth-microsoft-v2-auth.rb:7: syntax error, unexpected ',', expecting =>
+/home/rails/sources/exia-pizzatime/config/initializers/omniauth-microsoft-v2-auth.rb:9: syntax error, unexpected =>, expecting &. or :: or '[' or '.'
+  :scope => ENV['SCOPE']
+           ^
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/dependencies.rb:268:in `load'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/dependencies.rb:268:in `block in load'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/dependencies.rb:240:in `load_dependency'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/dependencies.rb:268:in `load'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:652:in `block in load_config_initializer'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/notifications.rb:166:in `instrument'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:651:in `load_config_initializer'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:616:in `block (2 levels) in <class:Engine>'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:615:in `each'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:615:in `block in <class:Engine>'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/initializable.rb:30:in `instance_exec'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/initializable.rb:30:in `run'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/initializable.rb:55:in `block in run_initializers'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:228:in `block in tsort_each'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:350:in `block (2 levels) in each_strongly_connected_component'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:422:in `block (2 levels) in each_strongly_connected_component_from'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:431:in `each_strongly_connected_component_from'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:421:in `block in each_strongly_connected_component_from'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/initializable.rb:44:in `each'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/initializable.rb:44:in `tsort_each_child'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:415:in `call'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:415:in `each_strongly_connected_component_from'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:349:in `block in each_strongly_connected_component'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:347:in `each'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:347:in `call'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:347:in `each_strongly_connected_component'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:226:in `tsort_each'
+  /usr/local/lib/ruby/2.3.0/tsort.rb:205:in `tsort_each'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/initializable.rb:54:in `run_initializers'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:352:in `initialize!'
+  /home/rails/sources/exia-pizzatime/config/environment.rb:14:in `<top (required)>'
+  config.ru:4:in `require'
+  config.ru:4:in `block in <main>'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/builder.rb:55:in `instance_eval'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/builder.rb:55:in `initialize'
+  config.ru:1:in `new'
+  config.ru:1:in `<main>'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn.rb:56:in `eval'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn.rb:56:in `block in builder'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:752:in `build_app!'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:129:in `start'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  /home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+I, [2016-12-07T15:51:52.668143 #2354]  INFO -- : Refreshing Gem list
+I, [2016-12-07T15:51:54.262600 #2354]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-07T15:51:54.262790 #2354]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-07T15:51:54.262977 #2354]  INFO -- : worker=0 spawning...
+I, [2016-12-07T15:51:54.264393 #2354]  INFO -- : worker=1 spawning...
+I, [2016-12-07T15:51:54.266556 #2354]  INFO -- : master process ready
+I, [2016-12-07T15:51:54.273120 #2357]  INFO -- : worker=0 spawned pid=2357
+I, [2016-12-07T15:51:54.273434 #2357]  INFO -- : worker=0 ready
+I, [2016-12-07T15:51:54.274507 #2360]  INFO -- : worker=1 spawned pid=2360
+I, [2016-12-07T15:51:54.274671 #2360]  INFO -- : worker=1 ready
+I, [2016-12-07T15:54:12.012878 #2354]  INFO -- : reaped #<Process::Status: pid 2357 exit 0> worker=0
+I, [2016-12-07T15:54:12.013310 #2354]  INFO -- : reaped #<Process::Status: pid 2360 exit 0> worker=1
+I, [2016-12-07T15:54:12.013633 #2354]  INFO -- : master complete
+I, [2016-12-07T15:54:16.220359 #2377]  INFO -- : Refreshing Gem list
+I, [2016-12-07T15:54:17.801200 #2377]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-07T15:54:17.801500 #2377]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-07T15:54:17.801675 #2377]  INFO -- : worker=0 spawning...
+I, [2016-12-07T15:54:17.806465 #2380]  INFO -- : worker=0 spawned pid=2380
+I, [2016-12-07T15:54:17.806751 #2380]  INFO -- : worker=0 ready
+I, [2016-12-07T15:54:17.807090 #2377]  INFO -- : worker=1 spawning...
+I, [2016-12-07T15:54:17.808590 #2377]  INFO -- : master process ready
+I, [2016-12-07T15:54:17.816457 #2383]  INFO -- : worker=1 spawned pid=2383
+I, [2016-12-07T15:54:17.816698 #2383]  INFO -- : worker=1 ready
+I, [2016-12-07T15:58:01.496544 #2377]  INFO -- : reaped #<Process::Status: pid 2380 exit 0> worker=0
+I, [2016-12-07T15:58:01.496776 #2377]  INFO -- : reaped #<Process::Status: pid 2383 exit 0> worker=1
+I, [2016-12-07T15:58:01.496927 #2377]  INFO -- : master complete
+I, [2016-12-07T15:58:08.112915 #2420]  INFO -- : Refreshing Gem list
+I, [2016-12-07T15:58:09.725275 #2420]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-07T15:58:09.725495 #2420]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-07T15:58:09.725620 #2420]  INFO -- : worker=0 spawning...
+I, [2016-12-07T15:58:09.727082 #2420]  INFO -- : worker=1 spawning...
+I, [2016-12-07T15:58:09.727964 #2423]  INFO -- : worker=0 spawned pid=2423
+I, [2016-12-07T15:58:09.728272 #2423]  INFO -- : worker=0 ready
+I, [2016-12-07T15:58:09.729458 #2420]  INFO -- : master process ready
+I, [2016-12-07T15:58:09.737441 #2426]  INFO -- : worker=1 spawned pid=2426
+I, [2016-12-07T15:58:09.737661 #2426]  INFO -- : worker=1 ready
+I, [2016-12-07T16:08:47.191475 #2420]  INFO -- : reaped #<Process::Status: pid 2423 exit 0> worker=0
+I, [2016-12-07T16:08:47.191839 #2420]  INFO -- : reaped #<Process::Status: pid 2426 exit 0> worker=1
+I, [2016-12-07T16:08:47.192166 #2420]  INFO -- : master complete
+I, [2016-12-07T16:08:50.648516 #2484]  INFO -- : Refreshing Gem list
+I, [2016-12-07T16:08:52.224500 #2484]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-07T16:08:52.227945 #2484]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-07T16:08:52.228157 #2484]  INFO -- : worker=0 spawning...
+I, [2016-12-07T16:08:52.229495 #2484]  INFO -- : worker=1 spawning...
+I, [2016-12-07T16:08:52.230285 #2484]  INFO -- : master process ready
+I, [2016-12-07T16:08:52.237042 #2487]  INFO -- : worker=0 spawned pid=2487
+I, [2016-12-07T16:08:52.237259 #2487]  INFO -- : worker=0 ready
+I, [2016-12-07T16:08:52.238219 #2489]  INFO -- : worker=1 spawned pid=2489
+I, [2016-12-07T16:08:52.238393 #2489]  INFO -- : worker=1 ready
+I, [2016-12-07T16:09:43.641113 #2484]  INFO -- : reaped #<Process::Status: pid 2487 exit 0> worker=0
+I, [2016-12-07T16:09:43.641352 #2484]  INFO -- : reaped #<Process::Status: pid 2489 exit 0> worker=1
+I, [2016-12-07T16:09:43.641515 #2484]  INFO -- : master complete
+I, [2016-12-07T16:09:53.124370 #2517]  INFO -- : Refreshing Gem list
+I, [2016-12-07T16:09:54.736785 #2517]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-07T16:09:54.736972 #2517]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-07T16:09:54.737113 #2517]  INFO -- : worker=0 spawning...
+I, [2016-12-07T16:09:54.738359 #2517]  INFO -- : worker=1 spawning...
+I, [2016-12-07T16:09:54.739208 #2517]  INFO -- : master process ready
+I, [2016-12-07T16:09:54.745906 #2520]  INFO -- : worker=0 spawned pid=2520
+I, [2016-12-07T16:09:54.746096 #2520]  INFO -- : worker=0 ready
+I, [2016-12-07T16:09:54.746962 #2522]  INFO -- : worker=1 spawned pid=2522
+I, [2016-12-07T16:09:54.747087 #2522]  INFO -- : worker=1 ready
+I, [2016-12-07T16:21:54.680494 #2517]  INFO -- : reaped #<Process::Status: pid 2520 exit 0> worker=0
+I, [2016-12-07T16:21:54.680738 #2517]  INFO -- : reaped #<Process::Status: pid 2522 exit 0> worker=1
+I, [2016-12-07T16:21:54.680911 #2517]  INFO -- : master complete
+I, [2016-12-07T16:21:57.868052 #2592]  INFO -- : Refreshing Gem list
+I, [2016-12-07T16:21:59.507310 #2592]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-07T16:21:59.507524 #2592]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-07T16:21:59.507646 #2592]  INFO -- : worker=0 spawning...
+I, [2016-12-07T16:21:59.508883 #2592]  INFO -- : worker=1 spawning...
+I, [2016-12-07T16:21:59.510150 #2592]  INFO -- : master process ready
+I, [2016-12-07T16:21:59.517792 #2595]  INFO -- : worker=0 spawned pid=2595
+I, [2016-12-07T16:21:59.517995 #2595]  INFO -- : worker=0 ready
+I, [2016-12-07T16:21:59.518977 #2598]  INFO -- : worker=1 spawned pid=2598
+I, [2016-12-07T16:21:59.519097 #2598]  INFO -- : worker=1 ready
+I, [2016-12-07T16:23:12.625132 #2592]  INFO -- : reaped #<Process::Status: pid 2595 exit 0> worker=0
+I, [2016-12-07T16:23:12.625576 #2592]  INFO -- : reaped #<Process::Status: pid 2598 exit 0> worker=1
+I, [2016-12-07T16:23:12.625875 #2592]  INFO -- : master complete
+I, [2016-12-07T16:23:20.708363 #2648]  INFO -- : Refreshing Gem list
+I, [2016-12-07T16:23:22.292181 #2648]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-07T16:23:22.292375 #2648]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-07T16:23:22.292489 #2648]  INFO -- : worker=0 spawning...
+I, [2016-12-07T16:23:22.293759 #2648]  INFO -- : worker=1 spawning...
+I, [2016-12-07T16:23:22.294686 #2648]  INFO -- : master process ready
+I, [2016-12-07T16:23:22.301990 #2655]  INFO -- : worker=1 spawned pid=2655
+I, [2016-12-07T16:23:22.302279 #2655]  INFO -- : worker=1 ready
+I, [2016-12-07T16:23:22.302578 #2653]  INFO -- : worker=0 spawned pid=2653
+I, [2016-12-07T16:23:22.302698 #2653]  INFO -- : worker=0 ready

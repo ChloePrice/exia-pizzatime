@@ -1241,3 +1241,210 @@ I, [2016-12-07T15:20:40.492603 #1988]  INFO -- : Started GET "/" for 37.163.80.1
 I, [2016-12-07T15:20:40.544411 #1988]  INFO -- : Processing by PagesController#index as HTML
 I, [2016-12-07T15:20:40.554358 #1988]  INFO -- : Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 0.0ms)
 bundler: failed to load command: unicorn (/home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/bin/unicorn)
+I, [2016-12-07T15:39:56.509813 #2254]  INFO -- : Started GET "/" for 37.163.80.100 at 2016-12-07 15:39:56 +0100
+I, [2016-12-07T15:39:56.529847 #2254]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-12-07T15:39:56.539262 #2254]  INFO -- : Completed 200 OK in 9ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+bundler: failed to load command: unicorn (/home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/bin/unicorn)
+bundler: failed to load command: unicorn (/home/rails/sources/exia-pizzatime/vendor/bundle/ruby/2.3.0/bin/unicorn)
+I, [2016-12-07T15:52:09.553450 #2360]  INFO -- : Started GET "/" for 37.163.80.100 at 2016-12-07 15:52:09 +0100
+I, [2016-12-07T15:52:09.597255 #2360]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-12-07T15:52:09.617008 #2360]  INFO -- : Completed 200 OK in 19ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T15:52:14.187772 #2360]  INFO -- : Started GET "/login" for 37.163.80.100 at 2016-12-07 15:52:14 +0100
+I, [2016-12-07T15:52:14.190826 #2360]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-07T15:52:14.191940 #2360]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-07T15:52:14.192483 #2360]  INFO -- : Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+I, [2016-12-07T15:52:14.352062 #2357]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 37.163.80.100 at 2016-12-07 15:52:14 +0100
+I, [2016-12-07T15:52:14.362319 #2357]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-07T15:54:25.667423 #2383]  INFO -- : Started GET "/login" for 37.163.80.100 at 2016-12-07 15:54:25 +0100
+I, [2016-12-07T15:54:25.711295 #2383]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-07T15:54:25.720997 #2383]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-07T15:54:25.721489 #2383]  INFO -- : Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+I, [2016-12-07T15:54:25.941426 #2380]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 37.163.80.100 at 2016-12-07 15:54:25 +0100
+I, [2016-12-07T15:54:25.949965 #2380]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-07T15:58:21.681861 #2426]  INFO -- : Started GET "/" for 37.163.80.100 at 2016-12-07 15:58:21 +0100
+I, [2016-12-07T15:58:21.707712 #2426]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-12-07T15:58:21.718284 #2426]  INFO -- : Completed 200 OK in 10ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T15:58:25.055383 #2423]  INFO -- : Started GET "/login" for 37.163.80.100 at 2016-12-07 15:58:25 +0100
+I, [2016-12-07T15:58:25.079602 #2423]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-07T15:58:25.089598 #2423]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-07T15:58:25.090261 #2423]  INFO -- : Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+I, [2016-12-07T15:58:25.198891 #2426]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 37.163.80.100 at 2016-12-07 15:58:25 +0100
+I, [2016-12-07T15:58:25.199690 #2426]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-07T15:58:34.694225 #2423]  INFO -- : Started GET "/auth/microsoft_v2_auth/callback?code=OAQABAAAAAADRNYRQ3dhRSrm-4K-adpCJ0Xv664jMwbTaVuBRM0Kv8Ewi56HF_YJMOmK3I115yKE1SkKBg5xjwyeNlgnQHVKvEsBJCK8GTxLpxBzo4qdOPc_yNQRSb3CT5UiTSwYJOPHc_P_dwMAR2jMsHHTFNo5X2YEEQBDb6He5uACKlgWXNbwJnjuhENaxWYYNDdNmvQjL43nuPDj_JjpeaReN8EVxxqcfoatPchyrIm2Bq8b4XKk0SchdVgfXyMTnN_zZGzLO4rb8_Db0Te83PrikVkqi2Oy78IJRzYeRaH5wLnPNRu_BSqe_9aFb-uCE7oePG3dC-YksI8ATQErLyvr2A1VPgQRhLlSKLgNvlXmWEI64q2nTC9vB-2lTkxsqWZaG2d9lj7usTwCCjK026e_PNsUamBWPfGCqccbNCKpeZdY3jiSTfi_dtDlIDEjz0nEskkWsfcR3aGhMRPwTxao7rXWVDMO9WDtY6cmRo8lHJ1KUCqvUw5tokKm_bHE-GdTi-E-b8PC-t3_r07mJct8J0zGjDTDCmscHwsUgIM6olGUxymusAOpLgV42UiNak-HV5jXyxgIUZoI4qW1zIxi6Hy01hQN3ivjuimkwiphTfYH1-KuqthgYETZ5VeXT-Bb_RA8xBAOgBrIiEuvRtB7HlJMILT8G48gxsbYfDB4rNOQc_bNjmvODQw_tLs50LcWKoYPIU4kLvGV9HiS3wGy2JC-tVHPGflM5zisJ9Qc6upP7HhyNHK34OYt2tqavL7hqqDcSadaZz8rcw91cO9F2pxujMJeCFd5P7hNyS6higZV_1CAA&state=7cff6182aaa9ea076e42464073733a3f10d2fc1b0eef50c7&session_state=4d4a2b7c-9789-4b88-870b-caab9862d66f" for 37.163.80.100 at 2016-12-07 15:58:34 +0100
+I, [2016-12-07T15:58:34.722229 #2423]  INFO -- : Processing by PagesController#callback as HTML
+I, [2016-12-07T15:58:34.722795 #2423]  INFO -- :   Parameters: {"code"=>"OAQABAAAAAADRNYRQ3dhRSrm-4K-adpCJ0Xv664jMwbTaVuBRM0Kv8Ewi56HF_YJMOmK3I115yKE1SkKBg5xjwyeNlgnQHVKvEsBJCK8GTxLpxBzo4qdOPc_yNQRSb3CT5UiTSwYJOPHc_P_dwMAR2jMsHHTFNo5X2YEEQBDb6He5uACKlgWXNbwJnjuhENaxWYYNDdNmvQjL43nuPDj_JjpeaReN8EVxxqcfoatPchyrIm2Bq8b4XKk0SchdVgfXyMTnN_zZGzLO4rb8_Db0Te83PrikVkqi2Oy78IJRzYeRaH5wLnPNRu_BSqe_9aFb-uCE7oePG3dC-YksI8ATQErLyvr2A1VPgQRhLlSKLgNvlXmWEI64q2nTC9vB-2lTkxsqWZaG2d9lj7usTwCCjK026e_PNsUamBWPfGCqccbNCKpeZdY3jiSTfi_dtDlIDEjz0nEskkWsfcR3aGhMRPwTxao7rXWVDMO9WDtY6cmRo8lHJ1KUCqvUw5tokKm_bHE-GdTi-E-b8PC-t3_r07mJct8J0zGjDTDCmscHwsUgIM6olGUxymusAOpLgV42UiNak-HV5jXyxgIUZoI4qW1zIxi6Hy01hQN3ivjuimkwiphTfYH1-KuqthgYETZ5VeXT-Bb_RA8xBAOgBrIiEuvRtB7HlJMILT8G48gxsbYfDB4rNOQc_bNjmvODQw_tLs50LcWKoYPIU4kLvGV9HiS3wGy2JC-tVHPGflM5zisJ9Qc6upP7HhyNHK34OYt2tqavL7hqqDcSadaZz8rcw91cO9F2pxujMJeCFd5P7hNyS6higZV_1CAA", "state"=>"7cff6182aaa9ea076e42464073733a3f10d2fc1b0eef50c7", "session_state"=>"4d4a2b7c-9789-4b88-870b-caab9862d66f", "provider"=>"microsoft_v2_auth"}
+I, [2016-12-07T15:58:34.725646 #2423]  INFO -- : Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+F, [2016-12-07T15:58:34.727147 #2423] FATAL -- : 
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/pages_controller.rb:46:in `callback'
+
+
+I, [2016-12-07T16:02:19.680471 #2426]  INFO -- : Started GET "/login" for 37.163.80.100 at 2016-12-07 16:02:19 +0100
+I, [2016-12-07T16:02:19.685331 #2426]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-07T16:02:19.687458 #2426]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-07T16:02:19.687842 #2426]  INFO -- : Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+I, [2016-12-07T16:02:20.067440 #2423]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 37.163.80.100 at 2016-12-07 16:02:20 +0100
+I, [2016-12-07T16:02:20.068693 #2423]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-07T16:02:28.379112 #2426]  INFO -- : Started GET "/auth/microsoft_v2_auth/callback?code=OAQABAAAAAADRNYRQ3dhRSrm-4K-adpCJlxhRn6Gf8DWDbjrZ9tYQjhN_U47PB-0ZuxRGOTOU-_eFsf2HOEWS_fViGmPZaIe7EYcmQPSvookXQ1VYovq8kH4jjsTGU7Ymh82ebseEu3q3ygwiePKw9BA_GuURNALuMUR4BhaMkGJqEFCao7N3eEQzYwYxKVtBsjzNNHyxiO8pRzAsebF6j1yghCObf6keoFZde041Y2pg5Yma1H2cGeHxqQZnoYgddPZgM_yCvt3M1aV2V0Sv90inq7YX0kYcDQwefmCaoVIaRHQ4d1Cg4gYraDfjYfFUVs-M-HdJBA6habL32tsZP5nS34kgJuZ-AyrIRGWAyTuC03gNK20lTL1ilKnS6fZ8yThjFyzQw9dsi2y3nBU07Cmyd3gUefpHSAVJ9_2d2XvgK8f2kJyMYpsiRtroFCpVznkCDCWBUpubo8El37dprp9U8DJoi6jZhWk8EtgXKivMAUar1CBP_dYlwAG6ZaFzUK7teXeLJ3nDswM2hH6LjuGB8TTaigcR90cjwnv8lG6mC_DmCChQwT6mursZmUcKkcnhU__QOjPIpJXQnHdWu7LVS9TqlRoydhwqJNHnoZPqVP0gP1w61KpPNWW5wJAmYZbbkiMAUqRxUyrHOE5btB4KbZcAF1KsoFYuzgsRgIyurME1jZP0q4BaHIiVDkdxmbWcIwQVheV7PcsasWvBv7fjMfRxQCXo0Gpp6T2J4OI4uYoTbsuBTFbPRjFUq-Vccmprif0l74W9dAldcAq1RXxIc3NnZGSAvEfITROTv3FtZ8X7QEBCfSAA&state=51f48253c99571ac27af946814267ba67bc228e9ecf39931&session_state=65609dda-a7ed-4cae-9b3f-7b40540eab3b" for 37.163.80.100 at 2016-12-07 16:02:28 +0100
+I, [2016-12-07T16:02:28.381483 #2426]  INFO -- : Processing by PagesController#callback as HTML
+I, [2016-12-07T16:02:28.381611 #2426]  INFO -- :   Parameters: {"code"=>"OAQABAAAAAADRNYRQ3dhRSrm-4K-adpCJlxhRn6Gf8DWDbjrZ9tYQjhN_U47PB-0ZuxRGOTOU-_eFsf2HOEWS_fViGmPZaIe7EYcmQPSvookXQ1VYovq8kH4jjsTGU7Ymh82ebseEu3q3ygwiePKw9BA_GuURNALuMUR4BhaMkGJqEFCao7N3eEQzYwYxKVtBsjzNNHyxiO8pRzAsebF6j1yghCObf6keoFZde041Y2pg5Yma1H2cGeHxqQZnoYgddPZgM_yCvt3M1aV2V0Sv90inq7YX0kYcDQwefmCaoVIaRHQ4d1Cg4gYraDfjYfFUVs-M-HdJBA6habL32tsZP5nS34kgJuZ-AyrIRGWAyTuC03gNK20lTL1ilKnS6fZ8yThjFyzQw9dsi2y3nBU07Cmyd3gUefpHSAVJ9_2d2XvgK8f2kJyMYpsiRtroFCpVznkCDCWBUpubo8El37dprp9U8DJoi6jZhWk8EtgXKivMAUar1CBP_dYlwAG6ZaFzUK7teXeLJ3nDswM2hH6LjuGB8TTaigcR90cjwnv8lG6mC_DmCChQwT6mursZmUcKkcnhU__QOjPIpJXQnHdWu7LVS9TqlRoydhwqJNHnoZPqVP0gP1w61KpPNWW5wJAmYZbbkiMAUqRxUyrHOE5btB4KbZcAF1KsoFYuzgsRgIyurME1jZP0q4BaHIiVDkdxmbWcIwQVheV7PcsasWvBv7fjMfRxQCXo0Gpp6T2J4OI4uYoTbsuBTFbPRjFUq-Vccmprif0l74W9dAldcAq1RXxIc3NnZGSAvEfITROTv3FtZ8X7QEBCfSAA", "state"=>"51f48253c99571ac27af946814267ba67bc228e9ecf39931", "session_state"=>"65609dda-a7ed-4cae-9b3f-7b40540eab3b", "provider"=>"microsoft_v2_auth"}
+I, [2016-12-07T16:02:28.386232 #2426]  INFO -- : Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+F, [2016-12-07T16:02:28.388604 #2426] FATAL -- : 
+NoMethodError (undefined method `[]' for nil:NilClass):
+  app/controllers/pages_controller.rb:46:in `callback'
+
+
+I, [2016-12-07T16:08:59.848159 #2489]  INFO -- : Started GET "/login" for 37.163.80.100 at 2016-12-07 16:08:59 +0100
+I, [2016-12-07T16:08:59.870162 #2489]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-07T16:08:59.879293 #2489]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-07T16:08:59.879920 #2489]  INFO -- : Completed 302 Found in 9ms (ActiveRecord: 0.0ms)
+I, [2016-12-07T16:09:00.001124 #2487]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 37.163.80.100 at 2016-12-07 16:09:00 +0100
+I, [2016-12-07T16:09:00.008147 #2487]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-07T16:10:11.385700 #2522]  INFO -- : Started GET "/login" for 37.163.80.100 at 2016-12-07 16:10:11 +0100
+I, [2016-12-07T16:10:11.408983 #2522]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-07T16:10:11.418514 #2522]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-07T16:10:11.419111 #2522]  INFO -- : Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+I, [2016-12-07T16:10:11.500597 #2520]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 37.163.80.100 at 2016-12-07 16:10:11 +0100
+I, [2016-12-07T16:10:11.507318 #2520]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-07T16:10:21.082414 #2522]  INFO -- : Started GET "/auth/microsoft_v2_auth/callback?code=OAQABAAAAAADRNYRQ3dhRSrm-4K-adpCJWclOBIeR01GYfynTnb_XNUpYwP15nLGBTv1xQDZE-StLeK54xWC9zd79g2MwwegkDWp91e-6l04UNJ3tcCTQJUDgdcLEHboRD1nD-4TgO9MQTTKFz8xaEuGuFxWbn6ow_QHAjBNua53D02XF2XRL7L5OzS_ufytPLmv1kcwtDQWHs6svfBFGbQeGMoOxlqZwMhUfCxTPrtFQ59570XZTovYl48nbsXmWmBj-8zIfSlyP7qJ0X-uGeTgBMO-NkEIgI0MDARHjWxbyhJik7J7hNRmijfQpfbIk02-uqIbaCbml37qVZ9YzWfuDhZcQf2bbqdlEZnyIcWiYO5WE72SjoOvFWuHJuOC_VIovWTpCN5NeUgfmQXKxLrh3Ri8Qfo1KYNx0KzLnJm7iQjVlfBJAf2YfNraAOm79IyfomWLT4Ax2SlRDro7t2dbYFdFG1z8EJ62S5Qc2hLeg3YC94qVsgLVR0XPjAVAJ4tYp2eP_2nIZtZTL7110stJ-iH_O9bqN9Epd9QWbGyQnFhUPyqcmA9jxYViNc8DB-nKw9hXMamtMCsu8AjD4hC0EVU0FUEWaPEVtCxdPF_h3dKMrfTebvWNyTPthjn-2rwr9mYKZUCYHOOaFUM82lMnTnzOyvpPokqIHrkqnH8TRa5tePjUnU-XS068_LVTaAIRDddvwb2oSP8I4uFC70jy8M6RNW3WKy5LGN8vu9M--6WjysZ8eAlUmG9EnLoqTXl1Buv3FjpPU0jmU3H_c0cT-Ig2p0sxLh5m8vjma5gRFYV5S633mxCAA&state=bf58290bbea48f52991d1ce56f375ba5bc7d48040fa99c20&session_state=c7a25da6-4b6f-4156-843d-0db8ad000e61" for 37.163.80.100 at 2016-12-07 16:10:21 +0100
+I, [2016-12-07T16:10:21.083769 #2522]  INFO -- omniauth: (microsoft_v2_auth) Callback phase initiated.
+I, [2016-12-07T16:10:21.665876 #2522]  INFO -- : Processing by PagesController#callback as HTML
+I, [2016-12-07T16:10:21.666041 #2522]  INFO -- :   Parameters: {"code"=>"OAQABAAAAAADRNYRQ3dhRSrm-4K-adpCJWclOBIeR01GYfynTnb_XNUpYwP15nLGBTv1xQDZE-StLeK54xWC9zd79g2MwwegkDWp91e-6l04UNJ3tcCTQJUDgdcLEHboRD1nD-4TgO9MQTTKFz8xaEuGuFxWbn6ow_QHAjBNua53D02XF2XRL7L5OzS_ufytPLmv1kcwtDQWHs6svfBFGbQeGMoOxlqZwMhUfCxTPrtFQ59570XZTovYl48nbsXmWmBj-8zIfSlyP7qJ0X-uGeTgBMO-NkEIgI0MDARHjWxbyhJik7J7hNRmijfQpfbIk02-uqIbaCbml37qVZ9YzWfuDhZcQf2bbqdlEZnyIcWiYO5WE72SjoOvFWuHJuOC_VIovWTpCN5NeUgfmQXKxLrh3Ri8Qfo1KYNx0KzLnJm7iQjVlfBJAf2YfNraAOm79IyfomWLT4Ax2SlRDro7t2dbYFdFG1z8EJ62S5Qc2hLeg3YC94qVsgLVR0XPjAVAJ4tYp2eP_2nIZtZTL7110stJ-iH_O9bqN9Epd9QWbGyQnFhUPyqcmA9jxYViNc8DB-nKw9hXMamtMCsu8AjD4hC0EVU0FUEWaPEVtCxdPF_h3dKMrfTebvWNyTPthjn-2rwr9mYKZUCYHOOaFUM82lMnTnzOyvpPokqIHrkqnH8TRa5tePjUnU-XS068_LVTaAIRDddvwb2oSP8I4uFC70jy8M6RNW3WKy5LGN8vu9M--6WjysZ8eAlUmG9EnLoqTXl1Buv3FjpPU0jmU3H_c0cT-Ig2p0sxLh5m8vjma5gRFYV5S633mxCAA", "state"=>"bf58290bbea48f52991d1ce56f375ba5bc7d48040fa99c20", "session_state"=>"c7a25da6-4b6f-4156-843d-0db8ad000e61", "provider"=>"microsoft_v2_auth"}
+D, [2016-12-07T16:10:21.712261 #2522] DEBUG -- :   [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "sorian.slimani@viacesi.fr"]]
+D, [2016-12-07T16:10:21.724742 #2522] DEBUG -- :   [1m[35m (0.1ms)[0m  begin transaction
+D, [2016-12-07T16:10:21.728235 #2522] DEBUG -- :   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "SLIMANI SORIAN"], ["email", "sorian.slimani@viacesi.fr"], ["created_at", "2016-12-07 15:10:21.725810"], ["updated_at", "2016-12-07 15:10:21.725810"]]
+D, [2016-12-07T16:10:21.734580 #2522] DEBUG -- :   [1m[35m (5.6ms)[0m  commit transaction
+I, [2016-12-07T16:10:21.736740 #2522]  INFO -- : Completed 500 Internal Server Error in 71ms (ActiveRecord: 7.6ms)
+F, [2016-12-07T16:10:21.738625 #2522] FATAL -- : 
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  app/models/token.rb:10:in `store'
+  app/controllers/pages_controller.rb:58:in `callback'
+
+
+I, [2016-12-07T16:17:38.657335 #2522]  INFO -- : Started GET "/" for 37.163.80.100 at 2016-12-07 16:17:38 +0100
+I, [2016-12-07T16:17:38.664745 #2522]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-12-07T16:17:38.668477 #2522]  INFO -- : Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T16:17:42.839620 #2522]  INFO -- : Started GET "/login" for 37.163.80.100 at 2016-12-07 16:17:42 +0100
+I, [2016-12-07T16:17:42.840705 #2522]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-07T16:17:42.841697 #2522]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-07T16:17:42.842269 #2522]  INFO -- : Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+I, [2016-12-07T16:17:42.954326 #2520]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 37.163.80.100 at 2016-12-07 16:17:42 +0100
+I, [2016-12-07T16:17:42.956212 #2520]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-07T16:17:49.316236 #2522]  INFO -- : Started GET "/auth/microsoft_v2_auth/callback?code=OAQABAAAAAADRNYRQ3dhRSrm-4K-adpCJwF4sHTu6GninBdb2rWXfA4wu21Wr6MJHT9c6V1LOiYLAMPA9XBaJ9xIoW6NNAb6GuYgZqmNAci9EfPgATbD3tTY0e5wKLmZIe1fqH8CHsTL6TH7SddU0N3T2GN13VkY0Isy6fXiHpkIxllhJf58s7P7BHA3I930Pb-bwZcCYJ8JS2uY5TmwOuGfWZwoqFVn9BN8sfomX-UYKrjnZwnQ5Uww0mSn5VWOnGr4svCJ_Yt971RzKrste2wh610iUokIG8zSb3JQ8WmEwznXvTKX2Cn-zmDmFcE6I5lUJA6TNpm_WO-9nSId-BSojRtQv2KMSzkWFLXodVaBblt2Nz71RBH8l1om1UlsdaQmUI0vD9C9YDexYl9ajNJvDESJ7vfxCZ71nDqPozvJsoTMzRyXgJ-SXg96qEWtKwQtE1lINobRvhoN2uU2ZUlvTgciVe_jRm6SgznRcT3VwlJJv5Jef7yRihWrmxxgtrONBQupMtSmjuHGL34b7rOjkCS3IEP9iV0jVD2a8hWUgjg0ugxAbOaoAyvPslblXQw-VjnOr_9NKxyTUB_TMp0Oiufhid36lk5wNUnsi_nPvZXSr8n3r5i_4YX4QQo7NNDQ9e6w4rNdy37CbnMgvgwlFh-jn59d6wCVaHdi-ATWdlTObJEiPXG6E0ROWaYVBVhM-wJfr3JHmcUJ0GbEIoRJq-ij2EGDO6yR-TmuXd7Y43Uu5eMOlJsz3jNyYvGKhULXRCewVwcDjwqtCJokHCZak2wNfkCLnu7P7-GvKps6DVRRg9j5hkiAA&state=73c2dd72f20a127298c55b88fe61e2e22c6144a2b1ca822e&session_state=5bb2d077-7760-4a7f-96ba-673abaef5c56" for 37.163.80.100 at 2016-12-07 16:17:49 +0100
+I, [2016-12-07T16:17:49.316951 #2522]  INFO -- omniauth: (microsoft_v2_auth) Callback phase initiated.
+I, [2016-12-07T16:17:49.810467 #2522]  INFO -- : Processing by PagesController#callback as HTML
+I, [2016-12-07T16:17:49.810589 #2522]  INFO -- :   Parameters: {"code"=>"OAQABAAAAAADRNYRQ3dhRSrm-4K-adpCJwF4sHTu6GninBdb2rWXfA4wu21Wr6MJHT9c6V1LOiYLAMPA9XBaJ9xIoW6NNAb6GuYgZqmNAci9EfPgATbD3tTY0e5wKLmZIe1fqH8CHsTL6TH7SddU0N3T2GN13VkY0Isy6fXiHpkIxllhJf58s7P7BHA3I930Pb-bwZcCYJ8JS2uY5TmwOuGfWZwoqFVn9BN8sfomX-UYKrjnZwnQ5Uww0mSn5VWOnGr4svCJ_Yt971RzKrste2wh610iUokIG8zSb3JQ8WmEwznXvTKX2Cn-zmDmFcE6I5lUJA6TNpm_WO-9nSId-BSojRtQv2KMSzkWFLXodVaBblt2Nz71RBH8l1om1UlsdaQmUI0vD9C9YDexYl9ajNJvDESJ7vfxCZ71nDqPozvJsoTMzRyXgJ-SXg96qEWtKwQtE1lINobRvhoN2uU2ZUlvTgciVe_jRm6SgznRcT3VwlJJv5Jef7yRihWrmxxgtrONBQupMtSmjuHGL34b7rOjkCS3IEP9iV0jVD2a8hWUgjg0ugxAbOaoAyvPslblXQw-VjnOr_9NKxyTUB_TMp0Oiufhid36lk5wNUnsi_nPvZXSr8n3r5i_4YX4QQo7NNDQ9e6w4rNdy37CbnMgvgwlFh-jn59d6wCVaHdi-ATWdlTObJEiPXG6E0ROWaYVBVhM-wJfr3JHmcUJ0GbEIoRJq-ij2EGDO6yR-TmuXd7Y43Uu5eMOlJsz3jNyYvGKhULXRCewVwcDjwqtCJokHCZak2wNfkCLnu7P7-GvKps6DVRRg9j5hkiAA", "state"=>"73c2dd72f20a127298c55b88fe61e2e22c6144a2b1ca822e", "session_state"=>"5bb2d077-7760-4a7f-96ba-673abaef5c56", "provider"=>"microsoft_v2_auth"}
+D, [2016-12-07T16:17:49.813912 #2522] DEBUG -- :   [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "sorian.slimani@viacesi.fr"]]
+D, [2016-12-07T16:17:49.818148 #2522] DEBUG -- :   [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "sorian.slimani@viacesi.fr"]]
+I, [2016-12-07T16:17:49.820444 #2522]  INFO -- : Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.7ms)
+F, [2016-12-07T16:17:49.822252 #2522] FATAL -- : 
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  app/models/token.rb:10:in `store'
+  app/controllers/pages_controller.rb:58:in `callback'
+
+
+I, [2016-12-07T16:22:04.548436 #2598]  INFO -- : Started GET "/auth/microsoft_v2_auth/callback?code=OAQABAAAAAADRNYRQ3dhRSrm-4K-adpCJwF4sHTu6GninBdb2rWXfA4wu21Wr6MJHT9c6V1LOiYLAMPA9XBaJ9xIoW6NNAb6GuYgZqmNAci9EfPgATbD3tTY0e5wKLmZIe1fqH8CHsTL6TH7SddU0N3T2GN13VkY0Isy6fXiHpkIxllhJf58s7P7BHA3I930Pb-bwZcCYJ8JS2uY5TmwOuGfWZwoqFVn9BN8sfomX-UYKrjnZwnQ5Uww0mSn5VWOnGr4svCJ_Yt971RzKrste2wh610iUokIG8zSb3JQ8WmEwznXvTKX2Cn-zmDmFcE6I5lUJA6TNpm_WO-9nSId-BSojRtQv2KMSzkWFLXodVaBblt2Nz71RBH8l1om1UlsdaQmUI0vD9C9YDexYl9ajNJvDESJ7vfxCZ71nDqPozvJsoTMzRyXgJ-SXg96qEWtKwQtE1lINobRvhoN2uU2ZUlvTgciVe_jRm6SgznRcT3VwlJJv5Jef7yRihWrmxxgtrONBQupMtSmjuHGL34b7rOjkCS3IEP9iV0jVD2a8hWUgjg0ugxAbOaoAyvPslblXQw-VjnOr_9NKxyTUB_TMp0Oiufhid36lk5wNUnsi_nPvZXSr8n3r5i_4YX4QQo7NNDQ9e6w4rNdy37CbnMgvgwlFh-jn59d6wCVaHdi-ATWdlTObJEiPXG6E0ROWaYVBVhM-wJfr3JHmcUJ0GbEIoRJq-ij2EGDO6yR-TmuXd7Y43Uu5eMOlJsz3jNyYvGKhULXRCewVwcDjwqtCJokHCZak2wNfkCLnu7P7-GvKps6DVRRg9j5hkiAA&state=73c2dd72f20a127298c55b88fe61e2e22c6144a2b1ca822e&session_state=5bb2d077-7760-4a7f-96ba-673abaef5c56" for 37.163.80.100 at 2016-12-07 16:22:04 +0100
+I, [2016-12-07T16:22:04.555165 #2598]  INFO -- omniauth: (microsoft_v2_auth) Callback phase initiated.
+E, [2016-12-07T16:22:04.768453 #2598] ERROR -- omniauth: (microsoft_v2_auth) Authentication failure! invalid_credentials: OAuth2::Error, invalid_client: AADSTS70002: Error validating credentials. AADSTS50011: The reply address 'http://api.pizzatime.ovh/auth/microsoft_v2_auth/callback' does not match the reply address 'https://api.pizzatime.ovh/auth/microsoft_v2_auth/callback' provided when requesting Authorization code.
+Trace ID: 7fd85c0b-6ccd-4875-b378-7758dfe53e31
+Correlation ID: 517a9e0f-17cb-4bde-aff9-39e2ffa8fff9
+Timestamp: 2016-12-07 15:22:09Z
+{"error":"invalid_client","error_description":"AADSTS70002: Error validating credentials. AADSTS50011: The reply address 'http://api.pizzatime.ovh/auth/microsoft_v2_auth/callback' does not match the reply address 'https://api.pizzatime.ovh/auth/microsoft_v2_auth/callback' provided when requesting Authorization code.\r\nTrace ID: 7fd85c0b-6ccd-4875-b378-7758dfe53e31\r\nCorrelation ID: 517a9e0f-17cb-4bde-aff9-39e2ffa8fff9\r\nTimestamp: 2016-12-07 15:22:09Z","error_codes":[70002,50011],"timestamp":"2016-12-07 15:22:09Z","trace_id":"7fd85c0b-6ccd-4875-b378-7758dfe53e31","correlation_id":"517a9e0f-17cb-4bde-aff9-39e2ffa8fff9"}
+I, [2016-12-07T16:22:04.850394 #2595]  INFO -- : Started GET "/auth/failure?message=invalid_credentials&strategy=microsoft_v2_auth" for 37.163.80.100 at 2016-12-07 16:22:04 +0100
+F, [2016-12-07T16:22:04.863697 #2595] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/auth/failure"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-07T16:22:11.937122 #2598]  INFO -- : Started GET "/login" for 37.163.80.100 at 2016-12-07 16:22:11 +0100
+I, [2016-12-07T16:22:11.958164 #2598]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-07T16:22:11.960578 #2598]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-07T16:22:11.961457 #2598]  INFO -- : Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+I, [2016-12-07T16:22:12.147593 #2595]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 37.163.80.100 at 2016-12-07 16:22:12 +0100
+I, [2016-12-07T16:22:12.148394 #2595]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-07T16:23:40.530451 #2653]  INFO -- : Started GET "/login" for 37.163.80.100 at 2016-12-07 16:23:40 +0100
+I, [2016-12-07T16:23:40.552706 #2653]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-07T16:23:40.562177 #2653]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-07T16:23:40.562834 #2653]  INFO -- : Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+I, [2016-12-07T16:23:40.689199 #2655]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 37.163.80.100 at 2016-12-07 16:23:40 +0100
+I, [2016-12-07T16:23:40.696158 #2655]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-07T16:23:43.249836 #2653]  INFO -- : Started GET "/auth/microsoft_v2_auth/callback?code=OAQABAAAAAADRNYRQ3dhRSrm-4K-adpCJIon-6dPhGLHkbL_6Hbpd6i50B5JXjDuMgFhFga7yQNiT42ZE3nfKOqsPikIr0_X849wruoZiKS5bAm77ACDaL36FY4a00zxCcokV_4YMYu9ARK496P0AgUz_yBgQ7oY92yexXXCSTrKXeSU1Jna9iZ-7jtkAYn9OUYe7tDKcNIZdtdZ2JE6t9eo_SQmpG8X1uBsvGRb4vjMO1St7SexkotLZ8Ol9OtVy7Pt1QkUNYCXUnoAvwh_EHqlYKjS-5vJF4YhLYUkIipM_eik0CZk5VmLRP3wjWH_TESsA-ncfRu5xhGPwXCKrl0R0Ut2PIs4OvhLylY3VYbCe0rgHAOjJRdOczI03XtblVDWWQMibxqFuXvswJZSYrJYWk8I5oIZxCA71y1UxEDx7rvcV3xXNJgFprkz0hniXfvzqtOqjXIIx8JM9J1tRvj6wsUkOuAn2TMM1FQYQUU40RhT043mq7z_xBdPRl8a2nrD0s6R9yaXDqLHycJ33Q98MU-vYZrVBz9ZYfZ8IaIbttHbGt_se8N5Ax2c4dxQGFGTGLpB2VsU3Ygbr6iSJOu9eVvmUXydUwEvc7oPEMl9kDT8V1sjo4lQMqZ48EWiDSX7c5K0GdzT5sPjfZSqVXVag_wNVj4VIikuciXKHsEALoLm7RxA8UJ9DXYqrX9Jrv0JC9hwCSvyIssQ-ArAVlltCCDbaBsadMmF0BfRrowGEjsdfS1uH-naGz7sQzlTkCUdGEYKp9hIoHvmgup07nbhsUixm_X_vmRJ4z1Z7Q81y_0_4PF6CL2vpnRvM3yEceFI-jjWTiC6rBueOY00L897g6qgxjIzvIAA&state=be9e649a145415967fa920ea617c8c841d7ac702fedf60a2&session_state=5bb2d077-7760-4a7f-96ba-673abaef5c56" for 37.163.80.100 at 2016-12-07 16:23:43 +0100
+I, [2016-12-07T16:23:43.250400 #2653]  INFO -- omniauth: (microsoft_v2_auth) Callback phase initiated.
+I, [2016-12-07T16:23:43.814132 #2653]  INFO -- : Processing by PagesController#callback as HTML
+I, [2016-12-07T16:23:43.814353 #2653]  INFO -- :   Parameters: {"code"=>"OAQABAAAAAADRNYRQ3dhRSrm-4K-adpCJIon-6dPhGLHkbL_6Hbpd6i50B5JXjDuMgFhFga7yQNiT42ZE3nfKOqsPikIr0_X849wruoZiKS5bAm77ACDaL36FY4a00zxCcokV_4YMYu9ARK496P0AgUz_yBgQ7oY92yexXXCSTrKXeSU1Jna9iZ-7jtkAYn9OUYe7tDKcNIZdtdZ2JE6t9eo_SQmpG8X1uBsvGRb4vjMO1St7SexkotLZ8Ol9OtVy7Pt1QkUNYCXUnoAvwh_EHqlYKjS-5vJF4YhLYUkIipM_eik0CZk5VmLRP3wjWH_TESsA-ncfRu5xhGPwXCKrl0R0Ut2PIs4OvhLylY3VYbCe0rgHAOjJRdOczI03XtblVDWWQMibxqFuXvswJZSYrJYWk8I5oIZxCA71y1UxEDx7rvcV3xXNJgFprkz0hniXfvzqtOqjXIIx8JM9J1tRvj6wsUkOuAn2TMM1FQYQUU40RhT043mq7z_xBdPRl8a2nrD0s6R9yaXDqLHycJ33Q98MU-vYZrVBz9ZYfZ8IaIbttHbGt_se8N5Ax2c4dxQGFGTGLpB2VsU3Ygbr6iSJOu9eVvmUXydUwEvc7oPEMl9kDT8V1sjo4lQMqZ48EWiDSX7c5K0GdzT5sPjfZSqVXVag_wNVj4VIikuciXKHsEALoLm7RxA8UJ9DXYqrX9Jrv0JC9hwCSvyIssQ-ArAVlltCCDbaBsadMmF0BfRrowGEjsdfS1uH-naGz7sQzlTkCUdGEYKp9hIoHvmgup07nbhsUixm_X_vmRJ4z1Z7Q81y_0_4PF6CL2vpnRvM3yEceFI-jjWTiC6rBueOY00L897g6qgxjIzvIAA", "state"=>"be9e649a145415967fa920ea617c8c841d7ac702fedf60a2", "session_state"=>"5bb2d077-7760-4a7f-96ba-673abaef5c56", "provider"=>"microsoft_v2_auth"}
+D, [2016-12-07T16:23:43.855898 #2653] DEBUG -- :   [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "sorian.slimani@viacesi.fr"]]
+D, [2016-12-07T16:23:43.858648 #2653] DEBUG -- :   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "sorian.slimani@viacesi.fr"]]
+I, [2016-12-07T16:23:43.871443 #2653]  INFO -- : Completed 500 Internal Server Error in 57ms (ActiveRecord: 1.7ms)
+F, [2016-12-07T16:23:43.872913 #2653] FATAL -- : 
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  app/models/token.rb:10:in `store'
+  app/controllers/pages_controller.rb:58:in `callback'
+
+
+I, [2016-12-07T16:28:25.519837 #2653]  INFO -- : Started GET "/" for 37.163.80.100 at 2016-12-07 16:28:25 +0100
+I, [2016-12-07T16:28:25.525644 #2653]  INFO -- : Processing by PagesController#index as HTML
+I, [2016-12-07T16:28:25.529015 #2653]  INFO -- : Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+I, [2016-12-07T16:28:28.048313 #2655]  INFO -- : Started GET "/login" for 37.163.80.100 at 2016-12-07 16:28:28 +0100
+I, [2016-12-07T16:28:28.067382 #2655]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-07T16:28:28.069780 #2655]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-07T16:28:28.070462 #2655]  INFO -- : Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+I, [2016-12-07T16:28:28.165853 #2653]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 37.163.80.100 at 2016-12-07 16:28:28 +0100
+I, [2016-12-07T16:28:28.166336 #2653]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-07T16:28:30.992205 #2655]  INFO -- : Started GET "/auth/microsoft_v2_auth/callback?code=OAQABAAAAAADRNYRQ3dhRSrm-4K-adpCJ-DOUWC-NwT40u9yyllajpA_WpqNJ4r0es__qijv6qlkH7nHB5l6MjjXLZRR7GAPp69F6sFjgnGvSXgJGjnkwFu4nSjgUzHkoa1ZLdwn6VjMcAkHBh5qP71D90GhwoCnr5JQ1mEKhSETkbkdjUwN_vo8PPcEQWKP1aQGOvqOdnrcJu3hv4SW3o4yKUiGDMeUNMCqa5M7xvO9YQk1Lc0DOXY-NZ11bSiBansLxKZSwGr-gA4aUS1wB-LedbRjTdX_BB93-IIx-aU5CtsFdTcN5DB3sw0zRnENVXeWmwTDtbJqG4Gf_FhZfFCCG2_La1C7aJxI3Fmc40utPiVdqzhYRM2fxdhoeImYPkHTw4A1ppLiddtqkAP5QTfnZdzjP8_BFkusaHOMK93w1MN_H0lHFPYKxWdINQgD5omBecev-ck-MBRLbCSIO0ou5UFRYxD4PZ86juI70E2u7cfkkKMw31KQIILLVALkjfGkneTejHs9EF1ELsNDxWZ-6ucZcF_pcUOrTDefNyzFro30AFQdx2Ml4gKheyMRtK_H2bVEDYQEjfcgx86mCk-q5sMh2jBXT5Jo_UCBdV2jVM4KpK0Q-3_vw-VicxKsV_znOxDuMCZAbjawAR0-ds2oX-8-5cAQEgj7VpUSRr8pMspozCNS-Mt3ORfZESBSeHWGeebMaTiBGQFI4_40_YU814SKJR8oRDYHG44Xxz6BoKgaQOEATcVAmkZdIJWuJbhQDvMwr8b4ZBkOhq1LoM0m43gLcSkDWU1duUtIf4ztuASWG7SzGPeuy4UOwVgwDmbjo6LymeN6APYfwmsUmkRRbyum88fSEIAA&state=c576c4aca758e24db531d3e36cf22601434d12e985d13887&session_state=c7a25da6-4b6f-4156-843d-0db8ad000e61" for 37.163.80.100 at 2016-12-07 16:28:30 +0100
+I, [2016-12-07T16:28:30.992972 #2655]  INFO -- omniauth: (microsoft_v2_auth) Callback phase initiated.
+I, [2016-12-07T16:28:31.662784 #2655]  INFO -- : Processing by PagesController#callback as HTML
+I, [2016-12-07T16:28:31.662962 #2655]  INFO -- :   Parameters: {"code"=>"OAQABAAAAAADRNYRQ3dhRSrm-4K-adpCJ-DOUWC-NwT40u9yyllajpA_WpqNJ4r0es__qijv6qlkH7nHB5l6MjjXLZRR7GAPp69F6sFjgnGvSXgJGjnkwFu4nSjgUzHkoa1ZLdwn6VjMcAkHBh5qP71D90GhwoCnr5JQ1mEKhSETkbkdjUwN_vo8PPcEQWKP1aQGOvqOdnrcJu3hv4SW3o4yKUiGDMeUNMCqa5M7xvO9YQk1Lc0DOXY-NZ11bSiBansLxKZSwGr-gA4aUS1wB-LedbRjTdX_BB93-IIx-aU5CtsFdTcN5DB3sw0zRnENVXeWmwTDtbJqG4Gf_FhZfFCCG2_La1C7aJxI3Fmc40utPiVdqzhYRM2fxdhoeImYPkHTw4A1ppLiddtqkAP5QTfnZdzjP8_BFkusaHOMK93w1MN_H0lHFPYKxWdINQgD5omBecev-ck-MBRLbCSIO0ou5UFRYxD4PZ86juI70E2u7cfkkKMw31KQIILLVALkjfGkneTejHs9EF1ELsNDxWZ-6ucZcF_pcUOrTDefNyzFro30AFQdx2Ml4gKheyMRtK_H2bVEDYQEjfcgx86mCk-q5sMh2jBXT5Jo_UCBdV2jVM4KpK0Q-3_vw-VicxKsV_znOxDuMCZAbjawAR0-ds2oX-8-5cAQEgj7VpUSRr8pMspozCNS-Mt3ORfZESBSeHWGeebMaTiBGQFI4_40_YU814SKJR8oRDYHG44Xxz6BoKgaQOEATcVAmkZdIJWuJbhQDvMwr8b4ZBkOhq1LoM0m43gLcSkDWU1duUtIf4ztuASWG7SzGPeuy4UOwVgwDmbjo6LymeN6APYfwmsUmkRRbyum88fSEIAA", "state"=>"c576c4aca758e24db531d3e36cf22601434d12e985d13887", "session_state"=>"c7a25da6-4b6f-4156-843d-0db8ad000e61", "provider"=>"microsoft_v2_auth"}
+D, [2016-12-07T16:28:31.708330 #2655] DEBUG -- :   [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "sorian.slimani@viacesi.fr"]]
+D, [2016-12-07T16:28:31.711252 #2655] DEBUG -- :   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "sorian.slimani@viacesi.fr"]]
+I, [2016-12-07T16:28:31.724453 #2655]  INFO -- : Completed 500 Internal Server Error in 61ms (ActiveRecord: 23.8ms)
+F, [2016-12-07T16:28:31.725789 #2655] FATAL -- : 
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  app/models/token.rb:10:in `store'
+  app/controllers/pages_controller.rb:58:in `callback'
+
+
+I, [2016-12-07T16:28:37.396083 #2653]  INFO -- : Started GET "/auth/microsoft_v2_auth/callback?code=OAQABAAAAAADRNYRQ3dhRSrm-4K-adpCJ-DOUWC-NwT40u9yyllajpA_WpqNJ4r0es__qijv6qlkH7nHB5l6MjjXLZRR7GAPp69F6sFjgnGvSXgJGjnkwFu4nSjgUzHkoa1ZLdwn6VjMcAkHBh5qP71D90GhwoCnr5JQ1mEKhSETkbkdjUwN_vo8PPcEQWKP1aQGOvqOdnrcJu3hv4SW3o4yKUiGDMeUNMCqa5M7xvO9YQk1Lc0DOXY-NZ11bSiBansLxKZSwGr-gA4aUS1wB-LedbRjTdX_BB93-IIx-aU5CtsFdTcN5DB3sw0zRnENVXeWmwTDtbJqG4Gf_FhZfFCCG2_La1C7aJxI3Fmc40utPiVdqzhYRM2fxdhoeImYPkHTw4A1ppLiddtqkAP5QTfnZdzjP8_BFkusaHOMK93w1MN_H0lHFPYKxWdINQgD5omBecev-ck-MBRLbCSIO0ou5UFRYxD4PZ86juI70E2u7cfkkKMw31KQIILLVALkjfGkneTejHs9EF1ELsNDxWZ-6ucZcF_pcUOrTDefNyzFro30AFQdx2Ml4gKheyMRtK_H2bVEDYQEjfcgx86mCk-q5sMh2jBXT5Jo_UCBdV2jVM4KpK0Q-3_vw-VicxKsV_znOxDuMCZAbjawAR0-ds2oX-8-5cAQEgj7VpUSRr8pMspozCNS-Mt3ORfZESBSeHWGeebMaTiBGQFI4_40_YU814SKJR8oRDYHG44Xxz6BoKgaQOEATcVAmkZdIJWuJbhQDvMwr8b4ZBkOhq1LoM0m43gLcSkDWU1duUtIf4ztuASWG7SzGPeuy4UOwVgwDmbjo6LymeN6APYfwmsUmkRRbyum88fSEIAA&state=c576c4aca758e24db531d3e36cf22601434d12e985d13887&session_state=c7a25da6-4b6f-4156-843d-0db8ad000e61" for 37.163.80.100 at 2016-12-07 16:28:37 +0100
+I, [2016-12-07T16:28:37.396987 #2653]  INFO -- omniauth: (microsoft_v2_auth) Callback phase initiated.
+I, [2016-12-07T16:28:37.984857 #2653]  INFO -- : Processing by PagesController#callback as HTML
+I, [2016-12-07T16:28:37.984979 #2653]  INFO -- :   Parameters: {"code"=>"OAQABAAAAAADRNYRQ3dhRSrm-4K-adpCJ-DOUWC-NwT40u9yyllajpA_WpqNJ4r0es__qijv6qlkH7nHB5l6MjjXLZRR7GAPp69F6sFjgnGvSXgJGjnkwFu4nSjgUzHkoa1ZLdwn6VjMcAkHBh5qP71D90GhwoCnr5JQ1mEKhSETkbkdjUwN_vo8PPcEQWKP1aQGOvqOdnrcJu3hv4SW3o4yKUiGDMeUNMCqa5M7xvO9YQk1Lc0DOXY-NZ11bSiBansLxKZSwGr-gA4aUS1wB-LedbRjTdX_BB93-IIx-aU5CtsFdTcN5DB3sw0zRnENVXeWmwTDtbJqG4Gf_FhZfFCCG2_La1C7aJxI3Fmc40utPiVdqzhYRM2fxdhoeImYPkHTw4A1ppLiddtqkAP5QTfnZdzjP8_BFkusaHOMK93w1MN_H0lHFPYKxWdINQgD5omBecev-ck-MBRLbCSIO0ou5UFRYxD4PZ86juI70E2u7cfkkKMw31KQIILLVALkjfGkneTejHs9EF1ELsNDxWZ-6ucZcF_pcUOrTDefNyzFro30AFQdx2Ml4gKheyMRtK_H2bVEDYQEjfcgx86mCk-q5sMh2jBXT5Jo_UCBdV2jVM4KpK0Q-3_vw-VicxKsV_znOxDuMCZAbjawAR0-ds2oX-8-5cAQEgj7VpUSRr8pMspozCNS-Mt3ORfZESBSeHWGeebMaTiBGQFI4_40_YU814SKJR8oRDYHG44Xxz6BoKgaQOEATcVAmkZdIJWuJbhQDvMwr8b4ZBkOhq1LoM0m43gLcSkDWU1duUtIf4ztuASWG7SzGPeuy4UOwVgwDmbjo6LymeN6APYfwmsUmkRRbyum88fSEIAA", "state"=>"c576c4aca758e24db531d3e36cf22601434d12e985d13887", "session_state"=>"c7a25da6-4b6f-4156-843d-0db8ad000e61", "provider"=>"microsoft_v2_auth"}
+D, [2016-12-07T16:28:37.987657 #2653] DEBUG -- :   [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "sorian.slimani@viacesi.fr"]]
+D, [2016-12-07T16:28:37.988372 #2653] DEBUG -- :   [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "sorian.slimani@viacesi.fr"]]
+I, [2016-12-07T16:28:37.990495 #2653]  INFO -- : Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+F, [2016-12-07T16:28:37.992049 #2653] FATAL -- : 
+Redis::CannotConnectError (Error connecting to Redis on 127.0.0.1:6379 (Errno::ECONNREFUSED)):
+  app/models/token.rb:10:in `store'
+  app/controllers/pages_controller.rb:58:in `callback'
+
+
