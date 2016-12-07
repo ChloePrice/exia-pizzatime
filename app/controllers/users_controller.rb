@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   skip_before_filter :verify_authenticity_token
-  #before_action :validate_token, except: [:show, :authenticate]
+  before_action :validate_token
 
   def index
     render json: User.all

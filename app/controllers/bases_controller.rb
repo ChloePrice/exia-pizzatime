@@ -1,5 +1,7 @@
 class BasesController < ApplicationController
     skip_before_filter :verify_authenticity_token
+    before_action :validate_token
+    
     def index
         result = Base.all.map do |b|
             {id: b.id, name: b.name}
