@@ -39,7 +39,7 @@ gem 'tzinfo-data'
 # Use Unicorn as the app server
 gem 'unicorn'
 gem 'rack', '~>1.6.5'
-
+gem 'rack-cors', :require => 'rack/cors'
 
 
 # Use Capistrano for deployment

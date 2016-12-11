@@ -303,3 +303,107 @@ I, [2016-12-07T16:23:22.301990 #2655]  INFO -- : worker=1 spawned pid=2655
 I, [2016-12-07T16:23:22.302279 #2655]  INFO -- : worker=1 ready
 I, [2016-12-07T16:23:22.302578 #2653]  INFO -- : worker=0 spawned pid=2653
 I, [2016-12-07T16:23:22.302698 #2653]  INFO -- : worker=0 ready
+I, [2016-12-07T17:00:23.454189 #2648]  INFO -- : reaped #<Process::Status: pid 2653 exit 0> worker=0
+I, [2016-12-07T17:00:23.454917 #2648]  INFO -- : reaped #<Process::Status: pid 2655 exit 0> worker=1
+I, [2016-12-07T17:00:23.455238 #2648]  INFO -- : master complete
+I, [2016-12-07T17:00:29.820389 #2895]  INFO -- : Refreshing Gem list
+I, [2016-12-07T17:00:31.382463 #2895]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-07T17:00:31.382651 #2895]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-07T17:00:31.382786 #2895]  INFO -- : worker=0 spawning...
+I, [2016-12-07T17:00:31.384171 #2895]  INFO -- : worker=1 spawning...
+I, [2016-12-07T17:00:31.384985 #2898]  INFO -- : worker=0 spawned pid=2898
+I, [2016-12-07T17:00:31.385149 #2898]  INFO -- : worker=0 ready
+I, [2016-12-07T17:00:31.386159 #2895]  INFO -- : master process ready
+I, [2016-12-07T17:00:31.393550 #2901]  INFO -- : worker=1 spawned pid=2901
+I, [2016-12-07T17:00:31.393708 #2901]  INFO -- : worker=1 ready
+I, [2016-12-07T17:02:36.254719 #2895]  INFO -- : reaped #<Process::Status: pid 2898 exit 0> worker=0
+I, [2016-12-07T17:02:36.255246 #2895]  INFO -- : reaped #<Process::Status: pid 2901 exit 0> worker=1
+I, [2016-12-07T17:02:36.255527 #2895]  INFO -- : master complete
+I, [2016-12-07T17:02:39.224665 #2922]  INFO -- : Refreshing Gem list
+I, [2016-12-07T17:02:40.813708 #2922]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-07T17:02:40.813903 #2922]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-07T17:02:40.814010 #2922]  INFO -- : worker=0 spawning...
+I, [2016-12-07T17:02:40.815430 #2922]  INFO -- : worker=1 spawning...
+I, [2016-12-07T17:02:40.816479 #2925]  INFO -- : worker=0 spawned pid=2925
+I, [2016-12-07T17:02:40.816669 #2925]  INFO -- : worker=0 ready
+I, [2016-12-07T17:02:40.817939 #2922]  INFO -- : master process ready
+I, [2016-12-07T17:02:40.825233 #2928]  INFO -- : worker=1 spawned pid=2928
+I, [2016-12-07T17:02:40.825469 #2928]  INFO -- : worker=1 ready
+I, [2016-12-07T17:05:33.208919 #2922]  INFO -- : reaped #<Process::Status: pid 2925 exit 0> worker=0
+I, [2016-12-07T17:05:33.209322 #2922]  INFO -- : reaped #<Process::Status: pid 2928 exit 0> worker=1
+I, [2016-12-07T17:05:33.209541 #2922]  INFO -- : master complete
+I, [2016-12-07T17:05:35.928068 #2949]  INFO -- : Refreshing Gem list
+I, [2016-12-07T17:05:37.555919 #2949]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-07T17:05:37.556129 #2949]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-07T17:05:37.556236 #2949]  INFO -- : worker=0 spawning...
+I, [2016-12-07T17:05:37.557512 #2949]  INFO -- : worker=1 spawning...
+I, [2016-12-07T17:05:37.558366 #2952]  INFO -- : worker=0 spawned pid=2952
+I, [2016-12-07T17:05:37.558580 #2952]  INFO -- : worker=0 ready
+I, [2016-12-07T17:05:37.559852 #2949]  INFO -- : master process ready
+I, [2016-12-07T17:05:37.566515 #2955]  INFO -- : worker=1 spawned pid=2955
+I, [2016-12-07T17:05:37.566674 #2955]  INFO -- : worker=1 ready
+I, [2016-12-07T17:16:22.994380 #2949]  INFO -- : reaped #<Process::Status: pid 2952 exit 0> worker=0
+I, [2016-12-07T17:16:22.994826 #2949]  INFO -- : reaped #<Process::Status: pid 2955 exit 0> worker=1
+I, [2016-12-07T17:16:22.995162 #2949]  INFO -- : master complete
+I, [2016-12-07T17:16:29.204903 #3178]  INFO -- : Refreshing Gem list
+I, [2016-12-07T17:16:30.827652 #3178]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-07T17:16:30.827882 #3178]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-07T17:16:30.828011 #3178]  INFO -- : worker=0 spawning...
+I, [2016-12-07T17:16:30.829338 #3178]  INFO -- : worker=1 spawning...
+I, [2016-12-07T17:16:30.830326 #3181]  INFO -- : worker=0 spawned pid=3181
+I, [2016-12-07T17:16:30.830472 #3181]  INFO -- : worker=0 ready
+I, [2016-12-07T17:16:30.831777 #3178]  INFO -- : master process ready
+I, [2016-12-07T17:16:30.838527 #3184]  INFO -- : worker=1 spawned pid=3184
+I, [2016-12-07T17:16:30.838727 #3184]  INFO -- : worker=1 ready
+I, [2016-12-07T17:44:55.790150 #3178]  INFO -- : reaped #<Process::Status: pid 3181 exit 0> worker=0
+I, [2016-12-07T17:44:55.790779 #3178]  INFO -- : reaped #<Process::Status: pid 3184 exit 0> worker=1
+I, [2016-12-07T17:44:55.791220 #3178]  INFO -- : master complete
+I, [2016-12-07T17:45:13.471825 #3360]  INFO -- : Refreshing Gem list
+I, [2016-12-07T17:45:15.093238 #3360]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-07T17:45:15.093480 #3360]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-07T17:45:15.093622 #3360]  INFO -- : worker=0 spawning...
+I, [2016-12-07T17:45:15.095005 #3360]  INFO -- : worker=1 spawning...
+I, [2016-12-07T17:45:15.095967 #3363]  INFO -- : worker=0 spawned pid=3363
+I, [2016-12-07T17:45:15.096371 #3363]  INFO -- : worker=0 ready
+I, [2016-12-07T17:45:15.098040 #3360]  INFO -- : master process ready
+I, [2016-12-07T17:45:15.105816 #3366]  INFO -- : worker=1 spawned pid=3366
+I, [2016-12-07T17:45:15.106017 #3366]  INFO -- : worker=1 ready
+I, [2016-12-08T09:57:38.658163 #3360]  INFO -- : reaped #<Process::Status: pid 3363 exit 0> worker=0
+I, [2016-12-08T09:57:38.658758 #3360]  INFO -- : reaped #<Process::Status: pid 3366 exit 0> worker=1
+I, [2016-12-08T09:57:38.659123 #3360]  INFO -- : master complete
+I, [2016-12-08T09:57:54.747975 #5994]  INFO -- : Refreshing Gem list
+I, [2016-12-08T09:57:57.514142 #5994]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-08T09:57:57.514421 #5994]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-08T09:57:57.514661 #5994]  INFO -- : worker=0 spawning...
+I, [2016-12-08T09:57:57.517092 #5994]  INFO -- : worker=1 spawning...
+I, [2016-12-08T09:57:57.518215 #5997]  INFO -- : worker=0 spawned pid=5997
+I, [2016-12-08T09:57:57.518425 #5997]  INFO -- : worker=0 ready
+I, [2016-12-08T09:57:57.522044 #5994]  INFO -- : master process ready
+I, [2016-12-08T09:57:57.530520 #6000]  INFO -- : worker=1 spawned pid=6000
+I, [2016-12-08T09:57:57.530783 #6000]  INFO -- : worker=1 ready
+I, [2016-12-08T11:25:10.870006 #5994]  INFO -- : reaped #<Process::Status: pid 5997 exit 0> worker=0
+I, [2016-12-08T11:25:10.870866 #5994]  INFO -- : reaped #<Process::Status: pid 6000 exit 0> worker=1
+I, [2016-12-08T11:25:10.871173 #5994]  INFO -- : master complete
+I, [2016-12-08T11:25:15.465160 #6263]  INFO -- : Refreshing Gem list
+I, [2016-12-08T11:25:22.393612 #6263]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-08T11:25:22.393917 #6263]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-08T11:25:22.394104 #6263]  INFO -- : worker=0 spawning...
+I, [2016-12-08T11:25:22.396529 #6263]  INFO -- : worker=1 spawning...
+I, [2016-12-08T11:25:22.399359 #6263]  INFO -- : master process ready
+I, [2016-12-08T11:25:22.406145 #6266]  INFO -- : worker=0 spawned pid=6266
+I, [2016-12-08T11:25:22.406482 #6266]  INFO -- : worker=0 ready
+I, [2016-12-08T11:25:22.408243 #6269]  INFO -- : worker=1 spawned pid=6269
+I, [2016-12-08T11:25:22.408491 #6269]  INFO -- : worker=1 ready
+I, [2016-12-08T11:40:05.195190 #6263]  INFO -- : reaped #<Process::Status: pid 6266 exit 0> worker=0
+I, [2016-12-08T11:40:05.195903 #6263]  INFO -- : reaped #<Process::Status: pid 6269 exit 0> worker=1
+I, [2016-12-08T11:40:05.196305 #6263]  INFO -- : master complete
+I, [2016-12-08T11:40:14.282602 #6504]  INFO -- : Refreshing Gem list
+I, [2016-12-08T11:40:20.878004 #6504]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-08T11:40:20.878278 #6504]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-08T11:40:20.878446 #6504]  INFO -- : worker=0 spawning...
+I, [2016-12-08T11:40:20.888839 #6507]  INFO -- : worker=0 spawned pid=6507
+I, [2016-12-08T11:40:20.885322 #6504]  INFO -- : worker=1 spawning...
+I, [2016-12-08T11:40:20.889153 #6507]  INFO -- : worker=0 ready
+I, [2016-12-08T11:40:20.899148 #6504]  INFO -- : master process ready
+I, [2016-12-08T11:40:20.907943 #6510]  INFO -- : worker=1 spawned pid=6510
+I, [2016-12-08T11:40:20.908776 #6510]  INFO -- : worker=1 ready

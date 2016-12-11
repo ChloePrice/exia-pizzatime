@@ -107,6 +107,7 @@ GEM
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
     rack (1.6.5)
+    rack-cors (0.4.0)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.3)
@@ -199,6 +200,7 @@ DEPENDENCIES
   omniauth-microsoft_v2_auth!
   omniauth-oauth2
   rack (~> 1.6.5)
+  rack-cors
   rails (= 4.2.3)
   redis
   rest-client
