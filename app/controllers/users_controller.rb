@@ -50,7 +50,7 @@ class UsersController < ApplicationController
     raise Exceptions::BadRequest if user.nil?
     o = Order.live.placedBy(user).last
     if o.nil?
-      render_errors(error : "No order for this user")
+      render_errors({error: "No order for this user"})
     else
       entry = {id: o.id}
       entry[:items] = o.order_items.map do |item|
