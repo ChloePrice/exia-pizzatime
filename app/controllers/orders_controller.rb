@@ -2,7 +2,7 @@ require 'json'
 
 class OrdersController < ApplicationController
   skip_before_filter :verify_authenticity_token
-  #before_action :validate_token
+  before_action :validate_token
 
 
   # Get the list of orders

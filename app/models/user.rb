@@ -31,7 +31,7 @@ class User < ActiveRecord::Base
   end
 
   def self.current(token)
-    user_id = Redis.current.hget('tokens', token)
+    user_id = Integer(Redis.current.hget('tokens', token))
     raise Exceptions::UnAuthorized if user_id.nil?
     User.find(user_id)
   end
