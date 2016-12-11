@@ -48,15 +48,18 @@ class PagesController < ApplicationController
 
     if User.exists?(:email => @email)
         user = User.find_by(:email => @email)
-        user.last_token = session[:access_token]
+        user.last_token = data['credentials']['token']
+	user.save!
     else
         user = User.create!(name: @name, email: @email)
-        user.last_token = session[:access_token]
+        user.last_token = data['credentials']['token']
+	user.save!
     end
 
     # Store token/user in Redis
     Token.store(data['credentials']['token'], user)
-    redirect_to "http://pizzatime.ovh/#{name}/#{token}"
+
+    redirect_to("http://pizzatime.ovh/?name=#{CGI.escape(user.name)}&token=#{user.last_token}")
   end
 
   def auth_hash
