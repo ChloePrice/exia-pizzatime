@@ -407,3 +407,49 @@ I, [2016-12-08T11:40:20.889153 #6507]  INFO -- : worker=0 ready
 I, [2016-12-08T11:40:20.899148 #6504]  INFO -- : master process ready
 I, [2016-12-08T11:40:20.907943 #6510]  INFO -- : worker=1 spawned pid=6510
 I, [2016-12-08T11:40:20.908776 #6510]  INFO -- : worker=1 ready
+I, [2016-12-11T17:49:40.287734 #20866]  INFO -- : Refreshing Gem list
+I, [2016-12-11T17:49:41.993121 #20866]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-11T17:49:41.993319 #20866]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-11T17:49:41.993457 #20866]  INFO -- : worker=0 spawning...
+I, [2016-12-11T17:49:41.994935 #20866]  INFO -- : worker=1 spawning...
+I, [2016-12-11T17:49:41.995907 #20869]  INFO -- : worker=0 spawned pid=20869
+I, [2016-12-11T17:49:41.996089 #20869]  INFO -- : worker=0 ready
+I, [2016-12-11T17:49:41.997527 #20866]  INFO -- : master process ready
+I, [2016-12-11T17:49:42.006462 #20872]  INFO -- : worker=1 spawned pid=20872
+I, [2016-12-11T17:49:42.006648 #20872]  INFO -- : worker=1 ready
+I, [2016-12-11T18:01:31.762481 #20866]  INFO -- : reaped #<Process::Status: pid 20869 exit 0> worker=0
+I, [2016-12-11T18:01:31.763030 #20866]  INFO -- : reaped #<Process::Status: pid 20872 exit 0> worker=1
+I, [2016-12-11T18:01:31.763316 #20866]  INFO -- : master complete
+I, [2016-12-11T18:01:34.283885 #21049]  INFO -- : Refreshing Gem list
+I, [2016-12-11T18:01:36.083246 #21049]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-11T18:01:36.083462 #21049]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-11T18:01:36.083610 #21049]  INFO -- : worker=0 spawning...
+I, [2016-12-11T18:01:36.085199 #21049]  INFO -- : worker=1 spawning...
+I, [2016-12-11T18:01:36.086190 #21052]  INFO -- : worker=0 spawned pid=21052
+I, [2016-12-11T18:01:36.086370 #21052]  INFO -- : worker=0 ready
+I, [2016-12-11T18:01:36.087989 #21049]  INFO -- : master process ready
+I, [2016-12-11T18:01:36.094437 #21055]  INFO -- : worker=1 spawned pid=21055
+I, [2016-12-11T18:01:36.094587 #21055]  INFO -- : worker=1 ready
+I, [2016-12-11T18:02:36.094297 #21049]  INFO -- : reaped #<Process::Status: pid 21052 exit 0> worker=0
+I, [2016-12-11T18:02:36.094693 #21049]  INFO -- : reaped #<Process::Status: pid 21055 exit 0> worker=1
+I, [2016-12-11T18:02:36.094894 #21049]  INFO -- : master complete
+I, [2016-12-11T18:02:41.519410 #21069]  INFO -- : Refreshing Gem list
+I, [2016-12-11T18:02:43.177981 #21069]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-11T18:02:43.178192 #21069]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-11T18:02:43.178328 #21069]  INFO -- : worker=0 spawning...
+I, [2016-12-11T18:02:43.179748 #21069]  INFO -- : worker=1 spawning...
+I, [2016-12-11T18:02:43.180625 #21072]  INFO -- : worker=0 spawned pid=21072
+I, [2016-12-11T18:02:43.180792 #21072]  INFO -- : worker=0 ready
+I, [2016-12-11T18:02:43.181918 #21069]  INFO -- : master process ready
+I, [2016-12-11T18:02:43.188776 #21075]  INFO -- : worker=1 spawned pid=21075
+I, [2016-12-11T18:02:43.189038 #21075]  INFO -- : worker=1 ready
+I, [2016-12-11T18:16:34.352001 #21296]  INFO -- : Refreshing Gem list
+I, [2016-12-11T18:16:36.147357 #21296]  INFO -- : unlinking existing socket=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock
+I, [2016-12-11T18:16:36.147568 #21296]  INFO -- : listening on addr=/home/rails/sources/exia-pizzatime/shared/sockets/unicorn.sock fd=9
+I, [2016-12-11T18:16:36.147739 #21296]  INFO -- : worker=0 spawning...
+I, [2016-12-11T18:16:36.149221 #21296]  INFO -- : worker=1 spawning...
+I, [2016-12-11T18:16:36.150173 #21299]  INFO -- : worker=0 spawned pid=21299
+I, [2016-12-11T18:16:36.150614 #21299]  INFO -- : worker=0 ready
+I, [2016-12-11T18:16:36.151805 #21296]  INFO -- : master process ready
+I, [2016-12-11T18:16:36.158835 #21302]  INFO -- : worker=1 spawned pid=21302
+I, [2016-12-11T18:16:36.159001 #21302]  INFO -- : worker=1 ready

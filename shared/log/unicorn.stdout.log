@@ -3879,3 +3879,521 @@ ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
   /usr/local/bin/bundle:23:in `<main>'
 
 
+I, [2016-12-11T17:55:49.293750 #20872]  INFO -- : Started GET "/login" for 88.186.204.72 at 2016-12-11 17:55:49 +0100
+I, [2016-12-11T17:55:49.336009 #20872]  INFO -- : Processing by PagesController#login as HTML
+I, [2016-12-11T17:55:49.347963 #20872]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-11T17:55:49.348938 #20872]  INFO -- : Completed 302 Found in 12ms (ActiveRecord: 0.0ms)
+I, [2016-12-11T17:55:49.378976 #20869]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 88.186.204.72 at 2016-12-11 17:55:49 +0100
+I, [2016-12-11T17:55:49.387157 #20869]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-11T17:55:58.000041 #20869]  INFO -- : Started GET "/auth/microsoft_v2_auth/callback?code=OAQABAAAAAADRNYRQ3dhRSrm-4K-adpCJb_l931NpEVBOwiMUy4NnIaTictJkG1cXhmqJapIyTKTDaE9bh_MMm4Dx-0tXSs3aDtcQIH4Nu9-oIPXeivmGHrVKBJBN8bB3Fcuelgr6q6n4hfJapNh5qFPLXEobUSUJSyhkjSTf2c_t_A-9TaOPxhzCjasLntq2ZrhBze3xkcgkfphb__60nu-3qyIaai0Q_9IB1xv3qguJ1SEmCDqmb56f8UtLFPZcARFcHHrDUNpbdp2pDJmMMEaDdmCd86nHZjQBHPceMAvv3LUmEfWN3djf-N81UroPcmi1zDmnO0l3tFrqTc3VJRDrUDdV5R9nm1H5HQTOnCuCvIQTwYR1XkwKB5cdljpFo2QJqnt1wFLPGRl_DpeaWMEG2srDz9FenvUNmFXPR9snY3xCHupe6jNXmg6f8BaR_6fDY7RVxaziSv03uixFCoCuJSj11g_l8mzvac2OUpN_hER7A9vt4bNAlV0bF_ItKiZ4k5H3rBUjZUUx1MSO52ezki5J0R72UHIr8ed3OGCYD0YgHz-68dcHa4r6HOaxfWy9f2OEw0S8Zcq0mozmggBqGbMKH85w3WcA9bFFAHycFHNS9JOBFBUOLDzMOg1l4wc5NQ1ihwTEaH0iE35C14z9nRWSd7zX9d2bGmVzMqNKdLHgOysR23ek2XPxhFAa0X5FmFxcgpSfRVlkfzFvN5ni49r3FSxp6IogWD4TdbUNKD-P6RKr8A5WCR6z0xn0-xSvVMTPvXwuVyCCx5pJCtA8dE5IsZZ4mWKOM5kJw6djG42qUxZZnzHgCOLQtGCy0svk7eYPceUgAA&state=f315afe7d632ede4a214ed12831efbf7f527551b609ae533&session_state=d6d3b1bc-5654-43c7-9302-361bc0aa3bfa" for 88.186.204.72 at 2016-12-11 17:55:57 +0100
+I, [2016-12-11T17:55:58.000981 #20869]  INFO -- omniauth: (microsoft_v2_auth) Callback phase initiated.
+I, [2016-12-11T17:55:58.544598 #20869]  INFO -- : Processing by PagesController#callback as HTML
+I, [2016-12-11T17:55:58.544749 #20869]  INFO -- :   Parameters: {"code"=>"OAQABAAAAAADRNYRQ3dhRSrm-4K-adpCJb_l931NpEVBOwiMUy4NnIaTictJkG1cXhmqJapIyTKTDaE9bh_MMm4Dx-0tXSs3aDtcQIH4Nu9-oIPXeivmGHrVKBJBN8bB3Fcuelgr6q6n4hfJapNh5qFPLXEobUSUJSyhkjSTf2c_t_A-9TaOPxhzCjasLntq2ZrhBze3xkcgkfphb__60nu-3qyIaai0Q_9IB1xv3qguJ1SEmCDqmb56f8UtLFPZcARFcHHrDUNpbdp2pDJmMMEaDdmCd86nHZjQBHPceMAvv3LUmEfWN3djf-N81UroPcmi1zDmnO0l3tFrqTc3VJRDrUDdV5R9nm1H5HQTOnCuCvIQTwYR1XkwKB5cdljpFo2QJqnt1wFLPGRl_DpeaWMEG2srDz9FenvUNmFXPR9snY3xCHupe6jNXmg6f8BaR_6fDY7RVxaziSv03uixFCoCuJSj11g_l8mzvac2OUpN_hER7A9vt4bNAlV0bF_ItKiZ4k5H3rBUjZUUx1MSO52ezki5J0R72UHIr8ed3OGCYD0YgHz-68dcHa4r6HOaxfWy9f2OEw0S8Zcq0mozmggBqGbMKH85w3WcA9bFFAHycFHNS9JOBFBUOLDzMOg1l4wc5NQ1ihwTEaH0iE35C14z9nRWSd7zX9d2bGmVzMqNKdLHgOysR23ek2XPxhFAa0X5FmFxcgpSfRVlkfzFvN5ni49r3FSxp6IogWD4TdbUNKD-P6RKr8A5WCR6z0xn0-xSvVMTPvXwuVyCCx5pJCtA8dE5IsZZ4mWKOM5kJw6djG42qUxZZnzHgCOLQtGCy0svk7eYPceUgAA", "state"=>"f315afe7d632ede4a214ed12831efbf7f527551b609ae533", "session_state"=>"d6d3b1bc-5654-43c7-9302-361bc0aa3bfa", "provider"=>"microsoft_v2_auth"}
+D, [2016-12-11T17:55:58.579898 #20869] DEBUG -- :   [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "victor.rebiardcrepin@viacesi.fr"]]
+D, [2016-12-11T17:55:58.583152 #20869] DEBUG -- :   [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "victor.rebiardcrepin@viacesi.fr"]]
+D, [2016-12-11T17:55:58.600286 #20869] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+D, [2016-12-11T17:55:58.606282 #20869] DEBUG -- :   [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_token" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_token", "eyJ0eXAiOiJKV1QiLCJub25jZSI6IkFRQUJBQUFBQUFEUk5ZUlEzZGhSU3JtLTRLLWFkcENKU2RMZ2tOUFdVdEJteWtDdV96ZW9oX1JpTFBNdHYtZUtxQkx4T3hvZW5wdnk5ZE42VWJpckRMeHFBaVRKOG9FeHZyNWcxaUQ3TWpQSHVaTzFacnVROGlBQSIsImFsZyI6IlJTMjU2IiwieDV0IjoiUnJRcXU5cnlkQlZSV21jb2N1WFViMjBIR1JNIiwia2lkIjoiUnJRcXU5cnlkQlZSV21jb2N1WFViMjBIR1JNIn0.eyJhdWQiOiJodHRwczovL2dyYXBoLm1pY3Jvc29mdC5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8xOTBjZTQyMC1iMTU3LTQ0YWUtYmMyZi02OTU2M2JhYTVhM2IvIiwiaWF0IjoxNDgxNDc1MDY3LCJuYmYiOjE0ODE0NzUwNjcsImV4cCI6MTQ4MTQ3ODk2NywiYWNyIjoiMSIsImFtciI6WyJwd2QiXSwiYXBwX2Rpc3BsYXluYW1lIjoiUGl6emF0aW1lIiwiYXBwaWQiOiIyM2JmZjZlMy1jZWEzLTRkMGMtOWI0Zi0wMTJkOTY2Y2NmNzgiLCJhcHBpZGFjciI6IjEiLCJmYW1pbHlfbmFtZSI6IlJFQklBUkQgQ1JFUElOIiwiZ2l2ZW5fbmFtZSI6IlZpY3RvciIsImlwYWRkciI6Ijg4LjE4Ni4yMDQuNzIiLCJuYW1lIjoiUkVCSUFSRCBDUkVQSU4gVklDVE9SIiwib2lkIjoiOGQ4NTUxZWQtMzBhOS00YjBkLThkNjktYjc2ZmI0MGIwMjY4Iiwib25wcmVtX3NpZCI6IlMtMS01LTIxLTIxOTQxODE5MTUtMTI2NDQ2MzU2NC03NDQ5MjY5ODgtNDQwNzYiLCJwbGF0ZiI6IjMiLCJwdWlkIjoiMTAwM0JGRkQ4MkI2NjNBQyIsInNjcCI6Ik1haWwuU2VuZCBVc2VyLlJlYWQiLCJzdWIiOiI4OVFkRmRwRnlWZnNVYjJsLXZXZHFmcDd5SkwyQl90SmFfYjF4Q0hPNGFjIiwidGlkIjoiMTkwY2U0MjAtYjE1Ny00NGFlLWJjMmYtNjk1NjNiYWE1YTNiIiwidW5pcXVlX25hbWUiOiJ2aWN0b3IucmViaWFyZGNyZXBpbkB2aWFjZXNpLmZyIiwidXBuIjoidmljdG9yLnJlYmlhcmRjcmVwaW5AdmlhY2VzaS5mciIsInZlciI6IjEuMCJ9.Krw2y0HiK8EEN50s8pr-dAssOScIczF7niMtX8QdycBNNagGH98HPrbR0CdmSthHJyv613iCkM_tw9xJCGgzd0eEqACd4IfWQBCME1Q0AZNuwpj-0aGH50lPuc_JwIHR5mcQ0fhW00nRMGSqO2hMFAFns7x2zSqZXMlUHqNcwT6FR9TFasBl6yOWY_60D7oENpET35Q64TnNXWGupjeFUWKs1b_KjsDl3pSJWSx4P6l3OEk1htdoVdmjwCrG5iZyEWJqT_prRFffomn2PK_1bVEnES3OTC_nJ7lwzE7Z4-qXH7uka8379aFbd9PjQR9q6uy2O5XOTagLkQJkds4w6A"], ["updated_at", "2016-12-11 16:55:58.602006"], ["id", 3]]
+D, [2016-12-11T17:55:58.611245 #20869] DEBUG -- :   [1m[36m (4.2ms)[0m  [1mcommit transaction[0m
+I, [2016-12-11T17:55:58.614448 #20869]  INFO -- : Redirected to http://pizzatime.ovh/?name=REBIARD+CREPIN+VICTOR&token=eyJ0eXAiOiJKV1QiLCJub25jZSI6IkFRQUJBQUFBQUFEUk5ZUlEzZGhSU3JtLTRLLWFkcENKU2RMZ2tOUFdVdEJteWtDdV96ZW9oX1JpTFBNdHYtZUtxQkx4T3hvZW5wdnk5ZE42VWJpckRMeHFBaVRKOG9FeHZyNWcxaUQ3TWpQSHVaTzFacnVROGlBQSIsImFsZyI6IlJTMjU2IiwieDV0IjoiUnJRcXU5cnlkQlZSV21jb2N1WFViMjBIR1JNIiwia2lkIjoiUnJRcXU5cnlkQlZSV21jb2N1WFViMjBIR1JNIn0.eyJhdWQiOiJodHRwczovL2dyYXBoLm1pY3Jvc29mdC5jb20iLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC8xOTBjZTQyMC1iMTU3LTQ0YWUtYmMyZi02OTU2M2JhYTVhM2IvIiwiaWF0IjoxNDgxNDc1MDY3LCJuYmYiOjE0ODE0NzUwNjcsImV4cCI6MTQ4MTQ3ODk2NywiYWNyIjoiMSIsImFtciI6WyJwd2QiXSwiYXBwX2Rpc3BsYXluYW1lIjoiUGl6emF0aW1lIiwiYXBwaWQiOiIyM2JmZjZlMy1jZWEzLTRkMGMtOWI0Zi0wMTJkOTY2Y2NmNzgiLCJhcHBpZGFjciI6IjEiLCJmYW1pbHlfbmFtZSI6IlJFQklBUkQgQ1JFUElOIiwiZ2l2ZW5fbmFtZSI6IlZpY3RvciIsImlwYWRkciI6Ijg4LjE4Ni4yMDQuNzIiLCJuYW1lIjoiUkVCSUFSRCBDUkVQSU4gVklDVE9SIiwib2lkIjoiOGQ4NTUxZWQtMzBhOS00YjBkLThkNjktYjc2ZmI0MGIwMjY4Iiwib25wcmVtX3NpZCI6IlMtMS01LTIxLTIxOTQxODE5MTUtMTI2NDQ2MzU2NC03NDQ5MjY5ODgtNDQwNzYiLCJwbGF0ZiI6IjMiLCJwdWlkIjoiMTAwM0JGRkQ4MkI2NjNBQyIsInNjcCI6Ik1haWwuU2VuZCBVc2VyLlJlYWQiLCJzdWIiOiI4OVFkRmRwRnlWZnNVYjJsLXZXZHFmcDd5SkwyQl90SmFfYjF4Q0hPNGFjIiwidGlkIjoiMTkwY2U0MjAtYjE1Ny00NGFlLWJjMmYtNjk1NjNiYWE1YTNiIiwidW5pcXVlX25hbWUiOiJ2aWN0b3IucmViaWFyZGNyZXBpbkB2aWFjZXNpLmZyIiwidXBuIjoidmljdG9yLnJlYmlhcmRjcmVwaW5AdmlhY2VzaS5mciIsInZlciI6IjEuMCJ9.Krw2y0HiK8EEN50s8pr-dAssOScIczF7niMtX8QdycBNNagGH98HPrbR0CdmSthHJyv613iCkM_tw9xJCGgzd0eEqACd4IfWQBCME1Q0AZNuwpj-0aGH50lPuc_JwIHR5mcQ0fhW00nRMGSqO2hMFAFns7x2zSqZXMlUHqNcwT6FR9TFasBl6yOWY_60D7oENpET35Q64TnNXWGupjeFUWKs1b_KjsDl3pSJWSx4P6l3OEk1htdoVdmjwCrG5iZyEWJqT_prRFffomn2PK_1bVEnES3OTC_nJ7lwzE7Z4-qXH7uka8379aFbd9PjQR9q6uy2O5XOTagLkQJkds4w6A
+I, [2016-12-11T17:55:58.614936 #20869]  INFO -- : Completed 302 Found in 70ms (ActiveRecord: 6.8ms)
+I, [2016-12-11T17:55:58.859105 #20872]  INFO -- : Started GET "/pizzas" for 88.186.204.72 at 2016-12-11 17:55:58 +0100
+I, [2016-12-11T17:55:58.862130 #20872]  INFO -- : Processing by PizzasController#index as JSON
+D, [2016-12-11T17:55:58.867099 #20872] DEBUG -- :   [1m[36mPizza Load (1.8ms)[0m  [1mSELECT "pizzas".* FROM "pizzas"[0m
+I, [2016-12-11T17:55:58.870994 #20869]  INFO -- : Started GET "/bases" for 88.186.204.72 at 2016-12-11 17:55:58 +0100
+I, [2016-12-11T17:55:58.878556 #20869]  INFO -- : Processing by BasesController#index as JSON
+D, [2016-12-11T17:55:58.880965 #20869] DEBUG -- :   [1m[35mBase Load (0.2ms)[0m  SELECT "bases".* FROM "bases"
+I, [2016-12-11T17:55:58.938190 #20869]  INFO -- : Completed 200 OK in 59ms (Views: 0.6ms | ActiveRecord: 4.1ms)
+I, [2016-12-11T17:55:58.939518 #20869]  INFO -- : Started GET "/orders" for 88.186.204.72 at 2016-12-11 17:55:58 +0100
+I, [2016-12-11T17:55:58.941771 #20869]  INFO -- : Processing by OrdersController#index as JSON
+D, [2016-12-11T17:55:58.944894 #20872] DEBUG -- :   [1m[35mBase Load (0.4ms)[0m  SELECT  "bases".* FROM "bases" WHERE "bases"."id" = ? LIMIT 1  [["id", 1]]
+D, [2016-12-11T17:55:58.946242 #20869] DEBUG -- :   [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+D, [2016-12-11T17:55:58.954330 #20869] DEBUG -- :   [1m[35mOrder Load (0.3ms)[0m  SELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 1  [["discontinued", "f"], ["flag", -1]]
+D, [2016-12-11T17:55:58.955389 #20869] DEBUG -- :   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 2[0m  [["discontinued", "f"], ["flag", -1]]
+D, [2016-12-11T17:55:58.956581 #20869] DEBUG -- :   [1m[35mOrder Load (0.2ms)[0m  SELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 3  [["discontinued", "f"], ["flag", -1]]
+I, [2016-12-11T17:55:58.956941 #20869]  INFO -- : Completed 200 OK in 15ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+I, [2016-12-11T17:55:58.958495 #20872]  INFO -- : Completed 200 OK in 96ms (Views: 0.4ms | ActiveRecord: 3.4ms)
+I, [2016-12-11T17:55:58.984297 #20869]  INFO -- : Started GET "/pizzas" for 88.186.204.72 at 2016-12-11 17:55:58 +0100
+I, [2016-12-11T17:55:58.986699 #20872]  INFO -- : Started GET "/bases" for 88.186.204.72 at 2016-12-11 17:55:58 +0100
+I, [2016-12-11T17:55:58.989090 #20869]  INFO -- : Processing by PizzasController#index as JSON
+D, [2016-12-11T17:55:58.990445 #20869] DEBUG -- :   [1m[36mPizza Load (0.2ms)[0m  [1mSELECT "pizzas".* FROM "pizzas"[0m
+I, [2016-12-11T17:55:58.994807 #20872]  INFO -- : Processing by BasesController#index as JSON
+D, [2016-12-11T17:55:58.997754 #20872] DEBUG -- :   [1m[36mBase Load (0.3ms)[0m  [1mSELECT "bases".* FROM "bases"[0m
+I, [2016-12-11T17:55:58.998625 #20872]  INFO -- : Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+I, [2016-12-11T17:55:59.002208 #20872]  INFO -- : Started GET "/orders" for 88.186.204.72 at 2016-12-11 17:55:59 +0100
+I, [2016-12-11T17:55:59.004610 #20872]  INFO -- : Processing by OrdersController#index as JSON
+D, [2016-12-11T17:55:59.010684 #20872] DEBUG -- :   [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+D, [2016-12-11T17:55:59.024015 #20869] DEBUG -- :   [1m[35mBase Load (0.2ms)[0m  SELECT  "bases".* FROM "bases" WHERE "bases"."id" = ? LIMIT 1  [["id", 1]]
+I, [2016-12-11T17:55:59.025124 #20869]  INFO -- : Completed 200 OK in 36ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+D, [2016-12-11T17:55:59.052336 #20872] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 1[0m  [["discontinued", "f"], ["flag", -1]]
+D, [2016-12-11T17:55:59.053779 #20872] DEBUG -- :   [1m[35mOrder Load (0.2ms)[0m  SELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 2  [["discontinued", "f"], ["flag", -1]]
+D, [2016-12-11T17:55:59.054912 #20872] DEBUG -- :   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 3[0m  [["discontinued", "f"], ["flag", -1]]
+I, [2016-12-11T17:55:59.055559 #20872]  INFO -- : Completed 200 OK in 51ms (Views: 0.4ms | ActiveRecord: 1.7ms)
+I, [2016-12-11T17:56:23.460731 #20869]  INFO -- : Started POST "/orders" for 88.186.204.72 at 2016-12-11 17:56:23 +0100
+I, [2016-12-11T17:56:23.467791 #20869]  INFO -- : Processing by OrdersController#create as JSON
+I, [2016-12-11T17:56:23.467953 #20869]  INFO -- :   Parameters: {"items"=>{"parent"=>{"source"=>[{"id"=>1, "pizza"=>{"id"=>1, "name"=>"Delicious Margaritta", "base"=>{"id"=>1, "name"=>"Tomate"}, "price"=>"5.0"}, "base"=>{"id"=>1, "name"=>"Tomate"}}]}}, "order"=>{}}
+I, [2016-12-11T17:56:23.488026 #20869]  INFO -- : Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+F, [2016-12-11T17:56:23.490109 #20869] FATAL -- : 
+NoMethodError (undefined method `current' for #<Class:0x007fab3e7faad0>
+Did you mean?  current_scope
+               Current):
+  app/controllers/orders_controller.rb:47:in `create'
+
+
+I, [2016-12-11T17:59:30.605904 #20869]  INFO -- : Started GET "/pizzas" for 88.186.204.72 at 2016-12-11 17:59:30 +0100
+I, [2016-12-11T17:59:30.612167 #20872]  INFO -- : Started GET "/bases" for 88.186.204.72 at 2016-12-11 17:59:30 +0100
+I, [2016-12-11T17:59:30.620226 #20869]  INFO -- : Processing by PizzasController#index as JSON
+I, [2016-12-11T17:59:30.623096 #20872]  INFO -- : Processing by BasesController#index as JSON
+D, [2016-12-11T17:59:30.631202 #20869] DEBUG -- :   [1m[36mPizza Load (0.6ms)[0m  [1mSELECT "pizzas".* FROM "pizzas"[0m
+D, [2016-12-11T17:59:30.633685 #20872] DEBUG -- :   [1m[35mBase Load (6.1ms)[0m  SELECT "bases".* FROM "bases"
+I, [2016-12-11T17:59:30.635970 #20872]  INFO -- : Completed 200 OK in 13ms (Views: 0.8ms | ActiveRecord: 6.1ms)
+D, [2016-12-11T17:59:30.638210 #20869] DEBUG -- :   [1m[35mBase Load (0.2ms)[0m  SELECT  "bases".* FROM "bases" WHERE "bases"."id" = ? LIMIT 1  [["id", 1]]
+I, [2016-12-11T17:59:30.640122 #20869]  INFO -- : Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 0.8ms)
+I, [2016-12-11T17:59:30.642395 #20872]  INFO -- : Started GET "/orders" for 88.186.204.72 at 2016-12-11 17:59:30 +0100
+I, [2016-12-11T17:59:30.644263 #20872]  INFO -- : Processing by OrdersController#index as JSON
+D, [2016-12-11T17:59:30.646575 #20872] DEBUG -- :   [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+D, [2016-12-11T17:59:30.649593 #20872] DEBUG -- :   [1m[35mOrder Load (0.2ms)[0m  SELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 1  [["discontinued", "f"], ["flag", -1]]
+D, [2016-12-11T17:59:30.651199 #20872] DEBUG -- :   [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 2[0m  [["discontinued", "f"], ["flag", -1]]
+D, [2016-12-11T17:59:30.652488 #20872] DEBUG -- :   [1m[35mOrder Load (0.1ms)[0m  SELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 3  [["discontinued", "f"], ["flag", -1]]
+I, [2016-12-11T17:59:30.653016 #20872]  INFO -- : Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+I, [2016-12-11T17:59:50.980975 #20872]  INFO -- : Started POST "/orders" for 88.186.204.72 at 2016-12-11 17:59:50 +0100
+I, [2016-12-11T17:59:50.988956 #20872]  INFO -- : Processing by OrdersController#create as JSON
+I, [2016-12-11T17:59:50.989095 #20872]  INFO -- :   Parameters: {"items"=>[{"id"=>1, "base"=>{"id"=>1}}], "order"=>{}}
+I, [2016-12-11T17:59:51.005666 #20872]  INFO -- : Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+F, [2016-12-11T17:59:51.007750 #20872] FATAL -- : 
+NoMethodError (undefined method `current' for #<Class:0x007fab3e7faad0>
+Did you mean?  current_scope
+               Current):
+  app/controllers/orders_controller.rb:47:in `create'
+
+
+I, [2016-12-11T18:01:42.440042 #21055]  INFO -- : Started GET "/pizzas" for 88.186.204.72 at 2016-12-11 18:01:42 +0100
+I, [2016-12-11T18:01:42.443005 #21052]  INFO -- : Started GET "/bases" for 88.186.204.72 at 2016-12-11 18:01:42 +0100
+I, [2016-12-11T18:01:42.488324 #21055]  INFO -- : Processing by PizzasController#index as JSON
+I, [2016-12-11T18:01:42.491758 #21052]  INFO -- : Processing by BasesController#index as JSON
+D, [2016-12-11T18:01:42.517550 #21055] DEBUG -- :   [1m[36mPizza Load (1.8ms)[0m  [1mSELECT "pizzas".* FROM "pizzas"[0m
+D, [2016-12-11T18:01:42.521637 #21052] DEBUG -- :   [1m[36mBase Load (5.3ms)[0m  [1mSELECT "bases".* FROM "bases"[0m
+I, [2016-12-11T18:01:42.557884 #21052]  INFO -- : Completed 200 OK in 66ms (Views: 0.9ms | ActiveRecord: 10.1ms)
+I, [2016-12-11T18:01:42.560160 #21052]  INFO -- : Started GET "/orders" for 88.186.204.72 at 2016-12-11 18:01:42 +0100
+I, [2016-12-11T18:01:42.567281 #21052]  INFO -- : Processing by OrdersController#index as JSON
+D, [2016-12-11T18:01:42.573414 #21052] DEBUG -- :   [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+D, [2016-12-11T18:01:42.603666 #21055] DEBUG -- :   [1m[35mBase Load (0.4ms)[0m  SELECT  "bases".* FROM "bases" WHERE "bases"."id" = ? LIMIT 1  [["id", 1]]
+D, [2016-12-11T18:01:42.615514 #21052] DEBUG -- :   [1m[36mOrder Load (0.6ms)[0m  [1mSELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 1[0m  [["discontinued", "f"], ["flag", -1]]
+D, [2016-12-11T18:01:42.617071 #21052] DEBUG -- :   [1m[35mOrder Load (0.4ms)[0m  SELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 2  [["discontinued", "f"], ["flag", -1]]
+I, [2016-12-11T18:01:42.617546 #21055]  INFO -- : Completed 200 OK in 129ms (Views: 0.5ms | ActiveRecord: 3.0ms)
+D, [2016-12-11T18:01:42.619689 #21052] DEBUG -- :   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 3[0m  [["discontinued", "f"], ["flag", -1]]
+I, [2016-12-11T18:01:42.620343 #21052]  INFO -- : Completed 200 OK in 53ms (Views: 0.2ms | ActiveRecord: 1.9ms)
+I, [2016-12-11T18:01:46.634373 #21055]  INFO -- : Started POST "/orders" for 88.186.204.72 at 2016-12-11 18:01:46 +0100
+I, [2016-12-11T18:01:46.639247 #21055]  INFO -- : Processing by OrdersController#create as JSON
+I, [2016-12-11T18:01:46.639315 #21055]  INFO -- :   Parameters: {"items"=>[{"id"=>1, "base"=>{"id"=>1}}], "order"=>{}}
+I, [2016-12-11T18:01:46.644526 #21055]  INFO -- : Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.2ms)
+F, [2016-12-11T18:01:46.646339 #21055] FATAL -- : 
+NoMethodError (undefined method `Current' for Redis:Class
+Did you mean?  current
+               current=):
+  app/models/user.rb:34:in `current'
+  app/controllers/orders_controller.rb:47:in `create'
+
+
+I, [2016-12-11T18:03:57.866963 #21075]  INFO -- : Started POST "/orders" for 88.186.204.72 at 2016-12-11 18:03:57 +0100
+D, [2016-12-11T18:03:57.882336 #21075] DEBUG -- : Error occurred while parsing request parameters.
+Contents:
+
+{items:[{"id":1, "base":{"id":1}}]}
+F, [2016-12-11T18:03:57.886540 #21075] FATAL -- : 
+ActionDispatch::ParamsParser::ParseError (822: unexpected token at '{items:[{"id":1, "base":{"id":1}}]}'):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/params_parser.rb:53:in `rescue in parse_formatted_parameters'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/params_parser.rb:32:in `parse_formatted_parameters'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/params_parser.rb:23:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/flash.rb:260:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:225:in `context'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/session/abstract/id.rb:220:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.3/lib/active_record/query_cache.rb:36:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activerecord-4.2.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/callbacks.rb:84:in `run_callbacks'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-cors-0.4.0/lib/rack/cors.rb:80:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-cors-0.4.0/lib/rack/cors.rb:80:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-11T18:04:57.453499 #21072]  INFO -- : Started POST "/orders" for 88.186.204.72 at 2016-12-11 18:04:57 +0100
+I, [2016-12-11T18:04:57.493593 #21072]  INFO -- : Processing by OrdersController#create as */*
+I, [2016-12-11T18:04:57.493768 #21072]  INFO -- :   Parameters: {"items"=>[{"id"=>1, "base"=>{"id"=>1}}], "order"=>{}}
+I, [2016-12-11T18:04:57.502935 #21072]  INFO -- : Redirected to http://api.pizzatime.ovh/login
+I, [2016-12-11T18:04:57.503370 #21072]  INFO -- : Completed 302 Found in 9ms (ActiveRecord: 2.3ms)
+I, [2016-12-11T18:04:57.529020 #21075]  INFO -- : Started GET "/login" for 88.186.204.72 at 2016-12-11 18:04:57 +0100
+I, [2016-12-11T18:04:57.544020 #21075]  INFO -- : Processing by PagesController#login as */*
+I, [2016-12-11T18:04:57.552698 #21075]  INFO -- : Redirected to http://api.pizzatime.ovh/auth/microsoft_v2_auth
+I, [2016-12-11T18:04:57.553344 #21075]  INFO -- : Completed 302 Found in 9ms (ActiveRecord: 0.0ms)
+I, [2016-12-11T18:04:57.575021 #21072]  INFO -- : Started GET "/auth/microsoft_v2_auth" for 88.186.204.72 at 2016-12-11 18:04:57 +0100
+I, [2016-12-11T18:04:57.575771 #21072]  INFO -- omniauth: (microsoft_v2_auth) Request phase initiated.
+I, [2016-12-11T18:05:21.292081 #21072]  INFO -- : Started POST "/orders" for 88.186.204.72 at 2016-12-11 18:05:21 +0100
+I, [2016-12-11T18:05:21.295404 #21072]  INFO -- : Processing by OrdersController#create as JSON
+I, [2016-12-11T18:05:21.295511 #21072]  INFO -- :   Parameters: {"items"=>[{"id"=>1, "base"=>{"id"=>1}}], "order"=>{}}
+D, [2016-12-11T18:05:21.324163 #21072] DEBUG -- :   [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2016-12-11T18:05:21.342480 #21072] DEBUG -- :   [1m[35mOrderEndDay Load (0.2ms)[0m  SELECT  "order_end_days".* FROM "order_end_days"  ORDER BY "order_end_days"."id" DESC LIMIT 1
+I, [2016-12-11T18:05:21.345874 #21072]  INFO -- : Completed 500 Internal Server Error in 50ms (ActiveRecord: 2.1ms)
+F, [2016-12-11T18:05:21.347898 #21072] FATAL -- : 
+NoMethodError (undefined method `end_day' for nil:NilClass):
+  app/controllers/application_controller.rb:81:in `getCurrentEndDate'
+  app/controllers/orders_controller.rb:51:in `block in create'
+  app/controllers/orders_controller.rb:50:in `each'
+  app/controllers/orders_controller.rb:50:in `create'
+
+
+I, [2016-12-11T18:05:25.296851 #21075]  INFO -- : Started GET "/pizzas" for 88.186.204.72 at 2016-12-11 18:05:25 +0100
+I, [2016-12-11T18:05:25.300220 #21075]  INFO -- : Processing by PizzasController#index as JSON
+D, [2016-12-11T18:05:25.306408 #21075] DEBUG -- :   [1m[36mPizza Load (1.4ms)[0m  [1mSELECT "pizzas".* FROM "pizzas"[0m
+I, [2016-12-11T18:05:25.313707 #21072]  INFO -- : Started GET "/bases" for 88.186.204.72 at 2016-12-11 18:05:25 +0100
+I, [2016-12-11T18:05:25.316477 #21072]  INFO -- : Processing by BasesController#index as JSON
+D, [2016-12-11T18:05:25.323124 #21072] DEBUG -- :   [1m[36mBase Load (0.2ms)[0m  [1mSELECT "bases".* FROM "bases"[0m
+I, [2016-12-11T18:05:25.345505 #21072]  INFO -- : Completed 200 OK in 29ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+I, [2016-12-11T18:05:25.347190 #21072]  INFO -- : Started GET "/orders" for 88.186.204.72 at 2016-12-11 18:05:25 +0100
+I, [2016-12-11T18:05:25.348687 #21072]  INFO -- : Processing by OrdersController#index as JSON
+D, [2016-12-11T18:05:25.350345 #21072] DEBUG -- :   [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+D, [2016-12-11T18:05:25.358799 #21072] DEBUG -- :   [1m[36mOrder Load (0.4ms)[0m  [1mSELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 1[0m  [["discontinued", "f"], ["flag", -1]]
+D, [2016-12-11T18:05:25.360292 #21072] DEBUG -- :   [1m[35mOrder Load (0.2ms)[0m  SELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 2  [["discontinued", "f"], ["flag", -1]]
+D, [2016-12-11T18:05:25.366492 #21072] DEBUG -- :   [1m[36mOrder Load (0.3ms)[0m  [1mSELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 3[0m  [["discontinued", "f"], ["flag", -1]]
+I, [2016-12-11T18:05:25.367013 #21072]  INFO -- : Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 1.1ms)
+D, [2016-12-11T18:05:25.378799 #21075] DEBUG -- :   [1m[35mBase Load (0.4ms)[0m  SELECT  "bases".* FROM "bases" WHERE "bases"."id" = ? LIMIT 1  [["id", 1]]
+I, [2016-12-11T18:05:25.384536 #21075]  INFO -- : Completed 200 OK in 84ms (Views: 0.5ms | ActiveRecord: 2.7ms)
+I, [2016-12-11T18:05:27.979937 #21072]  INFO -- : Started POST "/orders" for 88.186.204.72 at 2016-12-11 18:05:27 +0100
+I, [2016-12-11T18:05:27.981805 #21072]  INFO -- : Processing by OrdersController#create as JSON
+I, [2016-12-11T18:05:27.981868 #21072]  INFO -- :   Parameters: {"items"=>[{"id"=>1, "base"=>{"id"=>1}}], "order"=>{}}
+D, [2016-12-11T18:05:27.983481 #21072] DEBUG -- :   [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+D, [2016-12-11T18:05:27.984680 #21072] DEBUG -- :   [1m[36mOrderEndDay Load (0.1ms)[0m  [1mSELECT  "order_end_days".* FROM "order_end_days"  ORDER BY "order_end_days"."id" DESC LIMIT 1[0m
+I, [2016-12-11T18:05:27.986660 #21072]  INFO -- : Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+F, [2016-12-11T18:05:27.988165 #21072] FATAL -- : 
+NoMethodError (undefined method `end_day' for nil:NilClass):
+  app/controllers/application_controller.rb:81:in `getCurrentEndDate'
+  app/controllers/orders_controller.rb:51:in `block in create'
+  app/controllers/orders_controller.rb:50:in `each'
+  app/controllers/orders_controller.rb:50:in `create'
+
+
+I, [2016-12-11T18:18:48.233153 #21299]  INFO -- : Started GET "/bases" for 88.186.204.72 at 2016-12-11 18:18:48 +0100
+I, [2016-12-11T18:18:48.233454 #21302]  INFO -- : Started GET "/orders" for 88.186.204.72 at 2016-12-11 18:18:48 +0100
+I, [2016-12-11T18:18:48.276246 #21302]  INFO -- : Processing by OrdersController#index as JSON
+I, [2016-12-11T18:18:48.278269 #21299]  INFO -- : Processing by BasesController#index as JSON
+D, [2016-12-11T18:18:48.301176 #21299] DEBUG -- :   [1m[36mBase Load (1.5ms)[0m  [1mSELECT "bases".* FROM "bases"[0m
+D, [2016-12-11T18:18:48.310351 #21302] DEBUG -- :   [1m[36mUser Load (5.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+I, [2016-12-11T18:18:48.345714 #21299]  INFO -- : Completed 200 OK in 67ms (Views: 1.2ms | ActiveRecord: 2.2ms)
+I, [2016-12-11T18:18:48.348120 #21299]  INFO -- : Started GET "/pizzas" for 88.186.204.72 at 2016-12-11 18:18:48 +0100
+I, [2016-12-11T18:18:48.354466 #21299]  INFO -- : Processing by PizzasController#index as JSON
+D, [2016-12-11T18:18:48.356093 #21299] DEBUG -- :   [1m[35mPizza Load (0.2ms)[0m  SELECT "pizzas".* FROM "pizzas"
+D, [2016-12-11T18:18:48.367681 #21302] DEBUG -- :   [1m[35mOrder Load (0.4ms)[0m  SELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 1  [["discontinued", "f"], ["flag", -1]]
+D, [2016-12-11T18:18:48.369269 #21302] DEBUG -- :   [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 2[0m  [["discontinued", "f"], ["flag", -1]]
+D, [2016-12-11T18:18:48.374330 #21302] DEBUG -- :   [1m[35mOrder Load (0.2ms)[0m  SELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 3  [["discontinued", "f"], ["flag", -1]]
+I, [2016-12-11T18:18:48.375496 #21302]  INFO -- : Completed 200 OK in 99ms (Views: 0.7ms | ActiveRecord: 6.8ms)
+D, [2016-12-11T18:18:48.392125 #21299] DEBUG -- :   [1m[36mBase Load (0.4ms)[0m  [1mSELECT  "bases".* FROM "bases" WHERE "bases"."id" = ? LIMIT 1[0m  [["id", 1]]
+I, [2016-12-11T18:18:48.393379 #21299]  INFO -- : Completed 200 OK in 39ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+I, [2016-12-11T18:18:52.893350 #21302]  INFO -- : Started POST "/orders" for 88.186.204.72 at 2016-12-11 18:18:52 +0100
+I, [2016-12-11T18:18:52.896193 #21302]  INFO -- : Processing by OrdersController#create as JSON
+I, [2016-12-11T18:18:52.896380 #21302]  INFO -- :   Parameters: {"items"=>[{"id"=>1, "base"=>{"id"=>1}}, {"id"=>1, "base"=>{"id"=>1}}], "order"=>{}}
+D, [2016-12-11T18:18:52.901459 #21302] DEBUG -- :   [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+D, [2016-12-11T18:18:52.903586 #21302] DEBUG -- :   [1m[35mOrderEndDay Load (0.1ms)[0m  SELECT  "order_end_days".* FROM "order_end_days"  ORDER BY "order_end_days"."id" DESC LIMIT 1
+I, [2016-12-11T18:18:52.906263 #21302]  INFO -- : Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.6ms)
+F, [2016-12-11T18:18:52.907627 #21302] FATAL -- : 
+NoMethodError (undefined method `end_day' for nil:NilClass):
+  app/controllers/application_controller.rb:81:in `getCurrentEndDate'
+  app/controllers/orders_controller.rb:51:in `block in create'
+  app/controllers/orders_controller.rb:50:in `each'
+  app/controllers/orders_controller.rb:50:in `create'
+
+
+I, [2016-12-11T18:25:38.988321 #21302]  INFO -- : Started GET "/config/endDate" for 88.186.204.72 at 2016-12-11 18:25:38 +0100
+F, [2016-12-11T18:25:38.993649 #21302] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/config/endDate"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-cors-0.4.0/lib/rack/cors.rb:80:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-cors-0.4.0/lib/rack/cors.rb:80:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-11T18:25:39.145163 #21302]  INFO -- : Started GET "/favicon.ico" for 88.186.204.72 at 2016-12-11 18:25:39 +0100
+F, [2016-12-11T18:25:39.148273 #21302] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-cors-0.4.0/lib/rack/cors.rb:80:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-cors-0.4.0/lib/rack/cors.rb:80:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-11T18:25:44.372804 #21302]  INFO -- : Started GET "/config/end_date" for 88.186.204.72 at 2016-12-11 18:25:44 +0100
+I, [2016-12-11T18:25:44.379122 #21302]  INFO -- : Processing by ConfigController#currentEndDate as HTML
+D, [2016-12-11T18:25:44.383257 #21302] DEBUG -- :   [1m[36mOrderEndDay Load (0.8ms)[0m  [1mSELECT  "order_end_days".* FROM "order_end_days"  ORDER BY "order_end_days"."id" DESC LIMIT 1[0m
+I, [2016-12-11T18:25:44.385857 #21302]  INFO -- : Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.8ms)
+F, [2016-12-11T18:25:44.387207 #21302] FATAL -- : 
+NoMethodError (undefined method `end_day' for nil:NilClass):
+  app/controllers/application_controller.rb:81:in `getCurrentEndDate'
+  app/controllers/config_controller.rb:6:in `currentEndDate'
+
+
+I, [2016-12-11T18:25:44.595542 #21299]  INFO -- : Started GET "/favicon.ico" for 88.186.204.72 at 2016-12-11 18:25:44 +0100
+F, [2016-12-11T18:25:44.600020 #21299] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-cors-0.4.0/lib/rack/cors.rb:80:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-cors-0.4.0/lib/rack/cors.rb:80:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-11T18:25:44.621479 #21302]  INFO -- : Started GET "/favicon.ico" for 88.186.204.72 at 2016-12-11 18:25:44 +0100
+F, [2016-12-11T18:25:44.623677 #21302] FATAL -- : 
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/rack/logger.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/actionpack-4.2.3/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/methodoverride.rb:22:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/ruby/2.3.0/gems/activesupport-4.2.3/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-1.6.5/lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-cors-0.4.0/lib/rack/cors.rb:80:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/ruby/2.3.0/gems/railties-4.2.3/lib/rails/application.rb:165:in `call'
+  vendor/bundle/ruby/2.3.0/gems/rack-cors-0.4.0/lib/rack/cors.rb:80:in `call'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:562:in `process_client'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:658:in `worker_loop'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/lib/unicorn/http_server.rb:132:in `start'
+  vendor/bundle/ruby/2.3.0/gems/unicorn-5.2.0/bin/unicorn:126:in `<top (required)>'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `load'
+  vendor/bundle/ruby/2.3.0/bin/unicorn:23:in `<top (required)>'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:74:in `kernel_load'
+  bundler (1.13.6) lib/bundler/cli/exec.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/cli.rb:332:in `exec'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/command.rb:27:in `run'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/invocation.rb:126:in `invoke_command'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor.rb:359:in `dispatch'
+  bundler (1.13.6) lib/bundler/cli.rb:20:in `dispatch'
+  bundler (1.13.6) lib/bundler/vendor/thor/lib/thor/base.rb:440:in `start'
+  bundler (1.13.6) lib/bundler/cli.rb:11:in `start'
+  bundler (1.13.6) exe/bundle:34:in `block in <top (required)>'
+  bundler (1.13.6) lib/bundler/friendly_errors.rb:100:in `with_friendly_errors'
+  bundler (1.13.6) exe/bundle:26:in `<top (required)>'
+  /usr/local/bin/bundle:23:in `load'
+  /usr/local/bin/bundle:23:in `<main>'
+
+
+I, [2016-12-11T18:25:45.121225 #21302]  INFO -- : Started GET "/config/end_date" for 88.186.204.72 at 2016-12-11 18:25:45 +0100
+I, [2016-12-11T18:25:45.123616 #21302]  INFO -- : Processing by ConfigController#currentEndDate as HTML
+D, [2016-12-11T18:25:45.127096 #21302] DEBUG -- :   [1m[35mOrderEndDay Load (0.3ms)[0m  SELECT  "order_end_days".* FROM "order_end_days"  ORDER BY "order_end_days"."id" DESC LIMIT 1
+I, [2016-12-11T18:25:45.129181 #21302]  INFO -- : Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.3ms)
+F, [2016-12-11T18:25:45.131310 #21302] FATAL -- : 
+NoMethodError (undefined method `end_day' for nil:NilClass):
+  app/controllers/application_controller.rb:81:in `getCurrentEndDate'
+  app/controllers/config_controller.rb:6:in `currentEndDate'
+
+
+I, [2016-12-11T18:25:47.453276 #21302]  INFO -- : Started GET "/config/end_date" for 88.186.204.72 at 2016-12-11 18:25:47 +0100
+I, [2016-12-11T18:25:47.454584 #21302]  INFO -- : Processing by ConfigController#currentEndDate as HTML
+D, [2016-12-11T18:25:47.456134 #21302] DEBUG -- :   [1m[36mOrderEndDay Load (0.4ms)[0m  [1mSELECT  "order_end_days".* FROM "order_end_days"  ORDER BY "order_end_days"."id" DESC LIMIT 1[0m
+I, [2016-12-11T18:25:47.458154 #21302]  INFO -- : Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms)
+F, [2016-12-11T18:25:47.459677 #21302] FATAL -- : 
+NoMethodError (undefined method `end_day' for nil:NilClass):
+  app/controllers/application_controller.rb:81:in `getCurrentEndDate'
+  app/controllers/config_controller.rb:6:in `currentEndDate'
+
+
+I, [2016-12-11T18:27:30.763812 #21299]  INFO -- : Started GET "/config/end_date" for 88.186.204.72 at 2016-12-11 18:27:30 +0100
+I, [2016-12-11T18:27:30.771662 #21299]  INFO -- : Processing by ConfigController#currentEndDate as HTML
+D, [2016-12-11T18:27:30.778319 #21299] DEBUG -- :   [1m[35mOrderEndDay Load (0.2ms)[0m  SELECT  "order_end_days".* FROM "order_end_days"  ORDER BY "order_end_days"."id" DESC LIMIT 1
+I, [2016-12-11T18:27:30.781745 #21299]  INFO -- : Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.7ms)
+F, [2016-12-11T18:27:30.783121 #21299] FATAL -- : 
+NoMethodError (undefined method `end_day' for nil:NilClass):
+  app/controllers/application_controller.rb:81:in `getCurrentEndDate'
+  app/controllers/config_controller.rb:6:in `currentEndDate'
+
+
+I, [2016-12-11T18:28:59.534466 #21302]  INFO -- : Started GET "/config/end_date" for 88.186.204.72 at 2016-12-11 18:28:59 +0100
+I, [2016-12-11T18:28:59.540836 #21302]  INFO -- : Processing by ConfigController#currentEndDate as HTML
+D, [2016-12-11T18:28:59.545967 #21302] DEBUG -- :   [1m[35mOrderEndDay Load (0.9ms)[0m  SELECT  "order_end_days".* FROM "order_end_days"  ORDER BY "order_end_days"."id" DESC LIMIT 1
+I, [2016-12-11T18:28:59.559148 #21302]  INFO -- : Completed 200 OK in 18ms (Views: 2.4ms | ActiveRecord: 0.9ms)
+I, [2016-12-11T18:29:11.189324 #21299]  INFO -- : Started GET "/config/end_date" for 88.186.204.72 at 2016-12-11 18:29:11 +0100
+I, [2016-12-11T18:29:11.193496 #21299]  INFO -- : Processing by ConfigController#currentEndDate as HTML
+D, [2016-12-11T18:29:11.197088 #21299] DEBUG -- :   [1m[36mOrderEndDay Load (0.4ms)[0m  [1mSELECT  "order_end_days".* FROM "order_end_days"  ORDER BY "order_end_days"."id" DESC LIMIT 1[0m
+I, [2016-12-11T18:29:11.204090 #21299]  INFO -- : Completed 200 OK in 10ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+I, [2016-12-11T18:29:37.246510 #21302]  INFO -- : Started GET "/bases" for 88.186.204.72 at 2016-12-11 18:29:37 +0100
+I, [2016-12-11T18:29:37.259115 #21299]  INFO -- : Started GET "/orders" for 88.186.204.72 at 2016-12-11 18:29:37 +0100
+I, [2016-12-11T18:29:37.274953 #21299]  INFO -- : Processing by OrdersController#index as JSON
+I, [2016-12-11T18:29:37.278094 #21302]  INFO -- : Processing by BasesController#index as JSON
+D, [2016-12-11T18:29:37.283102 #21299] DEBUG -- :   [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users"
+D, [2016-12-11T18:29:37.289330 #21302] DEBUG -- :   [1m[36mBase Load (0.9ms)[0m  [1mSELECT "bases".* FROM "bases"[0m
+I, [2016-12-11T18:29:37.316710 #21302]  INFO -- : Completed 200 OK in 38ms (Views: 0.3ms | ActiveRecord: 1.2ms)
+I, [2016-12-11T18:29:37.323368 #21302]  INFO -- : Started GET "/pizzas" for 88.186.204.72 at 2016-12-11 18:29:37 +0100
+I, [2016-12-11T18:29:37.331382 #21302]  INFO -- : Processing by PizzasController#index as JSON
+D, [2016-12-11T18:29:37.338349 #21302] DEBUG -- :   [1m[35mPizza Load (0.4ms)[0m  SELECT "pizzas".* FROM "pizzas"
+D, [2016-12-11T18:29:37.377438 #21299] DEBUG -- :   [1m[36mOrder Load (0.8ms)[0m  [1mSELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 1[0m  [["discontinued", "f"], ["flag", -1]]
+D, [2016-12-11T18:29:37.380798 #21299] DEBUG -- :   [1m[35mOrder Load (0.4ms)[0m  SELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 2  [["discontinued", "f"], ["flag", -1]]
+D, [2016-12-11T18:29:37.387738 #21299] DEBUG -- :   [1m[36mOrder Load (0.5ms)[0m  [1mSELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 3[0m  [["discontinued", "f"], ["flag", -1]]
+I, [2016-12-11T18:29:37.388967 #21299]  INFO -- : Completed 200 OK in 113ms (Views: 0.3ms | ActiveRecord: 12.6ms)
+D, [2016-12-11T18:29:37.413848 #21302] DEBUG -- :   [1m[36mBase Load (0.5ms)[0m  [1mSELECT  "bases".* FROM "bases" WHERE "bases"."id" = ? LIMIT 1[0m  [["id", 1]]
+I, [2016-12-11T18:29:37.419283 #21302]  INFO -- : Completed 200 OK in 88ms (Views: 0.3ms | ActiveRecord: 2.0ms)
+I, [2016-12-11T18:29:40.738285 #21299]  INFO -- : Started POST "/orders" for 88.186.204.72 at 2016-12-11 18:29:40 +0100
+I, [2016-12-11T18:29:40.750821 #21299]  INFO -- : Processing by OrdersController#create as JSON
+I, [2016-12-11T18:29:40.750987 #21299]  INFO -- :   Parameters: {"items"=>[{"id"=>1, "base"=>{"id"=>1}}, {"id"=>1, "base"=>{"id"=>1}}], "order"=>{}}
+D, [2016-12-11T18:29:40.754969 #21299] DEBUG -- :   [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+D, [2016-12-11T18:29:40.756906 #21299] DEBUG -- :   [1m[36mOrderEndDay Load (0.3ms)[0m  [1mSELECT  "order_end_days".* FROM "order_end_days"  ORDER BY "order_end_days"."id" DESC LIMIT 1[0m
+D, [2016-12-11T18:29:40.802016 #21299] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "order_end_days".* FROM "order_end_days"  ORDER BY "order_end_days"."id" DESC LIMIT 1
+D, [2016-12-11T18:29:40.804684 #21299] DEBUG -- :   [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+D, [2016-12-11T18:29:40.810010 #21299] DEBUG -- :   [1m[35mSQL (1.2ms)[0m  INSERT INTO "pizzas_users" ("pizza_id", "base_id", "ordered_for", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["pizza_id", 1], ["base_id", 1], ["ordered_for", "2016-12-11 10:30:00.000000"], ["user_id", 3], ["created_at", "2016-12-11 17:29:40.806262"], ["updated_at", "2016-12-11 17:29:40.806262"]]
+D, [2016-12-11T18:29:40.822363 #21299] DEBUG -- :   [1m[36m (11.0ms)[0m  [1mcommit transaction[0m
+D, [2016-12-11T18:29:40.823817 #21299] DEBUG -- :   [1m[35m (1.0ms)[0m  begin transaction
+D, [2016-12-11T18:29:40.829683 #21299] DEBUG -- :   [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "pizzas_users" ("pizza_id", "base_id", "ordered_for", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["pizza_id", 1], ["base_id", 1], ["ordered_for", "2016-12-11 10:30:00.000000"], ["user_id", 3], ["created_at", "2016-12-11 17:29:40.825901"], ["updated_at", "2016-12-11 17:29:40.825901"]]
+D, [2016-12-11T18:29:40.836533 #21299] DEBUG -- :   [1m[35m (5.3ms)[0m  commit transaction
+I, [2016-12-11T18:29:40.881719 #21299]  INFO -- : Completed 200 OK in 89ms (Views: 3.8ms | ActiveRecord: 20.5ms)
+I, [2016-12-11T18:30:33.032753 #21299]  INFO -- : Started GET "/config/end_date" for 88.186.204.72 at 2016-12-11 18:30:33 +0100
+I, [2016-12-11T18:30:33.042983 #21299]  INFO -- : Processing by ConfigController#currentEndDate as HTML
+D, [2016-12-11T18:30:33.048924 #21299] DEBUG -- :   [1m[36mOrderEndDay Load (0.7ms)[0m  [1mSELECT  "order_end_days".* FROM "order_end_days"  ORDER BY "order_end_days"."id" DESC LIMIT 1[0m
+I, [2016-12-11T18:30:33.051766 #21299]  INFO -- : Completed 200 OK in 9ms (Views: 1.1ms | ActiveRecord: 0.7ms)
+I, [2016-12-11T18:30:51.652235 #21299]  INFO -- : Started GET "/pizzas" for 88.186.204.72 at 2016-12-11 18:30:51 +0100
+I, [2016-12-11T18:30:51.664264 #21299]  INFO -- : Processing by PizzasController#index as JSON
+I, [2016-12-11T18:30:51.665403 #21302]  INFO -- : Started GET "/orders" for 88.186.204.72 at 2016-12-11 18:30:51 +0100
+D, [2016-12-11T18:30:51.677997 #21299] DEBUG -- :   [1m[35mPizza Load (0.4ms)[0m  SELECT "pizzas".* FROM "pizzas"
+D, [2016-12-11T18:30:51.680291 #21299] DEBUG -- :   [1m[36mBase Load (0.2ms)[0m  [1mSELECT  "bases".* FROM "bases" WHERE "bases"."id" = ? LIMIT 1[0m  [["id", 1]]
+I, [2016-12-11T18:30:51.683357 #21302]  INFO -- : Processing by OrdersController#index as JSON
+I, [2016-12-11T18:30:51.685945 #21299]  INFO -- : Completed 200 OK in 21ms (Views: 4.4ms | ActiveRecord: 0.6ms)
+I, [2016-12-11T18:30:51.688669 #21299]  INFO -- : Started GET "/bases" for 88.186.204.72 at 2016-12-11 18:30:51 +0100
+I, [2016-12-11T18:30:51.694740 #21299]  INFO -- : Processing by BasesController#index as JSON
+D, [2016-12-11T18:30:51.697195 #21299] DEBUG -- :   [1m[35mBase Load (0.3ms)[0m  SELECT "bases".* FROM "bases"
+D, [2016-12-11T18:30:51.698143 #21302] DEBUG -- :   [1m[35mUser Load (5.1ms)[0m  SELECT "users".* FROM "users"
+I, [2016-12-11T18:30:51.702760 #21299]  INFO -- : Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 0.3ms)
+D, [2016-12-11T18:30:51.705929 #21302] DEBUG -- :   [1m[36mOrder Load (0.4ms)[0m  [1mSELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 1[0m  [["discontinued", "f"], ["flag", -1]]
+D, [2016-12-11T18:30:51.710014 #21302] DEBUG -- :   [1m[35mOrder Load (0.2ms)[0m  SELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 2  [["discontinued", "f"], ["flag", -1]]
+D, [2016-12-11T18:30:51.716266 #21302] DEBUG -- :   [1m[36mOrder Load (0.7ms)[0m  [1mSELECT "pizzas_users".* FROM "pizzas_users" WHERE "pizzas_users"."discontinued" = ? AND ("pizzas_users"."flag" != ?) AND "pizzas_users"."user_id" = 3[0m  [["discontinued", "f"], ["flag", -1]]
+D, [2016-12-11T18:30:51.799661 #21302] DEBUG -- :   [1m[35mPizza Load (0.4ms)[0m  SELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT 1  [["id", 1]]
+D, [2016-12-11T18:30:51.800772 #21302] DEBUG -- :   [1m[36mBase Load (0.1ms)[0m  [1mSELECT  "bases".* FROM "bases" WHERE "bases"."id" = ? LIMIT 1[0m  [["id", 1]]
+D, [2016-12-11T18:30:51.801861 #21302] DEBUG -- :   [1m[35mCACHE (0.0ms)[0m  SELECT  "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = ? LIMIT 1  [["id", 1]]
+D, [2016-12-11T18:30:51.802969 #21302] DEBUG -- :   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "bases".* FROM "bases" WHERE "bases"."id" = ? LIMIT 1[0m  [["id", 1]]
+I, [2016-12-11T18:30:51.805764 #21302]  INFO -- : Completed 200 OK in 122ms (Views: 2.1ms | ActiveRecord: 7.7ms)

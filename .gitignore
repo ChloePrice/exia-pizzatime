@@ -17,8 +17,10 @@
 !/log/.keep
 /tmp
 /.idea
+/shared
 =======
 *.rbc
+*.log
 capybara-*.html
 .rspec
 /log
