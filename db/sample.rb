@@ -5,3 +5,5 @@ Pizza.create!(name: 'Margaritta', price: 6.5, description: 'Oune délicious pizz
 Pizza.create!(name: 'Savoyarde', price: 6.5, description: 'Oune délicious pizza!', base_id: Base.last.id)
 
 OrderEndDay.create(end_day: Date.new)
+
+User.create!(email: 'god@viacesi.fr', name: 'God')

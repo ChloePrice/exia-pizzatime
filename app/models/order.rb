@@ -1,8 +1,6 @@
 class Order< ActiveRecord::Base
   belongs_to :user
-  belongs_to :pizza
-  self.table_name = :pizzas_users
-
+  has_many :order_items
 
   scope :live, ->() { where(discontinued: false).where.not(flag: -1) }
   scope :paid, ->() { where(paid: true) }

@@ -28,9 +28,7 @@ ActiveRecord::Schema.define(version: 20160315155207) do
     t.integer  "base_id", null: false
   end
 
-  create_table "pizzas_users", force: :cascade do |t|
-    t.integer  "pizza_id",                     null: false 
-    t.integer  "base_id",                      null: false 
+  create_table "orders", force: :cascade do |t|
     t.integer  "user_id",                      null: false 
     t.boolean  "paid",         default: false, null: false
     t.boolean  "discontinued", default: false, null: false
@@ -41,8 +39,15 @@ ActiveRecord::Schema.define(version: 20160315155207) do
     t.integer  "flag",         default: false   
   end
 
-  add_index "pizzas_users", ["pizza_id"], name: "index_pizzas_users_on_pizza_id"
-  add_index "pizzas_users", ["user_id"], name: "index_pizzas_users_on_user_id"
+  create_table "order_items", force: :cascade do |t|
+    t.integer  "order_id",                     null: false 
+    t.integer  "pizza_id",                     null: false 
+    t.integer  "base_id",                      null: false 
+  end
+
+  add_index "order_items", ["pizza_id"], name: "index_order_items_on_pizza_id"
+  add_index "order_items", ["base_id"], name: "index_order_items_on_base_id"
+  add_index "order_items", ["order_id"], name: "index_order_items_on_order_id"
 
 
   create_table "users", force: :cascade do |t|

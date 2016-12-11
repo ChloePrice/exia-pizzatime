@@ -12,7 +12,6 @@ Rails.application.routes.draw do
 
   resources :pizzas, only: [:index, :create, :show, :destroy]
   resources :users, only: [:index, :create, :destroy] do
-    get '/order', to: 'users#order'
   end
 
   resources :bases, only: [:index, :create, :update, :destroy]
@@ -20,6 +19,7 @@ Rails.application.routes.draw do
 
   resource :users do
     post :login, to: 'users#authenticate'
+    get '/order', to: 'users#order'
   end
   resources :admins, only: [:index, :create, :destroy]
   
@@ -28,7 +28,7 @@ Rails.application.routes.draw do
     get :end_date, to: 'config#currentEndDate'
   end
 
-  resources :orders, only: [:index, :create, :destroy, :update] do
+  resources :orders, param: :order_id, only: [:index, :create, :destroy, :update] do
     get '/:id', to: 'orders#show'
     put '/cancel', to: 'orders#cancel'
   end

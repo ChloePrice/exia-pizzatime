@@ -46,9 +46,19 @@ class UsersController < ApplicationController
   end
 
   def order
-    user = User.find(params[:user_id])
+    user = User.find(User.current(request.headers[:token]))
     raise Exceptions::BadRequest if user.nil?
-    render_success(Order.live.placedBy(user))
+    o = Order.live.placedBy(user).last
+    entry = {id: o.id}
+    entry[:items] = o.order_items.map do |item|
+      {pizza_id: item.pizza.id, base_id: item.base.id}
+    end
+    entry[:date] = o.created_at
+    entry[:paid] = o.paid
+    entry[:delivered] = o.is_delivered?
+    entry[:price] = o.order_items.inject(0){|sum, i| sum + i.pizza.price}
+    entry[:payment_date] = o.payment_date
+    render_success entry
   end
 
 

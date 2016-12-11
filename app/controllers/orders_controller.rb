@@ -15,16 +15,19 @@ class OrdersController < ApplicationController
     User.all.each do |u|
       user_orders = Order.live.placedBy(u)
       next if user_orders.blank?
-      entry = {user: u}
-      entry[:items] = user_orders.map do |o|
-        {id: o.id, pizza: {id: o.pizza.id, name: o.pizza.name, base:{id: o.pizza.base.id, name: o.pizza.base.name}}, date: o.created_at, paid: o.paid, payment_date: o.payment_date, price: o.pizza.price}
+
+      user_orders.each do |o|
+        entry = {id: o.id}
+        entry[:items] = o.order_items.map do |item|
+          {pizza_id: item.pizza.id, base_id: item.base.id}
+        end
+        entry[:date] = o.created_at
+        entry[:paid] = o.paid
+        entry[:delivered] = o.is_delivered?
+        entry[:price] = o.order_items.inject(0){|sum, i| sum + i.pizza.price}
+        entry[:payment_date] = o.payment_date
+        result.append(entry)
       end
-      entry[:date] = user_orders.last.created_at
-      entry[:paid] = !user_orders.any?{|o| !o.paid}
-      entry[:delivered] = !user_orders.any?{|o| !o.is_delivered?}
-      entry[:price] = user_orders.inject(0){|sum, o| sum + o.pizza.price}
-      entry[:payment_date] = user_orders.last.payment_date
-      result.append(entry)
     end
     render_success(result)
   end
@@ -35,7 +38,7 @@ class OrdersController < ApplicationController
   # An array containing pizzas ans users'name.
   #
   def destroy
-    order = Order.find(params[:id])
+    order = Order.find(params[:order_id])
     raise Exceptions::UnAuthorized if (order.user.email != session[:email] || order.discontinued)
     raise Exceptions::SalesAreClosed if o.flag == 0
     render_success(order.update!(flag: -1))
@@ -46,15 +49,10 @@ class OrdersController < ApplicationController
   def create
     u = User.current(request.headers['token']);
     raise Exceptions::BadRequest if u.nil?
-    order_list = []
-    params[:items].each do |pizza|
-      o = Order.new({pizza_id: pizza[:id], base_id: pizza[:base][:id], ordered_for: getCurrentEndDate()})
-      o.user = u
-      o.validate!
-      order_list.append(o)
-    end
-    order_list.each{|o| o.save!}
-    render_success(order_list)
+    order = Order.create!(user_id: u.id, ordered_for: getCurrentEndDate())
+    order.order_items = items_parameters(order)
+    order.save!
+    render_success(order)
   end
 
   # Display a summary of the orders sorted by pizzas
@@ -91,8 +89,11 @@ class OrdersController < ApplicationController
   # price and delivered status
   #
   def update
-    order = Order.find(params[:id])
+    order = Order.find_by(id:params[:order_id])
     raise Exceptions::BadRequest if order.nil?
+    OrderItem.where(order_id: order.id).delete_all
+    order_items = items_parameters(order)
+    order.save!
     order.deliver if update_parameters[:delivered]
     order.lock if update_parameters[:lock]
     order.pay if update_parameters[:paid]
@@ -113,7 +114,16 @@ class OrdersController < ApplicationController
   end
 
   def update_parameters
-    params.permit(:paid, :delivered, :lock)
+    params.permit(:paid, :delivered, :lock, :base, :id)
+  end
+
+  def items_parameters(order)
+    order_items = []
+    params[:items].each do |item|
+      o = OrderItem.create!(order_id: order.id, pizza_id: item[:pizzaId], base_id: item[:baseId])
+      order_items.append(o)
+    end
+    return order_items
   end
 
 end
