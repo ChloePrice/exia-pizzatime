@@ -19,7 +19,7 @@ Rails.application.routes.draw do
 
   resource :users do
     post :login, to: 'users#authenticate'
-    get '/order', to: 'users#orders'
+    get '/orders', to: 'users#order'
   end
   resources :admins, only: [:index, :create, :destroy]
   
