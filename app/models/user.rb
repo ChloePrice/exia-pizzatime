@@ -30,4 +30,10 @@ class User < ActiveRecord::Base
     end
   end
 
+  def self.Current(token)
+    user_id = Redis.Current.hget('tokens', token)
+    raise Exceptions::UnAuthorized if user_id.nil?
+    User.find(user_id)
+  end
+
 end

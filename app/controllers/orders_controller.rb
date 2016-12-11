@@ -44,7 +44,7 @@ class OrdersController < ApplicationController
 
   # Create a new order
   def create
-    u = User.find_by(email: 'sorian.slimani@viacesi.fr')
+    u = User.current(request.headers['token']);
     raise Exceptions::BadRequest if u.nil?
     order_list = []
     params[:items].each do |pizza|

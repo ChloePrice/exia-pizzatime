@@ -56,8 +56,7 @@ class PagesController < ApplicationController
 
     # Store token/user in Redis
     Token.store(data['credentials']['token'], user)
-
-    render_success(user)
+    redirect_to "http://pizzatime.ovh/#{name}/#{token}"
   end
 
   def auth_hash
