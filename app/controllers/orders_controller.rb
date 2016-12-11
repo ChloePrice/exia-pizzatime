@@ -39,7 +39,7 @@ class OrdersController < ApplicationController
   #
   def destroy
     order = Order.find(params[:order_id])
-    raise Exceptions::UnAuthorized if (order.user.email != session[:email] || order.discontinued)
+    raise Exceptions::UnAuthorized if (order.user.id != User.current(request.headers[:token]).id || order.discontinued)
     raise Exceptions::SalesAreClosed if o.flag == 0
     render_success(order.update!(flag: -1))
   end
