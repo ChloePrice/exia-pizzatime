@@ -54,13 +54,13 @@ class UsersController < ApplicationController
     else
       entry = {id: o.id}
       entry[:items] = o.order_items.map do |item|
-        {pizza_id: item.pizza.id, base_id: item.base.id}
+        {pizzaId: item.pizza.id, baseId: item.base.id}
       end
       entry[:date] = o.created_at
       entry[:paid] = o.paid
       entry[:delivered] = o.is_delivered?
       entry[:price] = o.order_items.inject(0){|sum, i| sum + i.pizza.price}
-      entry[:payment_date] = o.payment_date
+      entry[:paymentDate] = o.payment_date
       render_success entry
     end
   end
