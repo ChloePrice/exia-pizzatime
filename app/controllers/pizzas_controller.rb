@@ -8,7 +8,7 @@ class PizzasController < ApplicationController
     result = Pizza.all.map do |p| 
       {id: p.id, name: p.name, base: {id: p.base.id, name: p.base.name}, price: p.price }
     end
-    render_success(result.to_json)
+    render_success(result)
   end
 
   def create

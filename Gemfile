@@ -33,6 +33,7 @@ gem 'omniauth-microsoft_v2_auth', path: './omniauth-microsoft_v2_auth'
 
 # On Windows systems we need tzinfo-data
 gem 'tzinfo-data'
+gem 'activesupport-json_encoder'
 
 
 
