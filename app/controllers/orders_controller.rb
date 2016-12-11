@@ -2,7 +2,7 @@ require 'json'
 
 class OrdersController < ApplicationController
   skip_before_filter :verify_authenticity_token
-  before_action :validate_token
+  #before_action :validate_token
 
 
   # Get the list of orders
@@ -48,7 +48,7 @@ class OrdersController < ApplicationController
     raise Exceptions::BadRequest if u.nil?
     order_list = []
     params[:items].each do |pizza|
-      o = Order.new({pizza_id: pizza[:id], base_id: pizza[:base][:id], ordered_for: self.getCurrentEndDate()})
+      o = Order.new({pizza_id: pizza[:id], base_id: pizza[:base][:id], ordered_for: getCurrentEndDate()})
       o.user = u
       o.validate!
       order_list.append(o)
