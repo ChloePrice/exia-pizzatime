@@ -49,16 +49,20 @@ class UsersController < ApplicationController
     user = User.find(User.current(request.headers[:token]))
     raise Exceptions::BadRequest if user.nil?
     o = Order.live.placedBy(user).last
-    entry = {id: o.id}
-    entry[:items] = o.order_items.map do |item|
-      {pizza_id: item.pizza.id, base_id: item.base.id}
+    if o.nil?
+      render_errors("No order for this user")
+    else
+      entry = {id: o.id}
+      entry[:items] = o.order_items.map do |item|
+        {pizza_id: item.pizza.id, base_id: item.base.id}
+      end
+      entry[:date] = o.created_at
+      entry[:paid] = o.paid
+      entry[:delivered] = o.is_delivered?
+      entry[:price] = o.order_items.inject(0){|sum, i| sum + i.pizza.price}
+      entry[:payment_date] = o.payment_date
+      render_success entry
     end
-    entry[:date] = o.created_at
-    entry[:paid] = o.paid
-    entry[:delivered] = o.is_delivered?
-    entry[:price] = o.order_items.inject(0){|sum, i| sum + i.pizza.price}
-    entry[:payment_date] = o.payment_date
-    render_success entry
   end
 
 
