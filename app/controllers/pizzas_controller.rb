@@ -7,7 +7,7 @@ class PizzasController < ApplicationController
 
   def index
     result = Pizza.all.map do |p| 
-      {id: p.id, name: p.name, base: {id: p.base.id, name: p.base.name}, price: p.price }
+      {id: p.id, name: p.name, description: p.description, base: {id: p.base.id, name: p.base.name}, price: p.price }
     end
     render_success(result)
   end
