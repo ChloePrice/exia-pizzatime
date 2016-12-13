@@ -61,8 +61,14 @@ class ApplicationController < ActionController::Base
 
   def validate_token
     token = request.headers['token']
+    return if Token.is_admin?(token)
     raise Exceptions::UnAuthorized.new if token.blank?
     raise Exceptions::TokenExpired.new unless Token.is_valid?(token)
+  end
+
+  def validate_admin
+    token = request.headers['token']
+    raise Exceptions::UnAuthorized.new unless Token.is_admin?(token)
   end
 
   def check_sales_opened

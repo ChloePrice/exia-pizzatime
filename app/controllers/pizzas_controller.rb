@@ -2,7 +2,8 @@ require 'json'
 
 class PizzasController < ApplicationController
   skip_before_filter :verify_authenticity_token
-  before_action :validate_token, except: [:index, :show]
+  before_action :validate_token
+  before_action :validate_admin, except: [:index]
 
   def index
     result = Pizza.all.map do |p| 

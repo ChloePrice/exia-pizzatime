@@ -3,6 +3,7 @@ require 'json'
 class OrdersController < ApplicationController
   skip_before_filter :verify_authenticity_token
   before_action :validate_token
+  before_action :validate_admin, except: [:create, :update, :destroy]
 
 
   # Get the list of orders
@@ -89,14 +90,15 @@ class OrdersController < ApplicationController
   # price and delivered status
   #
   def update
+    token = request.headers['token']
     order = Order.find_by(id:params[:order_id])
     raise Exceptions::BadRequest if order.nil?
     OrderItem.where(order_id: order.id).delete_all
     order_items = items_parameters(order)
     order.save!
-    order.deliver if update_parameters[:delivered]
-    order.lock if update_parameters[:lock]
-    order.pay if update_parameters[:paid]
+    order.deliver if update_parameters[:delivered] && Token.is_admin?(token)
+    order.lock if update_parameters[:lock] && Token.is_admin?(token)
+    order.pay if update_parameters[:paid] && Token.is_admin?(token)
     render_success(order)
   end
 
