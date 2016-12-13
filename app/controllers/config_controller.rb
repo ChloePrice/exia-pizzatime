@@ -9,7 +9,9 @@ class ConfigController < ApplicationController
 
     #post
     def nextEndDate
-        render_success(OrderEndDay.create!(endDays_parameters))
+        Order.live.map(&:lock)
+        datetime = Date.iso8601(endDays_parameters[:datetime]).strftime
+        render_success(OrderEndDay.create!(datetime: datetime))
     end
 
     private

@@ -18,7 +18,7 @@ class OrdersController < ApplicationController
       next if user_orders.blank?
 
       user_orders.each do |o|
-        entry = {id: o.id, user_id: u.id}
+        entry = {id: o.id, user: {name: u.name}}
         entry[:items] = o.order_items.map do |item|
           {pizzaId: item.pizza.id, baseId: item.base.id}
         end
@@ -106,6 +106,11 @@ class OrdersController < ApplicationController
     order = Order.find_by(id: params[:order_id])
     raise Exceptions::BadRequest if order.nil?
     render_success(order.cancel)
+  end
+
+  def archive_all_delivered
+      Order.where(flag: 2, paid: true).map(&:discontinue)
+      render_success
   end
 
 
