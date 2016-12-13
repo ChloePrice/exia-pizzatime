@@ -18,7 +18,7 @@ class OrdersController < ApplicationController
       next if user_orders.blank?
 
       user_orders.each do |o|
-        entry = {id: o.id}
+        entry = {id: o.id, user_id: u.id}
         entry[:items] = o.order_items.map do |item|
           {pizzaId: item.pizza.id, baseId: item.base.id}
         end
