@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   skip_before_filter :verify_authenticity_token
-  before_action :validate_token, except: [authenticate]
-  before_action :validate_admin, except: [authenticate, order]
+  before_action :validate_token, except: [:authenticate]
+  before_action :validate_admin, except: [:authenticate, :order]
 
   def index
     render json: User.all
