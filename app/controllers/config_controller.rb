@@ -4,7 +4,7 @@ class ConfigController < ApplicationController
 
     #get
     def currentEndDate
-        render_success(getCurrentEndDate)
+        render_success({maxOrderDate: OrderEndDay.last.end_day, deliveryDate: OrderEndDay.last.deliver_date})
     end
 
     #post

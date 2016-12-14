@@ -62,7 +62,8 @@ ActiveRecord::Schema.define(version: 20160315155207) do
   end
 
   create_table "order_end_days", force: :cascade do |t|
-    t.datetime "end_day",       null: false
+    t.datetime "end_day",            null: false
+    t.datetime "deliver_date",       null: false
   end
 
 end
