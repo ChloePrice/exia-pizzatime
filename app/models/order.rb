@@ -2,7 +2,7 @@ class Order< ActiveRecord::Base
   belongs_to :user
   has_many :order_items
 
-  scope :live, ->() { where(discontinued: false).where.not(flag: -1) }
+  scope :live, ->() { where(discontinued: false).where.not(flag: -1).where.not(flag: 2) }
   scope :paid, ->() { where(paid: true) }
   scope :unpaid, ->() { where(paid: false) }
   scope :placedBy, -> (user) { where(user: user) }
