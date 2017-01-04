@@ -93,7 +93,6 @@ class OrdersController < ApplicationController
     token = request.headers['token']
     order = Order.find_by(id: params[:order_id])
     raise Exceptions::BadRequest if order.nil?
-    OrderItem.where(order_id: order.id).delete_all
     order_items = items_parameters(order)
     order.save!
     order.deliver if update_parameters[:delivered] && Token.is_admin?(token)
@@ -127,6 +126,7 @@ class OrdersController < ApplicationController
   def items_parameters(order)
     order_items = []
     if params[:items].present?
+      OrderItem.where(order_id: order.id).delete_all
       params[:items].each do |item|
         o = OrderItem.create!(order_id: order.id, pizza_id: item[:pizzaId], base_id: item[:baseId])
         order_items.append(o)
